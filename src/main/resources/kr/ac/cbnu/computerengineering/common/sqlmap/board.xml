@@ -1,0 +1,153 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="board">
+    <resultMap type="BoardDataType" id="BoardRowResult">
+    	<result column="BOARDID" property="boardID"/>
+    	<result column="BOARDTITLE" property="boardTitle"/>
+    	<result column="DATE" property="date"/>  
+    	<result column="USERID" property="userID"/>
+    </resultMap>
+    
+    <resultMap type="BoardDataType" id="OneBoardDataResult">
+    	<result column="BOARDID" property="boardID"/>
+    	<result column="BOARDTITLE" property="boardTitle"/>
+    	<result column="DATE" property="date"/>  
+    	<result column="USERID" property="userID"/>
+    	<result column="BOARDBODY" property="boardBody"/>
+    	<result column="DEPTH" property="depth"/>
+    	<result column="PARENTID" property="parentID"/>
+    	<collection property="fileList" column="BOARDID" javaType="List" ofType="FileDataType" select="selectFileData" ></collection>
+    	<collection property="replyList" column="BOARDID" javaType="List" ofType="RepDataType" select="selectReplyOneDepth"></collection>
+    	<collection property="childBoardDataTypeList" column="BOARDID" javaType="List" ofType="BoardDataType" select="selectChildBoardDataList"></collection>	
+    </resultMap>
+    
+    <resultMap type="RepDataType" id="ReplyResult">
+    	<result column="replyid" property="replyid"/>
+    	<result column="DATE" property="date"/>  
+    	<result column="USERID" property="userID"/>
+    	<result column="REPLYBODY" property="replyBody"/>
+    	<result column="DEPTH" property="depth"/>
+    	<result column="BOARDID" property="boardID"/>
+    </resultMap>
+    
+    <resultMap type="FileDataType" id="FileDataResult"></resultMap>
+    
+    <select id="selectChildBoardDataList" resultMap="OneBoardDataResult" resultType="List">
+    	SELECT * FROM BOARD WHERE PARENTID=#{boardID}
+    </select>
+    
+	<insert id="insertBoard" parameterType="BoardDataType" useGeneratedKeys="true" keyProperty="BOARDID">
+	    
+	    <choose>
+	    	<when test="depth == 0">
+	    			INSERT INTO BOARD(BOARDBODY, USERID, DATE, BOARDTITLE, DEPTH) VALUES
+	    			(#{boardBody}, #{userID}, #{date}, #{boardTitle}, #{depth})
+	    	</when>
+	    	<otherwise>
+	    	INSERT INTO BOARD(BOARDBODY, USERID, DATE, BOARDTITLE, PARENTID, DEPTH) VALUES
+	    	(#{boardBody}, #{userID}, #{date}, #{boardTitle}, #{parentID}, #{depth})
+	    	</otherwise>
+	    </choose>
+	    
+	    <selectKey keyProperty = "boardID" resultType ="int" order = "AFTER">
+    		SELECT LAST_INSERT_ID();
+    	</selectKey>
+	</insert>
+	
+	<insert id="insertFileList" parameterType="List">
+		INSERT INTO FILE_DATA
+		(SAVENAME,NICKNAME,LENGTH,BOARDID)
+		VALUES
+		<foreach item="item" collection="list" open="" separator="," close="">
+			(#{item.saveName},#{item.nickName},#{length},#{boardID})
+		</foreach>
+	</insert>
+	
+	
+	
+	<insert id="insertReply" parameterType="RepDataType">
+		INSERT INTO BOARD_REPLY
+		<choose>
+			<when test="depth == 1">
+			(DEPTH, USERID, REPLYBODY, DATE, BOARDID)
+			VALUES
+			(#{depth},#{userID},#{replyBody},#{date},#{boardID})
+			</when>
+			<otherwise>
+			(DEPTH, USERID, PARENTID, REPLYBODY, DATE, BOARDID)
+		VALUES
+		(#{depth},#{userID},#{parentID},#{replyBody},#{date},#{boardID})	
+			</otherwise>
+		</choose>
+		
+	</insert>
+	
+	<select id="countRow" parameterType="SearchParam" resultType="int">
+		SELECT COUNT(DISTINCT BOARDID) FROM BOARD  WHERE DEPTH=0 
+		<choose>
+			<when test="searchOption!=null and searchOption.equals('boardTitle')">
+				AND boardTitle LIKE'%${param}$'
+			</when>
+			<when test="searchOption!=null and searchOption.equals('boardBody')">
+				AND BOARDBODY LIKE '%${param}%'
+			</when>
+			<when test="searchOption!=null and searchOption.equals('userID')">
+				AND BOARDBODY USERID= #{param}
+			</when>
+		</choose>
+	</select>
+	
+	<select id="selectBoardRowList" parameterType="SearchParam" resultMap="OneBoardDataResult" resultType="List">
+    	SELECT * FROM BOARD WHERE DEPTH=0
+    	<choose>
+			<when test="searchOption!=null and searchOption.equals('boardTitle')">
+				AND BOARDTITLE LIKE'%${param}$'
+			</when>
+			<when test="searchOption!=null and searchOption.equals('boardBody')">
+				AND BOARDBODY LIKE '%${param}%'
+			</when>
+			<when test="searchOption!=null and searchOption.equals('userID')">
+				AND USERID= #{param}
+			</when>
+		</choose>
+    	ORDER BY BOARDID ASC LIMIT #{startRow}, #{endRow}
+    </select>
+    
+    <select id="selectBoardBody" resultType="BoardDataType" resultMap="OneBoardDataResult" parameterType="int">
+    	SELECT * from BOARD where BOARDID = #{BOARDID}
+    </select>
+    
+    <select id="selectFileData" resultType="FileDataType" resultMap="FileDataResult" parameterType="int">
+    	SELECT * FROM FILE_DATA WHERE BOARDID = #{BOARDID}
+    </select>
+    
+    <select id="selectReplyOneDepth" resultType="RepDataType" resultMap="ReplyResult" parameterType="int">
+    	SELECT * FROM BOARD_REPLY WHERE BOARDID = #{BOARDID} ORDER BY DEPTH
+    </select>
+    
+    <select id="selectTowMoreDepth" resultType="List" resultMap="ReplyResult" parameterType="int">
+    	SELECT * FROM BOARD_REPLY WHERE PARENTID = #{replyid}
+    </select>
+    
+    
+    <update id="modifyReply" parameterType="repDataType">
+    	UPDATE BOARD_REPLY SET REPLYBODY = #{replyBody}, DATE=#{date} WHERE REPLYID = #{replyid}
+    </update>
+    
+    <delete id="deleteReplyListOrderByBoardID" parameterType="int" >
+     	SET foreign_key_checks = 0;
+    	DELETE FROM BOARD_REPLY WHERE BOARDID = #{boardID};
+    	SET foreign_key_checks = 1;
+    </delete>
+    
+    <delete id="deleteFileList" parameterType="int">
+    	DELETE FROM FILE_DATA WHERE BOARDID = #{boardID}
+    </delete>
+    
+    <delete id="deleteBoard" parameterType="int">
+    	DELETE FROM BOARD WHERE boardID =#{boardID}
+    </delete>
+    
+  
+</mapper>
+

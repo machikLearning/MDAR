@@ -1,0 +1,62 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="atc">
+    <resultMap type="AtcDataType" id="ATCResult">
+    	<result column="IDX" property="idx"/>
+    	<result column="CODE" property="code"/>
+    	<result column="LEVEL_NAME" property="levelName"/>
+    	<result column="SHORT_LEVEL_NAME" property="shortLevelName"/>
+    </resultMap>
+	
+	<select id="countRow" parameterType="SearchParam" resultType="java.lang.Integer">
+		SELECT COUNT(DISTINCT A.CODE) FROM ATC_CODE A 
+		<choose>
+			<when test="searchOption!=null and searchOption.equals('ATCcode')">
+				WHERE A.CODE=#{param}
+			</when>
+			<when test="searchOption!=null and searchOption.equals('ATCname')">
+				WHERE A.LEVEL_NAME LIKE '%${param}%'
+			</when>
+			<when test="searchOption!=null and searchOption.equals('medicineFullName')">
+				INNER JOIN MEDICINE M ON A.IDX = M.ATC_IDX WHERE M.NAME LIKE '%${param}%'
+			</when>
+			<when test="searchOption!=null and searchOption.equals('medicineCode')">
+				INNER JOIN MEDICINE M ON A.IDX = M.ATC_IDX WHERE M.CODE LIKE '%${param}%'
+			</when>
+		</choose>
+	</select>
+	
+	<select id="selectATCList" parameterType="SearchParam" resultMap="ATCResult" resultType="java.util.List">
+    	SELECT DISTINCT A.CODE AS CODE, A.LEVEL_NAME AS LEVEL_NAME, A.SHORT_LEVEL_NAME AS SHORT_LEVEL_NAME FROM ATC_CODE A 
+    	<choose>
+			<when test="searchOption!=null and searchOption.equals('ATCcode')">
+				WHERE A.CODE=#{param}
+			</when>
+	    	<when test="searchOption!=null and searchOption.equals('ATCname')">
+			    WHERE A.LEVEL_NAME LIKE '%${param}%' OR A.SHORT_LEVEL_NAME LIKE '%${param}%'
+	    	</when>
+	    	<when test="searchOption!=null and searchOption.equals('medicineFullName')">
+				INNER JOIN MEDICINE M ON A.IDX = M.ATC_IDX WHERE M.NAME LIKE '%${param}%'
+			</when>
+			<when test="searchOption!=null and searchOption.equals('medicineCode')">
+				INNER JOIN MEDICINE M ON A.IDX = M.ATC_IDX WHERE M.CODE LIKE '%${param}%'
+			</when>
+		</choose>
+    	ORDER BY A.IDX ASC LIMIT #{startRow}, #{endRow}
+    </select>
+    
+    <select id="detailByIdx" resultMap="ATCResult" parameterType="java.lang.Integer">
+    	SELECT IDX,CODE,LEVEL_NAME,SHORT_LEVEL_NAME FROM ATC_CODE WHERE IDX = #{idx}
+    </select>
+    
+    <select id="detailByMaterial" resultMap="ATCResult" parameterType="java.lang.Integer">
+    	SELECT
+	    	ATC.IDX AS IDX,
+	    	ATC.CODE AS CODE,
+	    	ATC.LEVEL_NAME AS LEVEL_NAME,
+	    	ATC.SHORT_LEVEL_NAME AS SHORT_LEVEL_NAME
+   		FROM ATC_MATERIAL_MAPPING AS MAPPING 
+   		INNER JOIN ATC_CODE ATC ON MAPPING.ATC_IDX = ATC.IDX
+   		WHERE MAPPING.MATERIAL_IDX = #{idx}
+    </select>
+</mapper>

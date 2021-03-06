@@ -1,0 +1,150 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="medicine">
+    <resultMap type="MedicineDataType" id="MedicineDataTypeResult">
+	    <result column="IDX" property="idx"/>
+	    <result column="NAME" property="name"/>
+	    <result column="ITEM_CODE" property="itemCode"/>
+	    <result column="BARCODE" property="barcode"/>
+	    <result column="STANDARD_CODE" property="standardCode"/>
+	    <result column="CODE" property="code"/>  
+	    <association property="ATCCode" javaType="AtcDataType" select="atc.detailByIdx" column="ATC_IDX">
+	    	<id column="IDX" property="idx"/>
+    		<result column="CODE" property="code"/>
+	    	<result column="LEVEL_NAME" property="levelName"/>
+	    	<result column="SHORT_LEVEL_NAME" property="shortLevelName"/>
+	    </association>
+	    <association column="INGREDIENT_IDX" property="ingredient" select="ingredient.detailIngredient"/>
+    </resultMap>
+    
+	
+	<select id="countRow" parameterType="SearchParam" resultType="java.lang.Integer">
+		SELECT COUNT(DISTINCT M.CODE) FROM MEDICINE M 
+	    <choose>
+			<when test="searchOption!=null and searchOption.equals('ATCcode')">
+				INNER JOIN ATC_CODE A ON M.ATC_IDX = A.IDX WHERE A.CODE=#{param}
+			</when>
+	    	<when test="searchOption!=null and searchOption.equals('ATCname')">
+			    INNER JOIN ATC_CODE A ON M.ATC_IDX = A.IDX WHERE A.LEVEL_NAME LIKE '%${param}%'
+	    	</when>
+		    <when test="searchOption!=null and searchOption.equals('medicineCode')">
+				WHERE M.CODE=#{param}
+			</when>
+			<when test="searchOption!=null and searchOption.equals('medicineFullName')">
+				WHERE M.NAME LIKE '%${param}%'
+			</when>
+		</choose>
+	</select>
+	
+	<select id="selectMedicineList" parameterType="SearchParam" resultMap="MedicineDataTypeResult" resultType="java.util.List">
+		SELECT 
+			M.IDX AS IDX,
+			M.NAME AS NAME,
+			M.ITEM_CODE AS ITEM_CODE,
+			M.BARCODE AS BARCODE,
+			M.STANDARD_CODE AS STANDARD_CODE,
+			M.CODE AS CODE,
+	    	M.ATC_IDX AS ATC_IDX,
+	    	M.INGREDIENT_IDX AS INGREDIENT_IDX
+	    FROM MEDICINE M
+		<choose>
+			<when test="searchOption!=null and searchOption.equals('ATCcode')">
+				INNER JOIN ATC_CODE A ON M.ATC_IDX = A.IDX WHERE A.CODE=#{param}
+			</when>
+			<when test="searchOption!=null and searchOption.equals('ATCname')">
+			    INNER JOIN ATC_CODE A ON M.ATC_IDX = A.IDX WHERE A.LEVEL_NAME LIKE '%${param}%'
+	    	</when>
+			<when test="searchOption!=null and searchOption.equals('medicineCode')">
+				WHERE M.CODE=#{param}
+			</when>
+			<when test="searchOption!=null and searchOption.equals('medicineFullName')">
+				WHERE M.NAME LIKE '%${param}%'
+			</when>
+		</choose>
+		 GROUP BY M.CODE ORDER BY M.IDX ASC LIMIT #{startRow}, #{endRow}  
+	</select>
+	
+	<select id="selectMedicineNoLimitList" parameterType="SearchParam" resultMap="MedicineDataTypeResult" resultType="java.util.List">
+		SELECT 
+			M.IDX AS IDX,
+			M.NAME AS NAME,
+			M.ITEM_CODE AS ITEM_CODE,
+			M.BARCODE AS BARCODE,
+			M.STANDARD_CODE AS STANDARD_CODE,
+			M.CODE AS CODE,
+	    	M.ATC_IDX AS ATC_IDX,
+	    	M.INGREDIENT_IDX AS INGREDIENT_IDX
+	    FROM MEDICINE M
+		<choose>
+			<when test="searchOption!=null and searchOption.equals('ATCcode')">
+				INNER JOIN ATC_CODE A ON M.ATC_IDX = A.IDX WHERE A.CODE=#{param}
+			</when>
+			<when test="searchOption!=null and searchOption.equals('ATCname')">
+			    INNER JOIN ATC_CODE A ON M.ATC_IDX = A.IDX WHERE A.LEVEL_NAME LIKE '%${param}%'
+	    	</when>
+			<when test="searchOption!=null and searchOption.equals('medicineCode')">
+				WHERE M.CODE=#{param}
+			</when>
+			<when test="searchOption!=null and searchOption.equals('medicineFullName')">
+				WHERE M.NAME LIKE '%${param}%'
+			</when>
+		</choose>
+		GROUP BY M.CODE ORDER BY M.IDX ASC
+	</select>
+	
+	<select id="searchMedicineList" parameterType="SearchParam" resultMap="MedicineDataTypeResult" resultType="java.util.List">
+		SELECT 
+			M.IDX AS IDX,
+			M.NAME AS NAME,
+			M.ITEM_CODE AS ITEM_CODE,
+			M.BARCODE AS BARCODE,
+			M.STANDARD_CODE AS STANDARD_CODE,
+			M.CODE AS CODE,
+	    	M.ATC_IDX AS ATC_IDX,
+	    	M.INGREDIENT_IDX AS INGREDIENT_IDX
+	    FROM MEDICINE M
+		<choose>
+			<when test="searchOption!=null and searchOption.equals('medicineCode')">
+				WHERE M.CODE LIKE '%${param}%'
+			</when>
+			<when test="searchOption!=null and searchOption.equals('medicineFullName')">
+				WHERE M.NAME LIKE '%${param}%'
+			</when>
+		</choose>
+		 GROUP BY M.CODE
+	</select>
+	
+
+	
+	
+	<select id="selectAtcByMedicineName" resultMap="MedicineDataTypeResult" parameterType="SearchParam" resultType="java.util.List">
+	    SELECT 
+	    	M.IDX AS IDX,
+			M.NAME AS NAME,
+			M.ITEM_CODE AS ITEM_CODE,
+			M.BARCODE AS BARCODE,
+			M.STANDARD_CODE AS STANDARD_CODE,
+			M.CODE AS CODE,
+	    	M.ATC_IDX AS ATC_IDX,
+	    	M.INGREDIENT_IDX AS INGREDIENT_IDX
+	    FROM MEDICINE M
+	    WHERE M.NAME LIKE N'%${param}%'
+	</select>
+	<select id="selectMedicineByMedicineCode" resultMap="MedicineDataTypeResult" parameterType="SearchParam">
+	    SELECT 
+	    	M.IDX AS IDX,
+			M.NAME AS NAME,
+			M.ITEM_CODE AS ITEM_CODE,
+			M.BARCODE AS BARCODE,
+			M.STANDARD_CODE AS STANDARD_CODE,
+			M.CODE AS CODE,
+	    	M.ATC_IDX AS ATC_IDX,
+	    	M.INGREDIENT_IDX AS INGREDIENT_IDX
+	    FROM MEDICINE M
+	    WHERE M.CODE=${param}
+	</select>
+	
+	
+	
+</mapper>
+

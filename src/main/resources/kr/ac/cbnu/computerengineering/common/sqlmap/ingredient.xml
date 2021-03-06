@@ -1,0 +1,34 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="ingredient">
+	<resultMap type="IngredientDatatype" id="IngredientResult">
+		<result column="IDX" property="idx"/>
+		<result column="CODE" property="code"/>
+		<collection property="materials" select="detailMaterial" column="IDX"/>
+	</resultMap>
+	
+	<select id="detailIngredient" resultMap="IngredientResult" parameterType="java.lang.Integer">
+		SELECT IDX, CODE FROM INGREDIENT WHERE IDX = #{idx}
+	</select>
+	
+	<resultMap type="MaterialDatatype" id="MaterialResult">
+		<result column="IDX" property="idx"/>
+    	<result column="M_CODE" property="code"/>
+    	<result column="KOR_NAME" property="korName"/>
+    	<result column="ENG_NAME" property="engName"/>
+    	<result column="ENG_SHORT_NAME" property="engShortName"/>
+    	<collection property="atcs" javaType="java.util.List" select="atc.detailByMaterial" column="IDX"/>
+	</resultMap>
+	<select id="detailMaterial" resultMap="MaterialResult" parameterType="java.lang.Integer" resultType="java.util.List">
+		SELECT 
+			M.IDX AS IDX, 
+			M.CODE AS M_CODE, 
+			M.KOR_NAME AS KOR_NAME, 
+			M.ENG_NAME AS ENG_NAME, 
+			M.ENG_SHORT_NAME AS ENG_SHORT_NAME
+		FROM INGREDIENT_MATERIAL_MAPPING IM
+		INNER JOIN MATERIAL M ON IM.MATERIAL_IDX = M.IDX
+		WHERE IM.INGREDIENT_IDX = #{IDX} 
+	</select>
+</mapper>

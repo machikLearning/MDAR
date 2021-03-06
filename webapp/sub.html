@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>충북대학교 병원</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+
+	<script src="js/vendor/jquery-3.2.1.min.js"></script>
+	<script src="js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="js/submenu.js"></script>
+</head>
+
+
+<!-- wrap :s -->
+	<div id="wrapper">
+
+		<!-- header :s -->
+		<div id="headerWrap">
+			<div id="header">
+				<div id="globalWrap">
+					<ul class="global">
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Sitemap</a></li>
+					</ul>
+				</div>
+
+
+				<h1 id="logo"><a href="#"><img src="img/layout/logo.png" alt="충북대학교 병원" /></a></h1>
+				
+
+				<!-- gnbWrap :s -->
+				<div id="gnbWrap">	
+					<div id="gnb">
+						<ul class="menu">
+							<li><a href="#">대메뉴1</a>
+								<ul class="sub">
+									<li><a href="#">2차메뉴1</a></li>
+									<li><a href="#">2차메뉴2</a></li>
+									<li><a href="#">2차메뉴3</a></li>
+								</ul>
+							</li>
+							<li><a href="#">대메뉴2</a>
+								<ul class="sub">
+									<li><a href="#">2차메뉴1</a></li>
+									<li><a href="#">2차메뉴2</a></li>
+									<li><a href="#">2차메뉴3</a></li>
+								</ul>
+							</li>
+							<li><a href="#">대메뉴3</a>
+								<ul class="sub">
+									<li><a href="#">2차메뉴1</a></li>
+									<li><a href="#">2차메뉴2</a></li>
+									<li><a href="#">2차메뉴3</a></li>
+									
+								</ul>
+							</li>
+						</ul>
+					 </div>								
+			 	
+				<!-- gnbWrap :e -->
+			</div>
+		</div>
+		<!-- header :e -->
+
+
+		<!-- contentsWrap :s -->
+		<div id="contentsWrap">
+
+			<!-- lnbWrap :s -->
+			<div id="lnbWrap">
+				<div id="lnb_title">
+					<h2>대메뉴타이틀</h2>
+				</div>
+			
+				<ul id="lnb">
+					<li><a href="#">2차메뉴1</a></li>
+					<li><a href="#">2차메뉴2</a></li>
+					<li class="on"><a href="#">2차메뉴3</a></li>
+					<li><a href="#">2차메뉴4</a></li>
+					<li><a href="#">2차메뉴5</a></li>
+					<li><a href="#">2차메뉴6</a></li>
+					<li><a href="#">2차메뉴7</a></li>
+				
+				</ul>
+			</div>
+			<!-- lnbWrap :e -->
+
+			<!-- container :s -->
+			<div id="container">
+
+				<div class="location">
+					<span class="home"><a href="#"><img src="img/layout/ico_home.png" alt="홈"></a></span>
+					<span class="arrow">&gt;</span>
+					<a href="#"> <span class="first">타이틀1</span></a>
+					<span class="arrow">&gt;</span>
+					<a href="#"> <span>타이틀2</span></a>
+				</div>
+
+				<h3 id="contTi">타이틀이 들어갑니다.</h3>
+
+				<!-- 컨텐츠영역 txt :s -->
+				<div id="txt">
+					
+					<h4>제목이 들어갑니다.</h4>
+					<!-- table :s -->
+					<table class="tbl_basic center">
+			            <caption>
+			                <strong>전형방법</strong>
+			                <details>
+			                    <summary>전형방법 안내입니다.</summary>
+			                </details>
+			            </caption>
+			                <thead>
+			                    <tr>
+			                        <th class="trw" rowspan="2">학위과정</th>
+			                        <th class="trw" rowspan="2">면접</th>
+			                        <th class="trw" rowspan="2">구술</th>
+			                        <th colspan="3">서류심사</th>
+			                        <th rowspan="2">합계</th>
+			                    </tr>
+			                    <tr>
+			                        <th>성적<br>(학사/석사)</th>
+			                        <th>전공일치</th>
+			                        <th>소계</th>
+			                    </tr>
+			                </thead>
+			                <tbody>
+			                    <tr>
+			                        <td>산업대학원</td>
+			                        <td>30</td>
+			                        <td>70</td>
+			                        <td>80</td>
+			                        <td>20</td>
+			                        <td>100</td>
+			                        <td>200</td>
+			                    </tr>
+			                    <tr>
+			                        <td>경영행정대학원</td>
+			                        <td>30</td>
+			                        <td>70</td>
+			                        <td>80</td>
+			                        <td>20</td>
+			                        <td>100</td>
+			                        <td>200</td>
+			                    </tr>
+			                    <tr>
+			                        <td>인문대학원</td>
+			                        <td>30</td>
+			                        <td>70</td>
+			                        <td>80</td>
+			                        <td>20</td>
+			                        <td>100</td>
+			                        <td>200</td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			            <!-- table :e -->
+
+
+						<!-- 페이징 :s -->
+			            <ul class="paginate">
+							<li class="dir first"><a href="#" onclick="" title="첫페이지로 이동">««</a></li>
+							<li class="dir prev"><a href="#" onclick="" title="이전페이지로 이동">«</a></li>
+							<li class="active"><a href="#" title="1페이지">1</a></li>
+							<li><a href="#" onclick="" title="2페이지">2</a></li>
+							<li><a href="#" onclick="" title="3페이지">3</a></li>
+							<li class="dir next"><a href="#" onclick="" title="다음페이지로 이동">»</a></li>
+							<li class="dir last"><a href="#" onclick="" title="마지막페이지로 이동">»»</a></li>
+
+						</ul>
+						<!-- 페이징 :e -->
+
+
+			            <h4>제목이 들어갑니다.</h4>
+						<!-- table :s -->
+						<table class="tbl_basic center">
+			            <caption>
+			                <strong>전형방법</strong>
+			                <details>
+			                    <summary>전형방법 안내입니다.</summary>
+			                </details>
+			            </caption>
+			                <thead>
+			                    <tr>
+			                        <th class="trw" rowspan="2">학위과정</th>
+			                        <th class="trw" rowspan="2">면접</th>
+			                        <th class="trw" rowspan="2">구술</th>
+			                        <th colspan="3">서류심사</th>
+			                        <th rowspan="2">합계</th>
+			                    </tr>
+			                    <tr>
+			                        <th>성적<br>(학사/석사)</th>
+			                        <th>전공일치</th>
+			                        <th>소계</th>
+			                    </tr>
+			                </thead>
+			                <tbody>
+			                    <tr>
+			                        <td>산업대학원</td>
+			                        <td>30</td>
+			                        <td>70</td>
+			                        <td>80</td>
+			                        <td>20</td>
+			                        <td>100</td>
+			                        <td>200</td>
+			                    </tr>
+			                    <tr>
+			                        <td>경영행정대학원</td>
+			                        <td>30</td>
+			                        <td>70</td>
+			                        <td>80</td>
+			                        <td>20</td>
+			                        <td>100</td>
+			                        <td>200</td>
+			                    </tr>
+			                    <tr>
+			                        <td>인문대학원</td>
+			                        <td>30</td>
+			                        <td>70</td>
+			                        <td>80</td>
+			                        <td>20</td>
+			                        <td>100</td>
+			                        <td>200</td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			            <!-- table :e -->
+
+
+
+			            <h4>제목이 들어갑니다.</h4>
+						<!-- table :s -->
+						<table class="tbl_basic center">
+			            <caption>
+			                <strong>전형방법</strong>
+			                <details>
+			                    <summary>전형방법 안내입니다.</summary>
+			                </details>
+			            </caption>
+			                <thead>
+			                    <tr>
+			                        <th class="trw" rowspan="2">학위과정</th>
+			                        <th class="trw" rowspan="2">면접</th>
+			                        <th class="trw" rowspan="2">구술</th>
+			                        <th colspan="3">서류심사</th>
+			                        <th rowspan="2">합계</th>
+			                    </tr>
+			                    <tr>
+			                        <th>성적<br>(학사/석사)</th>
+			                        <th>전공일치</th>
+			                        <th>소계</th>
+			                    </tr>
+			                </thead>
+			                <tbody>
+			                    <tr>
+			                        <td>산업대학원</td>
+			                        <td>30</td>
+			                        <td>70</td>
+			                        <td>80</td>
+			                        <td>20</td>
+			                        <td>100</td>
+			                        <td>200</td>
+			                    </tr>
+			                    <tr>
+			                        <td>경영행정대학원</td>
+			                        <td>30</td>
+			                        <td>70</td>
+			                        <td>80</td>
+			                        <td>20</td>
+			                        <td>100</td>
+			                        <td>200</td>
+			                    </tr>
+			                    <tr>
+			                        <td>인문대학원</td>
+			                        <td>30</td>
+			                        <td>70</td>
+			                        <td>80</td>
+			                        <td>20</td>
+			                        <td>100</td>
+			                        <td>200</td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			            <!-- table :e -->
+
+
+				</div>
+				<!-- 컨텐츠영역 txt :e -->
+
+			</div>
+			<!-- container :e -->
+
+		</div>
+		<!-- contentsWrap :e -->
+
+
+		<!-- footerWrap :s -->
+		<div id="footerWrap">
+		  <div id="footer">
+		    <div>
+		     <address>(28644) 충북 청주시 서원구 1순환로 776 (개신동)  </address>
+		      <p class="copyright">Copyright  ⓒ  CHUNGBUK NATIONAL UNIVERSITY HOSPITAL. ALL RIGHTS</p>
+		    </div>
+		  </div>
+		</div>
+		<!-- footerWrap :e -->
+
+	
+</body>
+</html>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user"> 
+   	<resultMap type="UserDataType" id="UserResultMap">
+        <result column="USER_ID" property="userId" />
+        <result column="PASSWORD" property="password" />
+        <result column="NAME" property="name" />
+        <result column="CBNUCODE" property="cbnuCode" />
+        <result column="EMAIL" property="email"/>
+        <result column="DISABLE" property="disable" />
+        <result column="DATE" property="date" />
+        <result column="IS_LEAVED" property="isLeaved"/>
+        <association property="hospital" column="HOSPITAL_ID" select="etc.detailHospital"/>
+        <association property="approval" column="USER_ID" select="selectApprovalTypeByUserID"/>
+        <collection property="roles" column="USER_ID" javaType="List" select="detailUserRole"/>
+    </resultMap>
+    <resultMap type="UserRoleDataType" id="UserRoleDataTypeResultMap">
+        <result column="USER_ID" property="userId" />
+        <result column="ROLE" property="userRole" />
+    </resultMap>
+    
+    <resultMap type="ApprovalDataType" id="ApprovalDataTypeResultMap">
+        <result column="IDX" property="idx"/>
+        <result column="USER_ID" property="userId"/>
+        <result column="APPROVAL_VALUE" property="approval" />
+        <result column="DATE" property="date"/>
+    </resultMap>
+    
+	<insert id="insertUser" parameterType="UserDataType">
+	    INSERT INTO USER
+	    	(USER_ID, PASSWORD, NAME, CBNUCODE, DISABLE, EMAIL, DATE, HOSPITAL_ID) 
+	    VALUES 
+	    	(#{userId},#{password},#{name},#{cbnuCode},#{disable}, #{email}, #{date}, #{hospital.id})
+	</insert>
+	<insert id="insertRoles" parameterType="UserRoleDataType" >
+	    INSERT INTO USER_ROLES(USER_ID, ROLE) VALUES(#{userId},#{userRole})
+	</insert>
+	<delete id="deleteRole" parameterType="UserRoleDataType">
+        DELETE FROM USER_ROLES WHERE USER_ID = #{userId} AND ROLE = #{userRole} 
+    </delete>
+    
+    <delete id="deleteRole2" parameterType="UserRoleDataType">
+        DELETE FROM USER_ROLES WHERE USER_ID = #{userId} 
+    </delete>
+    
+    <insert id="insertApproval" parameterType="UserRoleDataType">
+        INSERT INTO APPROVAL(USER_ID) VALUES('${userId}')
+    </insert>
+	<select id="detailUser" parameterType="UserDataType" resultMap="UserResultMap">
+		SELECT * FROM USER 
+		WHERE USER_ID=#{userId} AND PASSWORD=#{password}
+	</select>
+    <select id="selectAllUserCounts" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM USER 
+    </select>
+    <select id="idCheck" parameterType="UserDataType" resultType="java.lang.Integer">
+		SELECT COUNT(*) FROM USER WHERE USER_ID=#{userId}
+	</select>
+	<select id="detailUserRole" parameterType="UserDataType" resultMap="UserRoleDataTypeResultMap" resultType="java.util.List">
+	    SELECT * FROM USER_ROLES WHERE USER_ID=#{userId} ORDER BY ROLE DESC;
+	</select>
+    <select id="selectAccounts" parameterType="SearchParam" resultMap="UserResultMap" resultType="java.util.List">
+        SELECT USER_ID, PASSWORD, NAME, CBNUCODE, DISABLE, EMAIL, DATE, HOSPITAL_ID 
+        FROM USER  
+        ORDER BY DATE DESC, NAME ASC LIMIT #{startRow}, #{endRow}
+    </select>
+    <update id="disableAccount" parameterType="UserDataType">
+        UPDATE USER SET DISABLE = '${disable}' WHERE USER_ID = '${userId}'
+    </update>
+    
+	<select id="selectRole" parameterType="UserRoleDataType" resultMap="UserRoleDataTypeResultMap" resultType="java.util.List">
+	    SELECT * FROM USER_ROLES WHERE USER_ID=#{userId}
+	</select>
+    
+    <select id="selectApprovals" parameterType="SearchParam" resultMap="ApprovalDataTypeResultMap" resultType="java.util.List">
+        SELECT * FROM APPROVAL ORDER BY DATE DESC, USER_ID ASC LIMIT #{page}, #{pageSize}
+    </select>
+    
+    <select id="selectAllApprovalCounts" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM APPROVAL
+    </select>
+
+    <update id="updateApprovalById" parameterType="ApprovalDataType">
+        UPDATE APPROVAL SET APPROVAL_VALUE = '${approval}' WHERE USER_ID = '${userId}'
+    </update>
+    <update id="changePassword" parameterType="UserDataType">
+        UPDATE USER SET PASSWORD = '${password}' WHERE USER_ID = '${userId}'
+    </update>
+    <delete id="deleteUserRoleInform" parameterType="UserDataType">
+        DELETE FROM USER_ROLES WHERE USER_ID = #{userId}
+    </delete>
+    <delete id="deleteUser" parameterType="UserDataType">
+        DELETE FROM USER WHERE USER_ID = #{userId}
+    </delete>
+    
+    <select id="emailCheck" parameterType="UserDataType" resultType="java.lang.Integer">
+		SELECT COUNT(*) FROM USER WHERE EMAIL = #{email}
+	</select>
+	<select id="cbnuCodeCheck" parameterType="UserDataType" resultType="java.lang.Integer">
+		SELECT COUNT(*) FROM USER WHERE CBNUCODE=#{cbnuCode}
+	</select>
+	<select id="selectIdByCbnuCode" parameterType="UserDataType" resultMap="UserResultMap">
+	    SELECT USER_ID FROM USER WHERE CBNUCODE=#{cbnuCode}
+	</select>
+	<select id="selectEMAILById" parameterType="UserDataType" resultMap="UserResultMap">
+	    SELECT EMAIL,CBNUCODE FROM USER WHERE USER_ID=#{userId}
+	</select>
+	<select id="selectIdByEmail" parameterType="UserDataType" resultMap="UserResultMap">
+	    SELECT USER_ID FROM USER WHERE EMAIL=#{email}
+	</select>
+	<select id="selectMailByIdAndCode" parameterType="UserDataType" resultMap="UserResultMap">
+	    SELECT EMAIL FROM USER WHERE USER_ID=#{userId} AND  CBNUCODE=#{cbnuCode}
+	</select>
+	<delete id="deleteApproval" parameterType="ApprovalDataType">
+	    DELETE FROM APPROVAL WHERE USER_ID = #{userId}
+	</delete>
+	<delete id="approvalCheck" parameterType="ApprovalDataType">
+	    SELECT APPROVAL_VALUE FROM APPROVAL WHERE USER_ID = #{userId}
+	</delete>
+	
+	<select id="selectAccountByName" parameterType="SearchParam" resultMap="UserResultMap" resultType="java.util.List">
+	    SELECT USER_ID, NAME, CBNUCODE, DISABLE, DATE, HOSPITAL_ID FROM USER WHERE NAME LIKE N'%${param}%'
+	</select>
+	
+	<select id="selectApprovalById" parameterType="SearchParam" resultMap="ApprovalDataTypeResultMap" resultType="java.util.List">
+	    SELECT * FROM APPROVAL WHERE USER_ID LIKE N'%${userId}%'
+	</select>
+	
+	 <select id="selectPassword" parameterType="UserDataType" resultMap="UserResultMap">
+    	SELECT USER_ID, PASSWORD, CBNUCODE, NAME, HOSPITAL_ID FROM USER WHERE USER_ID=#{userId} AND  CBNUCODE=#{cbnuCode}
+    </select>
+    <select id="selectDoctors" parameterType="SearchParam" resultMap="UserResultMap" resultType="java.util.List">
+        SELECT USER.USER_ID, USER.NAME, USER.EMAIL, USER.DATE, APPROVAL.APPROVAL_VALUE
+        FROM APPROVAL INNER JOIN USER ON APPROVAL.USER_ID = USER.USER_ID
+        ORDER BY FIELD(APPROVAL_VALUE, 3, 1, 2), USER.NAME LIMIT #{startRow}, #{endRow}
+    </select>
+    <select id="selectUserList" parameterType="UserDataType" resultMap="UserResultMap">
+	    SELECT USER_ID, NAME, CBNUCODE, DISABLE, DATE, HOSPITAL_ID FROM USER WHERE USER_ID = #{userId}
+	</select>
+	<update id="updateUser" parameterType="UserDataType">
+        UPDATE USER SET PASSWORD = '${password}', NAME = '${name}' , CBNUCODE = '${cbnuCode}', HOSPITAL_ID=#{hospital.id} WHERE USER_ID = '${userId}'
+    </update>
+    
+    <select id="selectSearchUser" parameterType="SearchParam" resultMap="UserResultMap" resultType="java.util.List">
+		SELECT  
+			USER.USER_ID, USER.NAME, USER.CBNUCODE,USER.HOSPITAL_ID 
+		FROM USER
+			INNER JOIN USER_ROLES ROLE ON USER.USER_ID = ROLE.USER_ID
+		WHERE 
+			ROLE.ROLE='PATIENT' AND USER.HOSPITAL_ID = #{hospitalIdx}
+			AND (SELECT COUNT(*) FROM REGISTRATION WHERE PATIENT_ID=USER.USER_ID AND DOCTOR_ID=#{id}) = 0
+		<choose>
+			<when test="searchOption!=null and searchOption.equals('userId')">
+				AND USER.USER_ID LIKE '${param}' 
+			</when>
+			<when test="searchOption!=null and searchOption.equals('name')">
+				AND USER.NAME LIKE '${param}'
+			</when>
+			<when test="searchOption!=null and searchOption.equals('cbnuCode')">
+				AND USER.CBNUCODE LIKE '${param}'
+			</when>
+		</choose>
+		<if test="startRow!=null">
+			ORDER BY USER.USER_ID ASC LIMIT #{startRow}, #{endRow}
+		</if>
+	</select>
+	
+	<select id="selectApprovalTypeByUserID" parameterType="String" resultType="ApprovalType">
+	    SELECT APPROVAL_VALUE FROM APPROVAL WHERE USER_ID = #{userId}
+	</select>
+	
+	<insert id="insertLogQRCode" parameterType="List">
+		INSERT INTO PATIENT_REQUEST_LOG(PATIENTID, DATE, ATCCODE, PATIENTREQUESTLOGNUMBER) VALUES
+		<foreach item="item" collection="list" open="" separator="," close="">
+			(#{item.userID},#{item.date},#{item.ATCCode},#{item.patientRequestLogNumber})
+		</foreach>
+	</insert>
+	
+	<insert id="insertLogByLoginCheck" parameterType="LogDataType">
+		INSERT INTO LOGBYLOGIN(PATIENTID, DATE) VALUES (#{userID}, #{date})
+	</insert>
+	
+	<select id="detailUserByID" parameterType="String" resultMap="UserResultMap">
+		SELECT * FROM USER WHERE USER_ID=#{id}
+	</select>
+	
+	<update id="setLeaveUser" parameterType="String">
+		UPDATE USER SET IS_LEAVED = 1 WHERE USER_ID = #{userID}
+	</update>
+	
+</mapper>
+

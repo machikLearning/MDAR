@@ -1,0 +1,45 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="etc">
+	<resultMap type="HospitalDatatype" id="hospitalResult">
+		<result column="ID" property="id"/>
+		<result column="NAME" property="name"/>
+		<result column="CONTACT_NAME1" property="contactName1"/>
+		<result column="CONTACT_TEL1" property="contactTel1"/>
+		<result column="CONTACT_NAME2" property="contactName2"/>
+		<result column="CONTACT_TEL2" property="contactTel2"/>
+	</resultMap>
+	<insert id="addHospital" parameterType="HospitalDatatype">
+		INSERT INTO HOSPITALS 
+		(
+			NAME, CONTACT_NAME1, CONTACT_TEL1, CONTACT_NAME2, CONTACT_TEL2
+		) 
+		VALUES 
+		(
+			#{name}, #{contactName1}, #{contactTel1}, #{contactName2}, #{contactTel2}
+		)
+	</insert>
+	
+	<select id="getHospitals" resultMap="hospitalResult" resultType="java.util.List">
+		SELECT ID, NAME, CONTACT_NAME1, CONTACT_NAME2, CONTACT_TEL1, CONTACT_TEL2 FROM HOSPITALS
+	</select>
+	
+	<delete id="deleteHospital" parameterType="java.lang.Integer">
+		DELETE FROM HOSPITALS WHERE ID = #{id}
+	</delete>
+	
+	<select id="detailHospital" parameterType="java.lang.Integer" resultMap="hospitalResult">
+		SELECT ID, NAME, CONTACT_NAME1, CONTACT_NAME2, CONTACT_TEL1, CONTACT_TEL2 
+		FROM HOSPITALS WHERE ID=#{id}
+	</select>
+	
+	<update id="modifyHospital" parameterType="HospitalDatatype">
+		UPDATE HOSPITALS SET 
+			NAME=#{name},
+			CONTACT_NAME1=#{contactName1}, 
+			CONTACT_NAME2=#{contactName2}, 
+			CONTACT_TEL1=#{contactTel1}, 
+			CONTACT_TEL2=#{contactTel2} 
+		WHERE ID=#{id}
+	</update>
+</mapper>
