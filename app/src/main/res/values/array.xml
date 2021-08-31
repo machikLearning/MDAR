@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hospital_array">
+        <item>충북대 병원</item>
+        <item>분당 서울대 병원</item>
+        <item>보라매 병원</item>
+        <item>서울대 병원</item>
+    </string-array>
+</resources>

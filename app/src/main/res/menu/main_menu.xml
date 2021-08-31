@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/drug_relive_fragment"
+            android:title="약 검색" />
+    <item
+            android:id="@+id/mainActivity"
+            android:title="메인화면"/>
+    <item
+            android:id="@+id/qr_code"
+            android:title="QR코드 검색"/>
+    <item
+            android:id="@+id/covid19_fragment"
+            android:title="코비드19 백신 부작용 문의"/>
+    <item
+            android:id="@+id/patient_ocr"
+            android:title ="처방전 자동 입력"/>
+<!--    <item-->
+<!--            android:id="@+id/surveyActivity"-->
+<!--            android:title="survey"/>-->
+<!--    <item-->
+<!--            android:id="@+id/seeingAllergyActivity"-->
+<!--            android:icon="@android:drawable/ic_dialog_info"-->
+<!--            android:title="seeingAll"/>-->
+<!--    <item-->
+<!--            android:id="@+id/prescriptionMakerActivity"-->
+<!--            android:icon="@android:drawable/ic_dialog_info"-->
+<!--            android:title="insertPrescription"/>-->
+<!--    <item-->
+<!--            android:id="@+id/dseReliverActivity"-->
+<!--            android:icon="@android:drawable/ic_dialog_info"-->
+<!--            android:title="insertDSE"/>-->
+
+
+</menu>
