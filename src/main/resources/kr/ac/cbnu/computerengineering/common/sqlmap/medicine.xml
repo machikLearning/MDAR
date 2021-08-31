@@ -113,10 +113,7 @@
 		</choose>
 		 GROUP BY M.CODE
 	</select>
-	
 
-	
-	
 	<select id="selectAtcByMedicineName" resultMap="MedicineDataTypeResult" parameterType="SearchParam" resultType="java.util.List">
 	    SELECT 
 	    	M.IDX AS IDX,
@@ -130,6 +127,7 @@
 	    FROM MEDICINE M
 	    WHERE M.NAME LIKE N'%${param}%'
 	</select>
+
 	<select id="selectMedicineByMedicineCode" resultMap="MedicineDataTypeResult" parameterType="SearchParam">
 	    SELECT 
 	    	M.IDX AS IDX,

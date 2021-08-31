@@ -1,19 +1,14 @@
 package kr.ac.cbnu.computerengineering.user.manager;
 
-import java.util.List;
-import org.apache.ibatis.session.SqlSession;
-
-import kr.ac.cbnu.computerengineering.common.datatype.ApprovalDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.LogDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.SearchParam;
-import kr.ac.cbnu.computerengineering.common.datatype.UserDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.UserRoleDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.UserRoleType;
+import kr.ac.cbnu.computerengineering.common.datatype.*;
 import kr.ac.cbnu.computerengineering.common.managers.IUserManager;
 import kr.ac.cbnu.computerengineering.common.managers.dao.IRoleDao;
 import kr.ac.cbnu.computerengineering.common.managers.dao.IUserDao;
 import kr.ac.cbnu.computerengineering.user.manager.dao.RoleDaoImpl;
 import kr.ac.cbnu.computerengineering.user.manager.dao.UserDaoImpl;
+import org.apache.ibatis.session.SqlSession;
+
+import java.util.List;
 
 public class UserManagerImpl implements IUserManager {
 	private IUserDao userDao;
@@ -43,6 +38,7 @@ public class UserManagerImpl implements IUserManager {
 			session.commit();
 		}catch(Exception e){
 			session.rollback();
+			e.printStackTrace();
 			throw new Exception(e.getMessage());
 		}finally{
 			session.close();
@@ -51,7 +47,8 @@ public class UserManagerImpl implements IUserManager {
 		return result;
 	}
 	public UserDataType checkLogin(UserDataType userDataType) throws Exception{
-		return this.userDao.detailUser(userDataType);
+		UserDataType result = this.userDao.detailUser(userDataType);
+		return result;
 	}
 	public List<UserRoleDataType> selectRoles(UserDataType userDataType) throws Exception{
 		return this.roleDao.detailsRoles(userDataType);

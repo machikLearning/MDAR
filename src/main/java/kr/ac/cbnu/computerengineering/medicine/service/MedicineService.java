@@ -1,7 +1,5 @@
 package kr.ac.cbnu.computerengineering.medicine.service;
 
-import java.util.List;
-
 import kr.ac.cbnu.computerengineering.common.datatype.AtcDataType;
 import kr.ac.cbnu.computerengineering.common.datatype.MedicineDataType;
 import kr.ac.cbnu.computerengineering.common.datatype.PagingDataType;
@@ -11,6 +9,11 @@ import kr.ac.cbnu.computerengineering.common.service.IMedicineService;
 import kr.ac.cbnu.computerengineering.common.util.Utils;
 import kr.ac.cbnu.computerengineering.medicine.manager.MedicineManagerImpl;
 
+import java.util.List;
+/*
+	UserService와 PrescriptionService에서 사용
+	왠만하면 건들지 말것
+ */
 public class MedicineService implements IMedicineService {
 	private IMedicineManager medicineManager;
 	

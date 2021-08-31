@@ -1,19 +1,13 @@
 package kr.ac.cbnu.computerengineering.user.manager.dao;
 
-import java.util.List;
-
+import kr.ac.cbnu.computerengineering.common.datatype.*;
+import kr.ac.cbnu.computerengineering.common.managers.dao.IUserDao;
+import kr.ac.cbnu.computerengineering.common.mybatis.Mybatis;
 import org.apache.ibatis.exceptions.PersistenceException;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
-import kr.ac.cbnu.computerengineering.common.datatype.ApprovalDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.LogDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.SearchParam;
-import kr.ac.cbnu.computerengineering.common.datatype.UserDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.UserRoleDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.UserRoleType;
-import kr.ac.cbnu.computerengineering.common.managers.dao.IUserDao;
-import kr.ac.cbnu.computerengineering.common.mybatis.Mybatis;
+import java.util.List;
 
 public class UserDaoImpl implements IUserDao {
 	private SqlSessionFactory sqlSessionFactory;
@@ -33,7 +27,6 @@ public class UserDaoImpl implements IUserDao {
 		} finally {
 			session.close();
 		}
-		
 		return result;
 	}
 	

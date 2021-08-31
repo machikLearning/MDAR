@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context reloadable="true">
+	<Resource name="jdbc/ADRM" auth="Container" type="javax.sql.DataSource"
+        username="adrm"
+        password="1234"
+        driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://localhost:3306/adrm?autoReconnect=true&amp;useSSL=false&amp;characterEncoding=utf8"
+		validationQuery="select 1"
+		maxTotal="100" maxIdle="30"
+		/>
+</Context>

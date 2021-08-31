@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="adrm.war">
+    <output-path>$PROJECT_DIR$/out/artifacts/adrm_war</output-path>
+    <root id="root" />
+  </artifact>
+</component>

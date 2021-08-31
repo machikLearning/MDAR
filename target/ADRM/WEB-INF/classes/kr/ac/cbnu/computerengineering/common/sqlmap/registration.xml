@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="registration">
+	 <resultMap type="UserDataType" id="UserResultMap">
+        <result column="USER_ID" property="userId" />
+        <result column="PASSWORD" property="password" />
+        <result column="NAME" property="name" />
+        <result column="CBNUCODE" property="cbnuCode" />
+        <result column="EMAIL" property="email"/>
+        <result column="DISABLE" property="disable" />
+        <result column="DATE" property="date" />
+        <result column="APPROVAL_VALUE" property="approval"/>
+        <association property="roles" column="USER_ID" javaType="java.util.List" select="user.detailUserRole"/>
+    </resultMap>
+    <resultMap type="RegistrationDataType" id="RegistrationResultMap">
+        <result property="idx" column="IDX"/>
+        <result property="registrationDate" column="REGISTRATION_DATE"/>
+        <association property="doctor" column="DOCTOR_ID" javaType="UserDataType" select="user.detailUserByID"/>
+        <association property="patient" column="PATIENT_ID"  javaType="UserDataType" select="user.detailUserByID"/>	
+    </resultMap>
+    
+    <resultMap type="RegistrationDataType" id="RegistrationJoinResultMap">
+        <result property="idx" column="IDX"/>
+        <result property="registrationDate" column="REGISTRATION_DATE"/>
+        <association property="patient" javaType="UserDataType">        
+        	<result property="userId" column="PATIENT_ID"/>
+        	<result property="cbnuCode" column="PATIENT_CBNUCODE"/>
+        	<result property="name" column="PATIENT_NAME"/>
+        	<association property="hospital" column="HOSPITAL_ID" javaType="HospitalDatatype" select="etc.detailHospital"/>
+        </association>
+       <association property="doctor" javaType="UserDataType">
+            <result property="userId" column="DOCTOR_ID"/>
+            <result property="name" column="DOCTOR_NAME"/>
+        </association> 
+    </resultMap>
+    
+    <resultMap type="RegistrationDataType" id="makeAllRegistrationDataType">
+    	<result column="IDX" property="idx"/>
+    	<collection column="IDX" property="prescriptionList" javaType="List" ofType="PrescriptionDataType" select="prescription.selectAllPrescription"></collection>
+    </resultMap>
+
+    <delete id="deleteRegistration" parameterType="SearchParam">
+        DELETE FROM REGISTRATION WHERE DOCTOR_ID='${id}' AND PATIENT_ID='${param}'
+    </delete>
+    
+    <select id="seachPatientFinal" parameterType="SearchParam" resultMap="user.UserResultMap">
+    	select U.USER_ID as userId, U.NAME as name, U.GENDER as gender, U.CBNUCODE as cbnuCode 
+    	from User as U
+		INNER JOIN USER_ROLES R on U.USER_ID = R.USER_ID
+		where U.USER_ID = 'nam' and R.ROLE = 'PATIENT'
+    </select>
+    
+    <select id="searchPatient" parameterType="SearchParam" resultMap="user.UserResultMap">
+        SELECT USER_ID, NAME, CBNUCODE FROM USER WHERE CBNUCODE = '${cbnuCode}'
+    </select>
+    <select id="detailPatientList" parameterType="UserDataType" resultMap="RegistrationResultMap" resultType="java.util.List">
+	    SELECT DOCTOR_ID, PATIENT_ID FROM REGISTRATION WHERE DOCTOR_ID=#{userId}
+	</select>	 
+	
+    <select id="detailPatientListJoin" parameterType="UserDataType" resultMap="RegistrationJoinResultMap" resultType="java.util.List">
+        select
+			U2.USER_ID as PATIENT_ID,
+			U2.CBNUCODE as PATIENT_CBNUCODE,
+			U2.NAME as PATIENT_NAME,
+			U2.HOSPITAL_ID AS HOSPITAL_ID
+		from REGISTRATION R 
+		left outer join USER U1 on U1.USER_ID = R.DOCTOR_ID
+		left outer join USER U2 on U2.USER_ID = R.PATIENT_ID
+		where R.DOCTOR_ID = '${userId}' 
+    </select>
+   
+    <select id="searchIdxById" parameterType="UserDataType" resultMap="RegistrationJoinResultMap" resultType="java.util.List">
+        SELECT IDX FROM REGISTRATION WHERE PATIENT_ID=#{userId}
+    </select>
+    
+    
+    
+    <select id="selectPatientCounts" parameterType="SearchParam" resultType="java.lang.Integer">
+    	SELECT COUNT(*) FROM REGISTRATION R
+    	LEFT OUTER JOIN USER U ON U.USER_ID = R.PATIENT_ID
+    	WHERE R.DOCTOR_ID = #{id}
+    	<choose>
+    		<when test="searchOption != null and searchOption.equals(userID)">
+				AND PATIENT_ID LIKE '${param}'
+			</when>
+			<when test="searchOption != null and searchoption.equals(userName)">
+				AND U.NAME LIKE '${param}'
+			</when>
+		</choose>
+    </select>
+   
+    <select id="selectPatientList" parameterType="SearchParam" resultMap="RegistrationJoinResultMap" resultType="java.util.List">
+    	 select
+    	 	R.IDX as IDX,
+			U2.USER_ID as PATIENT_ID,
+			U2.CBNUCODE as PATIENT_CBNUCODE,
+			U2.NAME as PATIENT_NAME,
+			U2.HOSPITAL_ID AS HOSPITAL_ID
+		from REGISTRATION R 
+		left outer join USER U1 on U1.USER_ID = R.DOCTOR_ID
+		left outer join USER U2 on U2.USER_ID = R.PATIENT_ID
+		where R.DOCTOR_ID = #{id}
+		<choose>
+			<when test="searchOption != null and searchOption.equals(userID)">
+				AND U2.USER_ID LIKE '${param}'
+			</when>
+			<when test="searchOption != null and searchoption.equals(userName)">
+				AND U2.NAME LIKE '${param}'
+			</when>
+		</choose> 
+		ORDER BY PATIENT_NAME ASC LIMIT #{startRow}, #{endRow}
+    </select>
+   
+    <select id="checkPatient" parameterType="SearchParam" resultType="java.lang.Integer">
+		SELECT COUNT(*) 
+		FROM USER
+			INNER JOIN USER_ROLES ROLE ON USER.USER_ID = ROLE.USER_ID
+		WHERE 
+			ROLE.ROLE='PATIENT' AND USER.HOSPITAL_ID = #{hospitalIdx}
+			AND (SELECT COUNT(*) FROM REGISTRATION WHERE PATIENT_ID=USER.USER_ID AND DOCTOR_ID=#{id}) = 0
+		<choose>
+			<when test="searchOption!=null and searchOption.equals('userId')">
+				AND USER.USER_ID LIKE '${param}' 
+			</when>
+			<when test="searchOption!=null and searchOption.equals('name')">
+				AND USER.NAME LIKE '${param}'
+			</when>
+			<when test="searchOption!=null and searchOption.equals('cbnuCode')">
+				AND USER.CBNUCODE LIKE '${param}'
+			</when>
+		</choose>
+	</select>
+	
+	<select id="selectDoctorIDByPatientID" parameterType="SearchParam" resultMap="RegistrationResultMap" resultType="RegistrationDataType">
+		SELECT * FROM REGISTRATION WHERE DOCTOR_ID = #{param} AND PATIENT_ID = #{id}
+	</select>
+	
+	<select id="selectSearchUser" parameterType="SearchParam" resultMap="UserResultMap" resultType="java.util.List">
+		SELECT DISTINCT USER.USER_ID, USER.NAME, USER.CBNUCODE FROM (SELECT USER_ID, NAME, CBNUCODE FROM USER) AS USER, (SELECT USER_ID, ROLE FROM USER_ROLES) AS ROLE , (SELECT DOCTOR_ID, PATIENT_ID FROM REGISTRATION) AS REGIST
+		<choose>
+			<when test="searchOption!=null and searchOption.equals('userId')">
+				WHERE USER.USER_ID LIKE '${param}' AND USER.USER_ID = ROLE.USER_ID AND ROLE.ROLE='PATIENT' AND REGIST.PATIENT_ID != USER.USER_ID
+			</when>
+			<when test="searchOption!=null and searchOption.equals('name')">
+				WHERE USER.NAME LIKE '${param}' AND USER.USER_ID = ROLE.USER_ID AND ROLE.ROLE='PATIENT' AND REGIST.PATIENT_ID != USER.USER_ID
+			</when>
+			<when test="searchOption!=null and searchOption.equals('cbnuCode')">
+				WHERE USER.CBNUCODE LIKE '${param}' AND USER.USER_ID = ROLE.USER_ID AND ROLE.ROLE='PATIENT' AND REGIST.PATIENT_ID != USER.USER_ID
+			</when>
+		</choose>
+		<if test="startRow!=null">
+			ORDER BY USER.USER_ID ASC LIMIT #{startRow}, #{endRow}
+		</if>
+	</select>
+	
+	<insert id="insertRegistration" parameterType="RegistrationDataType" useGeneratedKeys="true" keyProperty="NO">
+        INSERT INTO REGISTRATION(DOCTOR_ID, PATIENT_ID) VALUES(#{doctor.userId}, #{patient.userId})
+        <selectKey keyProperty = "idx" resultType ="int" order = "AFTER">
+    		SELECT LAST_INSERT_ID();
+    	</selectKey>
+    </insert>
+    <delete id="deletePatient" parameterType="int">
+    	DELETE FROM REGISTRATION WHERE IDX = #{registrationID}
+    </delete>
+    
+    <select id="selectAllRegistration" parameterType="String" resultType="List" resultMap="makeAllRegistrationDataType">
+    	SELECT IDX FROM REGISTRATION WHERE PATIENT_ID = #{patientID}
+    </select>
+</mapper>
+

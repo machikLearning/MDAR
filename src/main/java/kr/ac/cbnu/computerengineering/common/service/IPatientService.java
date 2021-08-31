@@ -1,16 +1,13 @@
 package kr.ac.cbnu.computerengineering.common.service;
 
-import java.security.NoSuchAlgorithmException;
-import java.text.ParseException;
-import java.util.Date;
-import java.util.List;
-
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-
 import kr.ac.cbnu.computerengineering.common.datatype.HospitalDatatype;
 import kr.ac.cbnu.computerengineering.common.datatype.PagingDataType;
 import kr.ac.cbnu.computerengineering.common.datatype.PrescriptionDataType;
+import org.json.simple.JSONObject;
+
+import java.security.NoSuchAlgorithmException;
+import java.util.Date;
+import java.util.List;
 
 public interface IPatientService {
 
@@ -25,5 +22,5 @@ public interface IPatientService {
 	void savePatientRequestLog(String id, int value, String[] codes) throws Exception;
 	HospitalDatatype detailHospitalByUserID(String iD) throws Exception;
 	JSONObject getHospitalList();
-
+	JSONObject getAllergyList(String userId) throws Exception;
 }

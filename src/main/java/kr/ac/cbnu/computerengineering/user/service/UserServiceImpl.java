@@ -1,19 +1,14 @@
 package kr.ac.cbnu.computerengineering.user.service;
 
-import java.util.Date;
-import java.util.List;
-import org.json.simple.JSONObject;
-
-import kr.ac.cbnu.computerengineering.common.datatype.ApprovalDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.LogDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.PagingDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.SearchParam;
-import kr.ac.cbnu.computerengineering.common.datatype.UserDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.UserRoleType;
+import kr.ac.cbnu.computerengineering.common.datatype.*;
 import kr.ac.cbnu.computerengineering.common.managers.IUserManager;
 import kr.ac.cbnu.computerengineering.common.service.IUserService;
 import kr.ac.cbnu.computerengineering.common.util.Utils;
 import kr.ac.cbnu.computerengineering.user.manager.UserManagerImpl;
+import org.json.simple.JSONObject;
+
+import java.util.Date;
+import java.util.List;
 
 public class UserServiceImpl implements IUserService {
 
@@ -25,7 +20,8 @@ public class UserServiceImpl implements IUserService {
 
 	@Override
 	public UserDataType checkLogin(UserDataType userDataType) throws Exception {
-		return  this.userManager.checkLogin(userDataType);
+		userDataType = this.userManager.checkLogin(userDataType);
+		return  userDataType;
 	}
 
 	@Override

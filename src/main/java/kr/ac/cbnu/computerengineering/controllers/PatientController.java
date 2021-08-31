@@ -14,6 +14,7 @@ import org.json.simple.JSONObject;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -21,11 +22,13 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.ParseException;
 import java.util.Date;
 import java.util.List;
 
 
 @WebServlet("/patient/*")
+@MultipartConfig(maxFileSize=1024*1024*10, location="D:\\UPLOADFILE")
 public class PatientController extends AbsADRMServlet {
 
 	private static final long serialVersionUID = 1L;
@@ -34,7 +37,11 @@ public class PatientController extends AbsADRMServlet {
 	private IUserManager userManager;
 	private IMedicineManager medicineManager;
     private IPatientService patientService;
-	
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * 앱에서 온 요청을 처리하는 컨트롤러
+	 */
     public PatientController() {
         super();
         this.userManager = new UserManagerImpl();
@@ -73,6 +80,7 @@ public class PatientController extends AbsADRMServlet {
 	
 	private void checkURL(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		String url = request.getRequestURI();
+		System.out.println(url);
 		url = url.replace("/ADRM/patient/", "");
 		if(url.equals("login")) {
 			this.loginRequest(request, response);
@@ -98,6 +106,10 @@ public class PatientController extends AbsADRMServlet {
 			this.joinCheckRequest(request, response);
 		} else if(url.equals("hospitals")){
 			this.selectHospital(request, response);
+		} else if(url.equals("covid19")){
+			this.covid19(request, response);
+		} else if(url.equals("uploadFile")){
+			this.uploadFile(request, response);
 		}
 		else {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/mobile/common/patient/404.jsp");
@@ -105,8 +117,14 @@ public class PatientController extends AbsADRMServlet {
 		} 
 		
 	}
-	
-	
+
+	private void uploadFile(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException, ParseException {
+		String uploadFolder = "D://UPLOADFILE";
+		super.uploadBoardFile(request,response,uploadFolder);
+
+	}
+
+
 	private void selectHospital(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		JSONObject json = this.patientService.getHospitalList();
 		response.setCharacterEncoding("UTF-8");
@@ -150,10 +168,11 @@ public class PatientController extends AbsADRMServlet {
 	 */
 	private void checkQRcodeRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		String[] codes = request.getParameterValues("codes");
-		HttpSession httpSession = request.getSession();
-		UserDataType userDataType = (UserDataType)httpSession.getAttribute("user");
-		this.patientService.savePatientRequestLog(userDataType.getUserId(), PatientRequestLogDataType.QRSearchMedicine.getValue(), codes);
-		List<PrescriptionDataType> prescriptionList = this.patientService.getRegistrationAllData(userDataType.getUserId());
+		HttpSession httpSession = (HttpSession)request.getSession();
+		UserDataType user = (UserDataType) httpSession.getAttribute("user");
+		String id = user.getUserId();
+		this.patientService.savePatientRequestLog(id, PatientRequestLogDataType.QRSearchMedicine.getValue(), codes);
+		List<PrescriptionDataType> prescriptionList = this.patientService.getRegistrationAllData(id);
 		JSONObject json = this.patientService.getQRCodeResult(prescriptionList, codes);
 		response.setCharacterEncoding("UTF-8");
 		PrintWriter out = response.getWriter();
@@ -243,9 +262,9 @@ public class PatientController extends AbsADRMServlet {
 	 */
 	@SuppressWarnings("unchecked")
 	private void loginCheckRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		JSONObject json = this.patientService.getLoginUser(request.getParameter("id"),Utils.encryptSHA256(request.getParameter("pw")));
-		if(String.valueOf(json.get("resultType")).equals("LOGIN_SUCCESS")) {
-			UserDataType user = (UserDataType)json.get("user");
+		JSONObject json = this.patientService.getLoginUser(request.getParameter("id"), Utils.encryptSHA256(request.getParameter("pw")));
+		if (String.valueOf(json.get("resultType")).equals("LOGIN_SUCCESS")) {
+			UserDataType user = (UserDataType) json.get("user");
 			HttpSession httpSession = request.getSession();
 			httpSession.setAttribute("user", user);
 			this.patientService.logByLoginCheck(user.getUserId());
@@ -261,16 +280,16 @@ public class PatientController extends AbsADRMServlet {
 	 * @param request
 	 * @param response
 	 * @throws Exception 
-	 * @throws IOExceptiona
+	 * @throws IOException
 	 */
 	private void mainPageRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		HttpSession httpSession = request.getSession();
+		HttpSession httpSession =(HttpSession)request.getSession();
 		UserDataType userDataType = (UserDataType)httpSession.getAttribute("user");
 		List<PrescriptionDataType> prescriptionDataTypeList = this.patientService.getRegistrationAllData(userDataType.getUserId());
-		if(prescriptionDataTypeList != null && !prescriptionDataTypeList.isEmpty()){
-			PagingDataType paging = this.patientService.makePrescriptionPage(prescriptionDataTypeList.size(),Utils.convertPageStringToInt(request.getParameter("page")));
-			request.setAttribute("prescription", prescriptionDataTypeList.get(paging.getNowPage()-1));
-			request.setAttribute("paging", paging);	
+		if (prescriptionDataTypeList != null && !prescriptionDataTypeList.isEmpty()) {
+			PagingDataType paging = this.patientService.makePrescriptionPage(prescriptionDataTypeList.size(), Utils.convertPageStringToInt(request.getParameter("page")));
+			request.setAttribute("prescription", prescriptionDataTypeList.get(paging.getNowPage() - 1));
+			request.setAttribute("paging", paging);
 		}
 		HospitalDatatype hospital = this.patientService.detailHospitalByUserID(userDataType.getUserId());
 		request.setAttribute("hospital", hospital);
@@ -285,9 +304,17 @@ public class PatientController extends AbsADRMServlet {
 	 * @throws IOException 
 	 */
 	private void logoutRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		HttpSession session = request.getSession();
-		session.invalidate();
-		response.sendRedirect("/ADRM/patient/login");
+		JSONObject jsonObject = new JSONObject();
+		try {
+			HttpSession session = request.getSession();
+			session.invalidate();
+			jsonObject.put("resultType","SUCCESS");
+		}catch (Exception e){
+			jsonObject.put("resultType","FAIL");
+		}
+		response.setCharacterEncoding("utf-8");
+		PrintWriter out = response.getWriter();
+		out.println(jsonObject);
 	}
 	
 	/**
@@ -298,20 +325,24 @@ public class PatientController extends AbsADRMServlet {
 	 * @throws IOException
 	 */
 	private void searchMedicineRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/mobile/patient/searchMedicine.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/mobile/patient/searchMedicineResult.jsp");
 		dispatcher.forward(request, response);
 	}
-	
+
+	/**
+	환자- 약물선택 결과 요청
+	 */
 	private void searchMedicineResultRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		SearchParam param = new SearchParam();
 		SearchDataType searchpaging = new SearchDataType();
 		HttpSession httpSession = request.getSession();
 		UserDataType userDataType = (UserDataType)httpSession.getAttribute("user");
+		String id = userDataType.getUserId();
 		String searchValue= request.getParameter("searchValue");
 		String searchOption= request.getParameter("searchOption");
 		String[] codeArray = new String[1];
 		codeArray[0] = searchValue;
-		this.patientService.savePatientRequestLog(userDataType.getUserId(), PatientRequestLogDataType.SearchMedicineResult.getValue(), codeArray);
+		this.patientService.savePatientRequestLog(id, PatientRequestLogDataType.SearchMedicineResult.getValue(), codeArray);
 		if(request.getParameter("resultType") != null){
 			String resultType = request.getParameter("resultType");
 			request.setAttribute("resultType", resultType);
@@ -331,13 +362,23 @@ public class PatientController extends AbsADRMServlet {
 	private void checkMedicineRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		HttpSession httpSession = request.getSession();
 		UserDataType userDataType = (UserDataType)httpSession.getAttribute("user");
+		String id = userDataType.getUserId();
 		String[] codeArray = new String[1];
 		codeArray[0] = request.getParameter("code");
-		this.patientService.savePatientRequestLog(userDataType.getUserId(), PatientRequestLogDataType.CheckMedicine.getValue(), codeArray);
-		List<PrescriptionDataType> prescriptionList = this.patientService.getRegistrationAllData(userDataType.getUserId());
+		this.patientService.savePatientRequestLog(id, PatientRequestLogDataType.CheckMedicine.getValue(), codeArray);
+		List<PrescriptionDataType> prescriptionList = this.patientService.getRegistrationAllData(id);
 		JSONObject json = this.patientService.checkMedicine(request.getParameter("searchOption"), request.getParameter("code"), prescriptionList);
 		response.setCharacterEncoding("utf-8");
 		PrintWriter out = response.getWriter();
 		out.println(json);
+	}
+
+	private void covid19(HttpServletRequest request, HttpServletResponse response) throws Exception{
+		HttpSession httpSession = request.getSession();
+		UserDataType userDataType = (UserDataType)httpSession.getAttribute("user");
+		JSONObject allergy = this.patientService.getAllergyList(userDataType.getUserId());
+		response.setCharacterEncoding("utf-8");
+		PrintWriter out = response.getWriter();
+		out.println(allergy);
 	}
 }

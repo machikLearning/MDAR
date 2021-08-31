@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="prescription">
+	
+	<select id="selectAllPrescription" parameterType="int" resultMap="selectAllPrescriptionDataType" resultType="List">
+		SELECT NO,DATE FROM PRESCRIPTION WHERE REGISTRATIONKEY = #{REGISTRATIONID}
+	</select>
+	
+	
+	
+	
+    <resultMap type="PrescriptionDataType" id="selectAllPrescriptionDataType">
+    	<result column="NO" property="prescriptionID"/>
+    	<result column="DATE" property="date"/>
+    	<association property="contentActionPlanDataType" column="NO" javaType="ContentActionPlanDataType" select="selectContentActionPlanDataType"/>
+    	<collection property="prohibitionList" column="NO" javaType="List" ofType="PrescriptionATCDataType" select="selectAllProhibition"/>
+    	<collection property="upperList" column="NO" javaType="List" ofType="PrescriptionATCDataType" select="selectAllUpper"/>
+    	<collection property="tolerableList" column="NO" javaType="List" ofType="PrescriptionATCDataType" select="selectAllTolerable"/>
+    </resultMap>
+    
+    <resultMap type="PrescriptionATCDataType" id="joinPrescriptionWithProhibitionTolerableUpper">
+    	<id property="prescriptionID" column="NO"/>
+    	<result column ="ATCCODE" property="ATCCode"/>
+    	<result column="ATCNAME" property="ATCName"/>
+		<result column="ATCSHORTNAME" property="ATCShortName"/>
+    </resultMap>
+    
+    <resultMap type="PrescriptionDataType" id="selectPrescriptionDataTypeDS">
+    	<result property = "prescriptionID" column="no"/>
+    	<result property="date" column="date"/>
+    </resultMap>
+    
+    <resultMap type="ContentActionPlanDataType" id="selectContentActionPlanDataType">
+    	<result property="content" column="COMMENT"/>
+    	<result property="actionPlan" column="ACTIONPLAN"/>
+    </resultMap>
+    <resultMap type="PrescriptionTemplateDataType" id="PrescriptionTemplateDataType">
+    	<result column="TEMPLATEID" property="templateID"/>
+    	<result column="PRESCRIPTIONID" property="prescriptionID"/>
+    	<result column="TEMPLATETITLE" property="templateTitle"/>
+    	<result column="WRITER" property="writer"/>
+    </resultMap>
+    
+    
+  
+    <select id="detailAtcByCode" parameterType="SearchParam" resultMap="medicine.MedicineDataTypeResult">
+        SELECT ATCCODE FROM MEDICINE_INFO WHERE CODE = #{medicineCode}
+    </select>
+    <select id="detailsMedicineByAtc" parameterType="SearchParam" resultMap="medicine.MedicineDataTypeResult" resultType="java.util.List">
+        SELECT
+	        	M.CODE AS CODE,
+	        	M.FULLNAME AS FULLNAME, 
+	        	A1.ATCCODE as ATCCODE, 
+	        	A1.ATCNAME as ATCNAME
+	        FROM MEDICINE_INFO M 
+	        INNER JOIN ATC A1 ON M.ATCCODE = A1.ATCCODE 
+	        WHERE M.ATCCODE LIKE '${atcFirst}%'
+    </select>
+    
+	<select id="selectMedicineByCode" parameterType="SearchParam" resultMap="medicine.MedicineDataTypeResult" resultType="MedicineDataType">
+	    SELECT
+	        	M.CODE AS CODE,
+	        	M.FULLNAME AS FULLNAME, 
+	        	M.NAME AS NAME,
+	        	A1.ATCCODE AS ATCCODE, 
+	        	A1.ATCNAME AS ATCNAME
+	        FROM MEDICINE_INFO M 
+	        INNER JOIN ATC A1 ON M.ATCCODE = A1.ATCCODE 
+	        WHERE M.CODE = '${param}'
+	</select>
+	 <insert id="insertPrescription" parameterType="PrescriptionDataType" useGeneratedKeys="true" keyProperty="NO">
+	 			INSERT INTO PRESCRIPTION(REGISTRATIONKEY,DATE) VALUES(#{registrationID},#{date})
+	 		<selectKey keyProperty = "prescriptionID" resultType ="int" order = "AFTER">
+    				SELECT LAST_INSERT_ID();
+    		</selectKey>
+    	
+    </insert>
+    
+	<insert id="insertProhibitionDS" parameterType="java.util.List">
+		INSERT INTO PROHIBITIONDS(PRESCRIPTIONID, ATCCODE) VALUES
+		<foreach item="item" collection="list" open="" separator="," close="">
+			(#{item.prescriptionID},#{item.ATCCode})
+		</foreach>
+	</insert>
+	
+	<insert id="insertTolerableDS" parameterType="java.util.List">
+		INSERT INTO TOLERABLEDS(PRESCRIPTIONID, ATCCODE) VALUES
+		<foreach item="item" collection="list" open="" separator="," close="">
+			(#{item.prescriptionID},#{item.ATCCode})
+		</foreach>
+	</insert>
+	
+	<insert id="insertUpperDS" parameterType="java.util.List">
+		INSERT INTO UPPERDS(PRESCRIPTIONID, ATCCODE) VALUES
+		<foreach item="item" collection="list" open="" separator="," close="">
+			(#{item.prescriptionID},#{item.ATCCode})
+		</foreach>
+	</insert>
+		
+	<delete id="deleteChangeProhibition" parameterType = "int">
+		DELETE FROM PROHIBITIONDS WHERE NO = #{prohibitionID}
+	</delete>
+	
+	<delete id="deleteChangeUpper" parameterType = "int">
+		DELETE FROM UPPERDS WHERE NO = #{prohibitionID}
+	</delete>
+	
+	<delete id="deleteChangeTolerable" parameterType="int">
+		DELETE FROM TOLERABLEDS WHERE NO = #{prohibitionID}
+	</delete>
+	
+	<delete id="deletePrescription" parameterType="int">
+        DELETE FROM PRESCRIPTION WHERE NO = #{prescriptionID}
+    </delete>
+    
+    <delete id="deletePrescriptionProhibition" parameterType="int">
+    	DELETE FROM PROHIBITIONDS WHERE PRESCRIPTIONID = #{prescriptionID}
+    </delete>
+    
+    <delete id="deletePrescriptionUpper" parameterType="int">
+    	DELETE FROM UPPERDS WHERE PRESCRIPTIONID = #{prescriptionID}
+    </delete>
+    
+    <delete id="deletePrescriptionTolerable" parameterType="int">
+    	DELETE FROM TOLERABLEDS WHERE PRESCRIPTIONID = #{prescriptionID}
+    </delete>
+	
+	<select id="selectMyPrescription" parameterType="int" resultMap="selectPrescriptionDataTypeDS" resultType="java.util.List">
+		SELECT NO,DATE FROM PRESCRIPTION WHERE REGISTRATIONKEY = #{registrationID}
+	</select>
+	
+	<insert id="insertContentActionPlan" parameterType="ContentActionPlanDataType">
+		INSERT INTO PRESCRIPTIONDETAILTEXT(PRESCRIPTIONID,COMMENT,ACTIONPLAN) VALUES( #{prescriptionID},#{content},#{actionPlan})
+	</insert>
+	
+	<select id="selectContentActionPlanDataType" parameterType="int" resultMap="selectContentActionPlanDataType">
+		SELECT COMMENT, ACTIONPLAN FROM PRESCRIPTIONDETAILTEXT WHERE PRESCRIPTIONID = #{prescriptionID}
+	</select>
+	
+	<update id="updateContentActionPlanDataType" parameterType="ContentActionPlanDataType">
+		UPDATE PRESCRIPTIONDETAILTEXT SET COMMENT = #{content} , ACTIONPLAN = #{actionPlan} WHERE PRESCRIPTIONID = #{prescriptionID}
+	</update>
+	
+	<select id="selectOnePrescriptionData" parameterType="int" resultMap="selectAllPrescriptionDataType">
+		SELECT NO FROM PRESCRIPTION WHERE NO = #{prescriptionID} 
+	</select>
+	
+	<delete id="deletePrescriptionDetailText" parameterType="int">
+		DELETE FROM PRESCRIPTIONDETAILTEXT WHERE PRESCRIPTIONID = #{prescriptionID}
+	</delete>
+	<select id="countTemplateRow" parameterType="SearchParam" resultType="int">
+		SELECT COUNT(DISTINCT TEMPLATEID) FROM TEMPLATE WHERE WRITER = #{id} 
+		<choose>
+		<when test="searchOption!=null and searchOption.equals('templateTitle')">
+			 AND TEMPLATETITLE LIKE '%${param}$'
+		</when>
+		</choose>
+	</select>
+	
+	<select id="selectPrescriptionDataTypeList" parameterType="SearchParam" resultType="List" resultMap="PrescriptionTemplateDataType">
+		SELECT * FROM TEMPLATE WHERE WRITER = #{id}
+		<choose>
+			<when test="searchOption != null">
+				  AND TEMPLATETITLE LIKE '%${param}$'
+			</when>
+		</choose>
+		ORDER BY TEMPLATEID ASC LIMIT #{startRow}, #{endRow}
+	</select>
+	
+	<insert id="insertPrescriptionTemplate" parameterType="PrescriptionTemplateDataType">
+		INSERT INTO TEMPLATE(PRESCRIPTIONID,WRITER,TEMPLATETITLE) VALUES(#{prescriptionID},#{writer},#{templateTitle})
+	</insert>
+	
+	<delete id="deleteTemplate" parameterType="int">
+		DELETE FROM TEMPLATE WHERE TEMPLATEID = #{templateID}
+	</delete>
+	<select id ="selectAllProhibition" parameterType="int" resultType="PrescriptionATCDataType">
+		SELECT 
+			P.NO AS ATCID,
+			P.PRESCRIPTIONID AS PRESCRIPTIONID,
+			A.CODE AS ATCCODE,
+			A.LEVEL_NAME AS ATCNAME,
+			A.SHORT_LEVEL_NAME AS ATCSHORTNAME
+		FROM PROHIBITIONDS P, ATC_CODE A
+		WHERE P.PRESCRIPTIONID = #{prescriptionID}
+		AND  P.ATCCODE = A.CODE	
+	</select>
+	
+	<select id ="selectAllUpper" parameterType="int" resultType="PrescriptionATCDataType">
+		SELECT 
+			P.NO AS ATCID,
+			P.PRESCRIPTIONID AS PRESCRIPTIONID,
+			A.CODE AS ATCCODE,
+			A.LEVEL_NAME AS ATCNAME,
+			A.SHORT_LEVEL_NAME AS ATCSHORTNAME
+		FROM UPPERDS AS P, ATC_CODE A
+		WHERE P.PRESCRIPTIONID = #{prescriptionID}
+		AND  P.ATCCODE = A.CODE	
+	</select>
+	
+	<select id ="selectAllTolerable" parameterType="int" resultType="PrescriptionATCDataType">
+		SELECT 
+			P.NO AS ATCID,
+			P.PRESCRIPTIONID AS PRESCRIPTIONID,
+			A.CODE AS ATCCODE,
+			A.LEVEL_NAME AS ATCNAME,
+			A.SHORT_LEVEL_NAME AS ATCSHORTNAME
+		FROM TOLERABLEDS AS P, ATC_CODE A
+		WHERE P.PRESCRIPTIONID = #{prescriptionID}
+		AND P.ATCCODE = A.CODE	
+	</select>
+	
+	<select id="selectPrescriptionTemplate" parameterType="int" resultType="PrescriptionTemplateDataType" resultMap="PrescriptionTemplateDataType">
+		SELECT * FROM TEMPLATE WHERE TEMPLATEID=#{templateID}
+	</select>
+	
+	<update id="updatePrescriptionTemplate" parameterType="PrescriptionTemplateDataType">
+		UPDATE TEMPLATE SET TEMPLATETITLE = #{templateTitle} WHERE TEMPLATEID=#{templateID}
+	</update>
+	
+</mapper>
+

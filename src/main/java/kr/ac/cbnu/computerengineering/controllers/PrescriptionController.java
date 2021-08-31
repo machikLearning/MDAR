@@ -1,9 +1,12 @@
 package kr.ac.cbnu.computerengineering.controllers;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.text.ParseException;
-import java.util.List;
+import kr.ac.cbnu.computerengineering.common.datatype.*;
+import kr.ac.cbnu.computerengineering.common.service.IRegistrationService;
+import kr.ac.cbnu.computerengineering.common.util.Utils;
+import kr.ac.cbnu.computerengineering.prescription.service.RegistrationServiceImpl;
+import org.apache.log4j.Logger;
+import org.json.simple.JSONObject;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,20 +14,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import org.apache.log4j.Logger;
-import org.json.simple.JSONObject;
-
-import kr.ac.cbnu.computerengineering.common.datatype.PagingDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.PrescriptionDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.PrescriptionTemplateDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.RegistrationDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.SearchDataReturnType;
-import kr.ac.cbnu.computerengineering.common.datatype.SearchDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.SearchParam;
-import kr.ac.cbnu.computerengineering.common.datatype.UserDataType;
-import kr.ac.cbnu.computerengineering.common.service.IRegistrationService;
-import kr.ac.cbnu.computerengineering.common.util.Utils;
-import kr.ac.cbnu.computerengineering.prescription.service.RegistrationServiceImpl;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.ParseException;
+import java.util.List;
 
 
 /**
@@ -406,7 +399,7 @@ public class PrescriptionController extends HttpServlet {
 	}
 	
 	/**
-	 * 선택한 환자 정보 확인 페이지u
+	 * 선택한 환자 정보 확인 페이지
 	 * @param response
 	 * @throws Exception 
 	 */
@@ -560,7 +553,6 @@ public class PrescriptionController extends HttpServlet {
 			request.setAttribute("registrationList",this.registrationSerivece.selectPatientInfoRequest(registration.getPatient().getUserId()));
 		}
 		request.setAttribute("ATCHashMapList", this.registrationSerivece.selectPrescription(Integer.valueOf(request.getParameter("prescriptionID"))));
-		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/prescription/prescription.jsp");
 		dispatcher.forward(request, response);
 	}

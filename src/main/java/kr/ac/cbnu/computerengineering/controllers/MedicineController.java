@@ -1,20 +1,18 @@
 package kr.ac.cbnu.computerengineering.controllers;
 
-import java.io.IOException;
-import java.util.List;
+import kr.ac.cbnu.computerengineering.common.datatype.MedicineDataType;
+import kr.ac.cbnu.computerengineering.common.datatype.SearchParam;
+import kr.ac.cbnu.computerengineering.common.managers.IMedicineManager;
+import kr.ac.cbnu.computerengineering.medicine.manager.MedicineManagerImpl;
+import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.apache.log4j.Logger;
-
-import kr.ac.cbnu.computerengineering.common.datatype.MedicineDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.SearchParam;
-import kr.ac.cbnu.computerengineering.common.managers.IMedicineManager;
-import kr.ac.cbnu.computerengineering.medicine.manager.MedicineManagerImpl;
+import java.io.IOException;
+import java.util.List;
 
 /**
  * Servlet implementation class MedicienListServlet
@@ -71,7 +69,6 @@ public class MedicineController extends HttpServlet {
 		
 		String url = request.getRequestURI();
 		url = url.replace("/ADRM/medicine/", "");
-		
 		if(url.equals("searchMedicine")){
 			this.medicineSearchRequest(request, response);
 		} else if(url.equals("searchAtc")){
@@ -93,13 +90,11 @@ public class MedicineController extends HttpServlet {
 	
 	
 	private void medicineUploadRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/upload/upload.jsp");
 		dispatcher.forward(request, response);
 	}
 	
 	private void medicineListRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		
 		SearchParam param = new SearchParam();
 		List<MedicineDataType> result = this.medicineManager.getMedicineList(param);
 		request.setAttribute("MEDICINE_LIST", result);
@@ -108,14 +103,12 @@ public class MedicineController extends HttpServlet {
 		
 	}
 	
-	private void searchPageRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{	
-		
+	private void searchPageRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/select/medicine_searchList.jsp");
 		dispatcher.forward(request, response);  //리스트형식으로 보여주는 부분		
 	}
 
 	private void medicineSearchRequest(HttpServletRequest request, HttpServletResponse response) throws Exception{
-		
 		SearchParam param = new SearchParam();
 		param.setParam("medicineCode");		
 		String code = request.getParameter("medicineCode");
@@ -128,12 +121,10 @@ public class MedicineController extends HttpServlet {
 
 	
 	private void atcSearchRequest(HttpServletRequest request, HttpServletResponse response) throws Exception{
-		
 		SearchParam param = new SearchParam();
 		param.setParam("atc");		
 		String code = request.getParameter("atc");
 		param.setId(code);
-	
 		List<MedicineDataType> result = this.medicineManager.getMedicineList(param);
 		request.setAttribute("MEDICINE_ATC_LIST", result);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/select/medicine_atc_list.jsp");

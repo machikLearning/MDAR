@@ -1,35 +1,19 @@
 package kr.ac.cbnu.computerengineering.patient.service;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.regex.Pattern;
-
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-
 import kr.ac.cbnu.computerengineering.admin.service.EtcServiceImpl;
-import kr.ac.cbnu.computerengineering.common.datatype.AtcDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.HospitalDatatype;
-import kr.ac.cbnu.computerengineering.common.datatype.LogDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.MaterialDatatype;
-import kr.ac.cbnu.computerengineering.common.datatype.MedicineDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.PagingDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.PrescriptionATCDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.PrescriptionDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.PrescriptionResultType;
-import kr.ac.cbnu.computerengineering.common.datatype.RegistrationDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.SearchParam;
-import kr.ac.cbnu.computerengineering.common.datatype.UserDataType;
-import kr.ac.cbnu.computerengineering.common.service.IEctService;
-import kr.ac.cbnu.computerengineering.common.service.IMedicineService;
-import kr.ac.cbnu.computerengineering.common.service.IPatientService;
-import kr.ac.cbnu.computerengineering.common.service.IRegistrationService;
-import kr.ac.cbnu.computerengineering.common.service.IUserService;
+import kr.ac.cbnu.computerengineering.common.datatype.*;
+import kr.ac.cbnu.computerengineering.common.service.*;
 import kr.ac.cbnu.computerengineering.common.util.Utils;
 import kr.ac.cbnu.computerengineering.medicine.service.MedicineService;
 import kr.ac.cbnu.computerengineering.prescription.service.RegistrationServiceImpl;
 import kr.ac.cbnu.computerengineering.user.service.UserServiceImpl;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.regex.Pattern;
 
 public class PatientServiceImpl implements IPatientService {
 
@@ -42,8 +26,10 @@ public class PatientServiceImpl implements IPatientService {
 		this.registrationService = new RegistrationServiceImpl();
 		this.medicineService = new MedicineService();
 	}
-	
-	@SuppressWarnings("unchecked")
+
+	/*
+	어플리케이션 로그인을 처리하는 함수
+	 */
 	@Override
 	public JSONObject getLoginUser(String ID, String password) throws Exception {
 		UserDataType userDataType = Utils.makeUserDataType(ID, 
@@ -63,6 +49,9 @@ public class PatientServiceImpl implements IPatientService {
 		return json;
 	}
 
+	/*
+	환자의 처방전을 갖고오는 함수
+	 */
 	@Override
 	public List<PrescriptionDataType> getRegistrationAllData(String ID) throws Exception {
 		List<RegistrationDataType> registrationDataTypeList = this.registrationService.selectPatientInfoRequest(ID);
@@ -77,7 +66,9 @@ public class PatientServiceImpl implements IPatientService {
 	}
 
 
-
+	/*
+	검색 약제가 없을 시 환자에게 보여줄 내용을 만드는 함수
+	 */
 	private String makeNotExsistStr(List<String> notExist) {
 		String notExistMessage = "";
 		if(notExist.size() > 0) {
@@ -93,6 +84,10 @@ public class PatientServiceImpl implements IPatientService {
 		return notExistMessage;
 	}
 
+	/*
+	환자가 선택한 약제가 처방전으로 설정되어 있는지 판단하는 함수
+	금기, 주의, 복용가능한 약물 리스트들의 상태에 따라 환자에게 보여지는 메세지가 다름
+	 */
 	private String compareMedicineDataTypeList(List<MedicineDataType> tolerables,
 			List<MedicineDataType> uppers, List<MedicineDataType> prohibitions) {
 		String message = "";
@@ -113,11 +108,12 @@ public class PatientServiceImpl implements IPatientService {
 		} else {
 			message = this.generateResultMessage(PrescriptionResultType.TOLERABLE, tolerables);
 		}
-		
-		
 		return message;
 	}
-	
+
+	/*
+	compareMedicineDataTypeList에서 사용하는 메세지 작성 함수
+	 */
 	private String generateResultMessage(PrescriptionResultType prescriptionResult, List<MedicineDataType> medicines) {
 		String result = "";
 		
@@ -148,6 +144,9 @@ public class PatientServiceImpl implements IPatientService {
 		return result;
 	}
 
+	/*
+	환자가 검색기능을 사용할 때 검색에 관련된 데이터를 만들어주는 함수
+	 */
 	@Override
 	public PagingDataType makePrescriptionPage(int size, int nowPage) {
 		PagingDataType pagingDataType = new PagingDataType();
@@ -160,6 +159,11 @@ public class PatientServiceImpl implements IPatientService {
 		return pagingDataType;
 	}
 
+	/*
+	사용자가 선택한 약과 환자의 처방전을 비교하는 함수
+	요청을 처리하는 함수이며 약물 내용은 MedicineSerivce의 함수를 사용
+	약과 사용자의 처방전을 비교하는 함수는 checkPrescriptionWithMedine 사용
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public JSONObject checkMedicine(String searchOption, String searchValue,
@@ -180,6 +184,10 @@ public class PatientServiceImpl implements IPatientService {
 	}
 
 
+	/*
+	QR코드 로직을 처리하는 함수
+	동작원리는 checkMedicine함수와 같음
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public JSONObject getQRCodeResult(List<PrescriptionDataType> prescriptionList, String[] medicineCodes) throws Exception {
@@ -203,7 +211,11 @@ public class PatientServiceImpl implements IPatientService {
 		return json;
 		
 	}
-	
+
+	/*
+	사용자에게 처방된 금기, 약제, 복용가능에 대한 ATC코드 리스트를 생성
+	검색한 약물과 사용자 처방 단계에 대한 비교는 compareMedicineATCWithPrescription 함수 사용
+	 */
 	private String checkPrescriptionWithMedicines(List<MedicineDataType> targetMedicines,
 			List<PrescriptionDataType> prescriptionList, List<String> notExist) {
 		List<MedicineDataType> tolerableMedicineList = null;
@@ -213,25 +225,23 @@ public class PatientServiceImpl implements IPatientService {
 		List<PrescriptionATCDataType> tolerablePrescriptionATCDataTypeList = new ArrayList<>();
 		List<PrescriptionATCDataType> upperPrescriptionATCDataTypeList = new ArrayList<>();
 		List<PrescriptionATCDataType> prohibitionPrescriptionATCDataTypeList = new ArrayList<>();
-		
 		if(targetMedicines != null && targetMedicines.size() != 0){
 			for(PrescriptionDataType prescription : prescriptionList) {
 				tolerablePrescriptionATCDataTypeList.addAll(prescription.getTolerableList()); 
 				upperPrescriptionATCDataTypeList.addAll(prescription.getUpperList());
 				prohibitionPrescriptionATCDataTypeList.addAll(prescription.getProhibitionList());
 			}
-			
 			tolerableMedicineList = this.compareMedicineATCWithPrescription(tolerablePrescriptionATCDataTypeList, targetMedicines);
 			upperMedicineList = this.compareMedicineATCWithPrescription(upperPrescriptionATCDataTypeList, targetMedicines);
 			prohibitionMedicineList = this.compareMedicineATCWithPrescription(prohibitionPrescriptionATCDataTypeList, targetMedicines);
 			message = this.compareMedicineDataTypeList(tolerableMedicineList, upperMedicineList, prohibitionMedicineList);			
 			
 		}
-		
-		
 		return message;
 	}
-
+	/*
+	약물 중 사용자 처방단계에 설정된 ATC코드가 있는지 검사하는 함수
+	 */
 	private List<MedicineDataType> compareMedicineATCWithPrescription(
 			List<PrescriptionATCDataType> prescriptionATCDataTypeList,
 			List<MedicineDataType> targetMedicines) {
@@ -269,8 +279,32 @@ public class PatientServiceImpl implements IPatientService {
 		}
 		return false;
 	}
+	/*
+	처방전에 정의된 코멘트 내용을 보여주는 함수
+	 */
+	@Override
+	public JSONObject getAllergyList(String userId) throws Exception {
+		String allergy = "";
+		List<PrescriptionDataType> prescriptionDataTypeList = this.getRegistrationAllData(userId);
+		if(prescriptionDataTypeList.isEmpty()){
+			allergy = String.valueOf(0);
+		}else {
+			for (PrescriptionDataType prescriptionDataType : prescriptionDataTypeList) {
+				allergy += prescriptionDataType.getContentActionPlanDataType().getContent() + " ";
+			}
+		}
+		JSONObject jsonObject = new JSONObject();
+		jsonObject.put("result", allergy);
+		return jsonObject;
+	}
 
 	@SuppressWarnings("unchecked")
+	/*
+	이하 앱에서 가입, 가입내용수정, ID찾기, PW찾기 기능
+	userService를 사용함
+	 */
+
+
 	@Override
 	public JSONObject createUser(String ID, String password, String name, String disable,
 			String email, String CBNUCode, String[] roles, int hospitalID, Date date) throws Exception {
@@ -316,6 +350,8 @@ public class PatientServiceImpl implements IPatientService {
 		return result;
 	}
 
+
+
 	@SuppressWarnings("unchecked")
 	private JSONArray changeFromHospitalToJSON(List<HospitalDatatype> hospitalDatatypeList, JSONArray arrayResult) {
 		for(HospitalDatatype hospitalDatatype : hospitalDatatypeList){
@@ -324,7 +360,6 @@ public class PatientServiceImpl implements IPatientService {
 			jsonObject.put("id",hospitalDatatype.getId());
 			arrayResult.add(jsonObject);
 		}
-		
 		return arrayResult;
 	}
 

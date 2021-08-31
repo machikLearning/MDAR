@@ -1,13 +1,14 @@
 package kr.ac.cbnu.computerengineering.controllers;
 
-import java.io.IOException;
+import org.apache.log4j.Logger;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.apache.log4j.Logger;
+import java.io.IOException;
 
 /**
  * Servlet implementation class MainController
@@ -64,7 +65,7 @@ public class MainController extends HttpServlet {
 		}
 	}
 	/**
-	 * main function 벙의해주는 함수?
+	 * main function 웹 로그인 시 사용자의 역할에 따라 사용할 수 있는 기능을 보여주는 함수
 	 * @param request
 	 * @param response
 	 * @throws ServletException

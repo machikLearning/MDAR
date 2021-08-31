@@ -1,20 +1,10 @@
 package kr.ac.cbnu.computerengineering.common;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Enumeration;
-import java.util.List;
-import java.util.Properties;
+import com.oreilly.servlet.MultipartRequest;
+import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
+import kr.ac.cbnu.computerengineering.board.common.datatype.FileDataType;
+import kr.ac.cbnu.computerengineering.common.datatype.UserDataType;
+import kr.ac.cbnu.computerengineering.common.util.Utils;
 
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -27,14 +17,11 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.oreilly.servlet.MultipartRequest;
-import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
-
-import kr.ac.cbnu.computerengineering.board.common.datatype.FileDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.Constraints;
-import kr.ac.cbnu.computerengineering.common.datatype.UserDataType;
-import kr.ac.cbnu.computerengineering.common.util.Utils;
+import java.io.*;
+import java.net.URLEncoder;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public abstract class AbsADRMServlet extends HttpServlet {
 
@@ -51,10 +38,9 @@ public abstract class AbsADRMServlet extends HttpServlet {
 		if(!file.exists()){
 			file.mkdirs();
 		}
-        MultipartRequest multi = new MultipartRequest(request, uploadFolder, sizeLimit,"UTF-8",new DefaultFileRenamePolicy());
-        
+        MultipartRequest multi = new MultipartRequest(request, uploadFolder, sizeLimit,"euc-kr",new DefaultFileRenamePolicy());
         @SuppressWarnings("unchecked")
-		Enumeration <String> formNames = multi.getFileNames();    
+		Enumeration <String> formNames = multi.getFileNames();
         String formName="";
         String fileName="";
         while (formNames.hasMoreElements()) {    
@@ -69,8 +55,7 @@ public abstract class AbsADRMServlet extends HttpServlet {
         		String nickName = this.makeNickName(saveName);
         		uploadFiles.add(new FileDataType(uploadFile.getCanonicalPath(), saveName,uploadFile.length(),nickName));
         	}
-       	}    
-        
+       	}
         return uploadFiles;
         }catch(Exception e){
         	e.printStackTrace();

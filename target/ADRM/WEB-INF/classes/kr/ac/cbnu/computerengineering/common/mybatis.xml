@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<typeAliases>
+		<typeAlias type="kr.ac.cbnu.computerengineering.common.datatype.UserDataType" alias="UserDataType" />
+		<typeAlias type="kr.ac.cbnu.computerengineering.common.datatype.SearchParam" alias="SearchParam" />
+		<typeAlias type="kr.ac.cbnu.computerengineering.common.datatype.UserRoleDataType" alias="UserRoleDataType" />
+		<typeAlias type="kr.ac.cbnu.computerengineering.common.datatype.RegistrationDataType" alias="RegistrationDataType" />
+		<typeAlias type="kr.ac.cbnu.computerengineering.common.datatype.ApprovalDataType" alias="ApprovalDataType" />
+		<typeAlias type="kr.ac.cbnu.computerengineering.common.datatype.ApprovalType" alias="ApprovalType" />
+		<typeAlias type="kr.ac.cbnu.computerengineering.common.datatype.PrescriptionDataType" alias="PrescriptionDataType" />
+		<typeAlias type="kr.ac.cbnu.computerengineering.common.datatype.ContentActionPlanDataType" alias="ContentActionPlanDataType"/>
+		<typeAlias type="kr.ac.cbnu.computerengineering.common.datatype.AtcDataType" alias="AtcDataType"/>
+		<typeAlias type="kr.ac.cbnu.computerengineering.common.datatype.PrescriptionATCDataType" alias="PrescriptionATCDataType"/>
+		<typeAlias type="kr.ac.cbnu.computerengineering.common.datatype.MedicineDataType" alias="MedicineDataType" />
+		<typeAlias type="kr.ac.cbnu.computerengineering.common.datatype.LogDataType" alias="LogDataType"/>
+		<typeAlias type="kr.ac.cbnu.computerengineering.common.datatype.PrescriptionTemplateDataType" alias="PrescriptionTemplateDataType"/>
+		<typeAlias type="kr.ac.cbnu.computerengineering.board.common.datatype.BoardDataType" alias="BoardDataType"/>
+		<typeAlias type="kr.ac.cbnu.computerengineering.board.common.datatype.FileDataType" alias="FileDataType"/>
+		<typeAlias type="kr.ac.cbnu.computerengineering.board.common.datatype.RepDataType" alias="RepDataType"/>
+		<typeAlias type="kr.ac.cbnu.computerengineering.board.common.datatype.BoardRole" alias="BoardRole"/>
+		<typeAlias type="kr.ac.cbnu.computerengineering.common.datatype.HospitalDatatype" alias="HospitalDatatype"/>
+		<typeAlias type="kr.ac.cbnu.computerengineering.common.datatype.MaterialDatatype" alias="MaterialDatatype"/>
+		<typeAlias type="kr.ac.cbnu.computerengineering.common.datatype.IngredientDatatype" alias="IngredientDatatype"/>
+		<typeAlias type="java.lang.Integer" alias="int"/>
+		<typeAlias type="java.lang.String" alias="String"/>
+		<typeAlias type="java.util.List" alias="List"/>
+	</typeAliases>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC"/>
+			<dataSource type="JNDI">
+				<property name="data_source" value="java:/comp/env/jdbc/ADRM"/>
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="kr/ac/cbnu/computerengineering/common/sqlmap/user.xml"/>
+		<mapper resource="kr/ac/cbnu/computerengineering/common/sqlmap/atc.xml"/>
+		<mapper resource="kr/ac/cbnu/computerengineering/common/sqlmap/medicine.xml"/>
+		<mapper resource="kr/ac/cbnu/computerengineering/common/sqlmap/registration.xml"/>
+		<mapper resource="kr/ac/cbnu/computerengineering/common/sqlmap/prescription.xml"/>
+		<mapper resource="kr/ac/cbnu/computerengineering/common/sqlmap/board.xml"/>
+		<mapper resource="kr/ac/cbnu/computerengineering/common/sqlmap/etc.xml"/>
+		<mapper resource="kr/ac/cbnu/computerengineering/common/sqlmap/ingredient.xml"/>
+	</mappers>
+</configuration>
+

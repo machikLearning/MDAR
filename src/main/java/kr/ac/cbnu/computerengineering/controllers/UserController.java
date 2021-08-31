@@ -1,13 +1,18 @@
 package kr.ac.cbnu.computerengineering.controllers;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import javax.mail.MessagingException;
-import javax.mail.internet.AddressException;
+import kr.ac.cbnu.computerengineering.admin.service.EtcServiceImpl;
+import kr.ac.cbnu.computerengineering.common.AbsADRMServlet;
+import kr.ac.cbnu.computerengineering.common.datatype.Constraints;
+import kr.ac.cbnu.computerengineering.common.datatype.HospitalDatatype;
+import kr.ac.cbnu.computerengineering.common.datatype.UserDataType;
+import kr.ac.cbnu.computerengineering.common.datatype.UserRoleType;
+import kr.ac.cbnu.computerengineering.common.service.IEctService;
+import kr.ac.cbnu.computerengineering.common.service.IUserService;
+import kr.ac.cbnu.computerengineering.common.util.Utils;
+import kr.ac.cbnu.computerengineering.user.service.UserServiceImpl;
+import org.apache.log4j.Logger;
+import org.json.simple.JSONObject;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,23 +20,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import org.apache.log4j.Logger;
-import org.json.simple.JSONObject;
-
-import kr.ac.cbnu.computerengineering.admin.service.EtcServiceImpl;
-import kr.ac.cbnu.computerengineering.common.AbsADRMServlet;
-import kr.ac.cbnu.computerengineering.common.datatype.Constraints;
-import kr.ac.cbnu.computerengineering.common.datatype.HospitalDatatype;
-import kr.ac.cbnu.computerengineering.common.datatype.UserDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.UserRoleDataType;
-import kr.ac.cbnu.computerengineering.common.datatype.UserRoleType;
-import kr.ac.cbnu.computerengineering.common.service.IEctService;
-import kr.ac.cbnu.computerengineering.common.service.IUserService;
-import kr.ac.cbnu.computerengineering.common.util.Utils;
-import kr.ac.cbnu.computerengineering.user.service.UserServiceImpl;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 /**
  * Servlet implementation class UserController
+ * 회원가입, 로그인, 아이디찾기, 비밀번호 찾기, 로그아웃, 유저정보변경
+ *
  */
 
 
@@ -178,7 +176,6 @@ public class UserController extends AbsADRMServlet {
 	 */
 	private void loginCheckRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		try{
-			System.out.println(Utils.encryptSHA256(request.getParameter("pw")));
 		UserDataType userDataType = Utils.makeUserDataType(request.getParameter("id"), 
 				Utils.encryptSHA256(request.getParameter("pw")), null, null, null, null, null, null, 0, null);
 		userDataType = this.userService.checkLogin(userDataType);

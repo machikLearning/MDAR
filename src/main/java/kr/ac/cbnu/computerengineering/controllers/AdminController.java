@@ -23,6 +23,8 @@ import java.util.List;
 
 /**
  * Servlet implementation class AdminController
+ * 관리자 페이지 컨트롤러
+ * 약물 서비스와 유저 서비스에 관한 내용 사용
  */
 @WebServlet("/admin/*")
 public class AdminController extends AbsADRMServlet {
@@ -42,6 +44,8 @@ public class AdminController extends AbsADRMServlet {
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * GET 요청 프리프로세스 관련 함수
+	 * URL 체크만 함
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { 
 		try {
@@ -66,6 +70,8 @@ public class AdminController extends AbsADRMServlet {
 	
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * POST 요청 프리프로세스
+	 * GET요청과 같음
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
@@ -122,6 +128,9 @@ public class AdminController extends AbsADRMServlet {
 		}
 	}
 
+	/*
+	병원 추가 update 함수
+	 */
 	private void updateHospitalRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		HospitalDatatype hospital = new HospitalDatatype();
 		hospital.setId(Integer.parseInt(request.getParameter("hospital_id")));
@@ -130,7 +139,6 @@ public class AdminController extends AbsADRMServlet {
 		hospital.setContactTel1(request.getParameter("contact_tel1"));
 		hospital.setContactName2(request.getParameter("contact_name2"));
 		hospital.setContactTel2(request.getParameter("contact_tel2"));
-		
 		try {
 			IEctService adminService = new EtcServiceImpl();
 			adminService.modifyHospital(hospital);
@@ -141,6 +149,9 @@ public class AdminController extends AbsADRMServlet {
 		response.sendRedirect("/ADRM/admin/hospitalManagement");
 	}
 
+	/*
+	병원 추가 페이지 요청 함수
+	 */
 	private void writeHospitalRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/admin/hospital_write_frm.jsp");
 		dispatcher.forward(request, response);

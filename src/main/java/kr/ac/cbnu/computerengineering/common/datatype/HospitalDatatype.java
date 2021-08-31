@@ -50,6 +50,4 @@ public class HospitalDatatype {
 	public void setContactTel2(String contactTel2) {
 		this.contactTel2 = contactTel2;
 	}
-	
-	
 }
