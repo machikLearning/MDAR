@@ -1,0 +1,7461 @@
+C:\Users\eotlr\project\MyData_for_Adverse_reaction\env\Scripts\python.exe C:/Users/eotlr/project/MyData_for_Adverse_reaction/drug_crawler/controller/main_controller.py
+196600011
+(1062, "Duplicate entry '38075' for key 'item_seq'")
+196600063
+(1062, "Duplicate entry '60626' for key 'item_seq'")
+196700061
+(1062, "Duplicate entry '47784' for key 'item_seq'")
+196900101
+(1062, "Duplicate entry '55651' for key 'item_seq'")
+197000190
+(1062, "Duplicate entry '26609' for key 'item_seq'")
+197300021
+(1062, "Duplicate entry '18891' for key 'item_seq'")
+197300121
+(1062, "Duplicate entry '55327' for key 'item_seq'")
+197300135
+(1062, "Duplicate entry '50942' for key 'item_seq'")
+197300228
+(1062, "Duplicate entry '29818' for key 'item_seq'")
+197400060
+(1062, "Duplicate entry '61782' for key 'item_seq'")
+197400186
+(1062, "Duplicate entry '53965' for key 'item_seq'")
+197400270
+(1062, "Duplicate entry '34454' for key 'item_seq'")
+197500004
+(1062, "Duplicate entry '48847' for key 'item_seq'")
+197500269
+(1062, "Duplicate entry '42417' for key 'item_seq'")
+197600064
+(1062, "Duplicate entry '61775' for key 'item_seq'")
+197600100
+(1062, "Duplicate entry '54258' for key 'item_seq'")
+197600326
+(1062, "Duplicate entry '60059' for key 'item_seq'")
+197600432
+(1062, "Duplicate entry '27874' for key 'item_seq'")
+197700052
+(1062, "Duplicate entry '61724' for key 'item_seq'")
+197700088
+(1062, "Duplicate entry '59635' for key 'item_seq'")
+197700171
+(1062, "Duplicate entry '50918' for key 'item_seq'")
+197800288
+(1062, "Duplicate entry '45753' for key 'item_seq'")
+197800432
+'NoneType' object is not subscriptable
+197800466
+(1062, "Duplicate entry '81721' for key 'item_seq'")
+197900066
+(1062, "Duplicate entry '16394' for key 'item_seq'")
+198000160
+198000301
+198000620
+'NoneType' object is not subscriptable
+198100257
+198200043
+(1062, "Duplicate entry '53016' for key 'item_seq'")
+198200053
+198200117
+198200118
+198200120
+(1062, "Duplicate entry '31118' for key 'item_seq'")
+198200254
+(1062, "Duplicate entry '51835' for key 'item_seq'")
+198200323
+198300091
+(1062, "Duplicate entry '16396' for key 'item_seq'")
+198300145
+198300274
+(1062, "Duplicate entry '18572' for key 'item_seq'")
+198300279
+(1062, "Duplicate entry '18489' for key 'item_seq'")
+198301325
+198400078
+198400082
+198400449
+(1062, "Duplicate entry '42250' for key 'item_seq'")
+198400453
+(1062, "Duplicate entry '60630' for key 'item_seq'")
+198400475
+198401121
+198401158
+198401223
+(1062, "Duplicate entry '78429' for key 'item_seq'")
+198401279
+(1062, "Duplicate entry '22975' for key 'item_seq'")
+198500038
+(1062, "Duplicate entry '524' for key 'item_seq'")
+198500245
+198500617
+198500618
+198500624
+198500625
+198500632
+198500633
+198500634
+198500715
+198501456
+(1062, "Duplicate entry '15973' for key 'item_seq'")
+198501820
+(1062, "Duplicate entry '34076' for key 'item_seq'")
+198600005
+(1062, "Duplicate entry '48544' for key 'item_seq'")
+198600024
+(1062, "Duplicate entry '48846' for key 'item_seq'")
+198600076
+(1062, "Duplicate entry '18892' for key 'item_seq'")
+198600091
+198600114
+198600237
+198600616
+198600661
+(1062, "Duplicate entry '82556' for key 'item_seq'")
+198600674
+(1062, "Duplicate entry '7205' for key 'item_seq'")
+198600965
+(1062, "Duplicate entry '22218' for key 'item_seq'")
+198601441
+(1062, "Duplicate entry '15971' for key 'item_seq'")
+198700025
+(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '8806485029701' ,'총량 : 1정(124.5mg)중|성분명 : 호박산독실아민|...' at line 1")
+198700297
+(1062, "Duplicate entry '31042' for key 'item_seq'")
+198700430
+(1062, "Duplicate entry '16880' for key 'item_seq'")
+198700445
+(1062, "Duplicate entry '68696' for key 'item_seq'")
+198700494
+(1062, "Duplicate entry '33207' for key 'item_seq'")
+198700511
+(1062, "Duplicate entry '39387' for key 'item_seq'")
+198700673
+198700737
+198700927
+198701673
+198800175
+(1062, "Duplicate entry '58806' for key 'item_seq'")
+198800541
+(1062, "Duplicate entry '50076' for key 'item_seq'")
+198800712
+198800821
+198800901
+(1062, "Duplicate entry '66985' for key 'item_seq'")
+198801131
+198801223
+198801228
+(1062, "Duplicate entry '73201' for key 'item_seq'")
+198801475
+(1062, "Duplicate entry '22361' for key 'item_seq'")
+198801643
+(1062, "Duplicate entry '36002' for key 'item_seq'")
+198801644
+(1062, "Duplicate entry '36023' for key 'item_seq'")
+198801823
+(1062, "Duplicate entry '56664' for key 'item_seq'")
+198801980
+(1062, "Duplicate entry '78903' for key 'item_seq'")
+198802327
+(1062, "Duplicate entry '63102' for key 'item_seq'")
+198802531
+(1062, "Duplicate entry '67921' for key 'item_seq'")
+198802575
+(1062, "Duplicate entry '6022' for key 'item_seq'")
+198900144
+(1062, "Duplicate entry '36757' for key 'item_seq'")
+198900192
+(1062, "Duplicate entry '36604' for key 'item_seq'")
+198900195
+198900207
+(1062, "Duplicate entry '38067' for key 'item_seq'")
+198900667
+(1062, "Duplicate entry '39022' for key 'item_seq'")
+198900881
+(1062, "Duplicate entry '42021' for key 'item_seq'")
+198900925
+198900927
+198901090
+(1062, "Duplicate entry '67450' for key 'item_seq'")
+198901098
+198901578
+198901916
+(1062, "Duplicate entry '48089' for key 'item_seq'")
+198902428
+(1062, "Duplicate entry '6083' for key 'item_seq'")
+198902459
+(1062, "Duplicate entry '2497' for key 'item_seq'")
+198902513
+(1062, "Duplicate entry '78491' for key 'item_seq'")
+198902844
+198902845
+(1062, "Duplicate entry '1395' for key 'item_seq'")
+199000005
+(1062, "Duplicate entry '48560' for key 'item_seq'")
+199000025
+199000035
+(1062, "Duplicate entry '48716' for key 'item_seq'")
+199000074
+199000146
+(1062, "Duplicate entry '36566' for key 'item_seq'")
+199000383
+(1062, "Duplicate entry '80692' for key 'item_seq'")
+199000459
+199000461
+199000465
+199000466
+199000474
+199000491
+199000492
+199000494
+199000495
+199000695
+(1062, "Duplicate entry '50064' for key 'item_seq'")
+199000983
+199000992
+199000993
+(1062, "Duplicate entry '42396' for key 'item_seq'")
+199001089
+(1062, "Duplicate entry '7253' for key 'item_seq'")
+199001232
+(1062, "Duplicate entry '60067' for key 'item_seq'")
+199001354
+(1062, "Duplicate entry '42857' for key 'item_seq'")
+199002368
+(1062, "Duplicate entry '11042' for key 'item_seq'")
+199100118
+(1062, "Duplicate entry '19091' for key 'item_seq'")
+199100123
+199100124
+199100125
+199100162
+199100243
+(1062, "Duplicate entry '61811' for key 'item_seq'")
+199100476
+(1062, "Duplicate entry '57441' for key 'item_seq'")
+199100838
+(1062, "Duplicate entry '55246' for key 'item_seq'")
+199100969
+(1062, "Duplicate entry '46256' for key 'item_seq'")
+199101033
+(1062, "Duplicate entry '58514' for key 'item_seq'")
+199101035
+(1062, "Duplicate entry '58390' for key 'item_seq'")
+199101108
+199101124
+199101125
+199101166
+199101467
+199101470
+(1062, "Duplicate entry '73176' for key 'item_seq'")
+199101471
+(1062, "Duplicate entry '73513' for key 'item_seq'")
+199101496
+(1062, "Duplicate entry '73448' for key 'item_seq'")
+199101771
+(1062, "Duplicate entry '13590' for key 'item_seq'")
+199101780
+(1062, "Duplicate entry '13785' for key 'item_seq'")
+199101782
+(1062, "Duplicate entry '13780' for key 'item_seq'")
+199101783
+(1062, "Duplicate entry '13694' for key 'item_seq'")
+199101785
+(1062, "Duplicate entry '13586' for key 'item_seq'")
+199101917
+(1062, "Duplicate entry '54750' for key 'item_seq'")
+199102137
+(1062, "Duplicate entry '78915' for key 'item_seq'")
+199102319
+(1062, "Duplicate entry '29813' for key 'item_seq'")
+199102609
+199102767
+(1062, "Duplicate entry '45042' for key 'item_seq'")
+199102938
+(1062, "Duplicate entry '75262' for key 'item_seq'")
+199200164
+(1062, "Duplicate entry '77452' for key 'item_seq'")
+199200220
+(1062, "Duplicate entry '19122' for key 'item_seq'")
+199200236
+(1062, "Duplicate entry '19032' for key 'item_seq'")
+199200351
+(1062, "Duplicate entry '54163' for key 'item_seq'")
+199200407
+199200420
+(1062, "Duplicate entry '30940' for key 'item_seq'")
+199200475
+(1062, "Duplicate entry '11922' for key 'item_seq'")
+199200476
+(1062, "Duplicate entry '11947' for key 'item_seq'")
+199201088
+(1062, "Duplicate entry '42253' for key 'item_seq'")
+199201335
+199201525
+(1062, "Duplicate entry '73609' for key 'item_seq'")
+199201558
+199201559
+199201562
+199201565
+(1062, "Duplicate entry '73350' for key 'item_seq'")
+199201568
+199201578
+(1062, "Duplicate entry '73671' for key 'item_seq'")
+199201589
+(1062, "Duplicate entry '73677' for key 'item_seq'")
+199201602
+(1062, "Duplicate entry '73667' for key 'item_seq'")
+199201972
+(1062, "Duplicate entry '56717' for key 'item_seq'")
+199202180
+199202903
+(1062, "Duplicate entry '58086' for key 'item_seq'")
+199202949
+(1062, "Duplicate entry '57838' for key 'item_seq'")
+199203272
+199203334
+199203554
+199300101
+(1062, "Duplicate entry '48696' for key 'item_seq'")
+199300175
+199300197
+(1062, "Duplicate entry '19110' for key 'item_seq'")
+199300368
+(1062, "Duplicate entry '44116' for key 'item_seq'")
+199300464
+199300649
+(1062, "Duplicate entry '62421' for key 'item_seq'")
+199300654
+199300655
+199300660
+199301007
+199301008
+199301086
+(1062, "Duplicate entry '69460' for key 'item_seq'")
+199301099
+(1062, "Duplicate entry '41939' for key 'item_seq'")
+199301180
+199301235
+199301503
+(1062, "Duplicate entry '60084' for key 'item_seq'")
+199301987
+(1062, "Duplicate entry '13679' for key 'item_seq'")
+199302436
+(1062, "Duplicate entry '29969' for key 'item_seq'")
+199302514
+(1062, "Duplicate entry '52176' for key 'item_seq'")
+199302515
+(1062, "Duplicate entry '52132' for key 'item_seq'")
+199303018
+(1062, "Duplicate entry '78263' for key 'item_seq'")
+199304000
+199304034
+(1062, "Duplicate entry '20177' for key 'item_seq'")
+199304303
+199304304
+199304434
+(1062, "Duplicate entry '72496' for key 'item_seq'")
+199400114
+199400172
+(1062, "Duplicate entry '36612' for key 'item_seq'")
+199400203
+199400204
+199400205
+199400362
+(1062, "Duplicate entry '59543' for key 'item_seq'")
+199400461
+(1062, "Duplicate entry '62534' for key 'item_seq'")
+199400581
+(1062, "Duplicate entry '33215' for key 'item_seq'")
+199400704
+199400752
+(1062, "Duplicate entry '1029' for key 'item_seq'")
+199400868
+199400873
+199401408
+(1062, "Duplicate entry '36075' for key 'item_seq'")
+199401549
+199401664
+(1062, "Duplicate entry '8381' for key 'item_seq'")
+199401754
+(1062, "Duplicate entry '21314' for key 'item_seq'")
+199401911
+(1062, "Duplicate entry '26410' for key 'item_seq'")
+199401998
+(1062, "Duplicate entry '16091' for key 'item_seq'")
+199402228
+199402366
+(1062, "Duplicate entry '75293' for key 'item_seq'")
+199403111
+199403283
+(1062, "Duplicate entry '34170' for key 'item_seq'")
+199403379
+(1062, "Duplicate entry '40872' for key 'item_seq'")
+199500173
+199500174
+199500267
+199500322
+(1062, "Duplicate entry '59572' for key 'item_seq'")
+199500495
+(1062, "Duplicate entry '8703' for key 'item_seq'")
+199500498
+199500708
+199500709
+199500959
+(1062, "Duplicate entry '82598' for key 'item_seq'")
+199501099
+(1062, "Duplicate entry '43549' for key 'item_seq'")
+199501168
+(1062, "Duplicate entry '23433' for key 'item_seq'")
+199501224
+199501286
+199501287
+199501757
+(1062, "Duplicate entry '52502' for key 'item_seq'")
+199501840
+(1062, "Duplicate entry '24297' for key 'item_seq'")
+199501941
+(1062, "Duplicate entry '48122' for key 'item_seq'")
+199502224
+(1062, "Duplicate entry '55701' for key 'item_seq'")
+199502333
+199502376
+199502406
+(1062, "Duplicate entry '14938' for key 'item_seq'")
+199502670
+199502679
+199502838
+(1062, "Duplicate entry '75281' for key 'item_seq'")
+199502842
+(1062, "Duplicate entry '75241' for key 'item_seq'")
+199504171
+199504213
+199504237
+(1062, "Duplicate entry '82096' for key 'item_seq'")
+199504271
+199504273
+(1062, "Duplicate entry '72844' for key 'item_seq'")
+199504331
+199600190
+199600394
+(1062, "Duplicate entry '80674' for key 'item_seq'")
+199600559
+(1062, "Duplicate entry '62516' for key 'item_seq'")
+199600917
+(1062, "Duplicate entry '46237' for key 'item_seq'")
+199600919
+(1062, "Duplicate entry '46239' for key 'item_seq'")
+199601497
+199601500
+(1062, "Duplicate entry '73216' for key 'item_seq'")
+199601811
+(1062, "Duplicate entry '29217' for key 'item_seq'")
+199601982
+(1062, "Duplicate entry '28085' for key 'item_seq'")
+199602123
+(1062, "Duplicate entry '35709' for key 'item_seq'")
+199602150
+(1062, "Duplicate entry '41144' for key 'item_seq'")
+199602552
+199602981
+(1062, "Duplicate entry '16685' for key 'item_seq'")
+199602990
+199602992
+199602997
+199602998
+199602999
+199603120
+(1062, "Duplicate entry '75282' for key 'item_seq'")
+199603159
+(1062, "Duplicate entry '57785' for key 'item_seq'")
+199603330
+(1062, "Duplicate entry '34602' for key 'item_seq'")
+199603458
+199604657
+199604691
+199604694
+199604695
+199604697
+199604698
+199604699
+199604914
+199604958
+199700025
+(1062, "Duplicate entry '48572' for key 'item_seq'")
+199700170
+(1062, "Duplicate entry '19098' for key 'item_seq'")
+199700176
+199700271
+(1062, "Duplicate entry '38060' for key 'item_seq'")
+199700483
+(1062, "Duplicate entry '54089' for key 'item_seq'")
+199700558
+199700628
+(1062, "Duplicate entry '27330' for key 'item_seq'")
+199700654
+(1062, "Duplicate entry '49158' for key 'item_seq'")
+199700870
+(1062, "Duplicate entry '33138' for key 'item_seq'")
+199700909
+199701131
+199701147
+199701295
+199701393
+199701659
+(1062, "Duplicate entry '45864' for key 'item_seq'")
+199701740
+199701930
+199701944
+(1062, "Duplicate entry '54780' for key 'item_seq'")
+199702117
+(1062, "Duplicate entry '70951' for key 'item_seq'")
+199702355
+199702356
+199702846
+(1062, "Duplicate entry '21418' for key 'item_seq'")
+199703542
+(1062, "Duplicate entry '34836' for key 'item_seq'")
+199703583
+199703584
+199703585
+199704232
+199704233
+199704339
+199704340
+199704518
+199704551
+(1062, "Duplicate entry '62362' for key 'item_seq'")
+199800042
+(1062, "Duplicate entry '37238' for key 'item_seq'")
+199800083
+199800085
+199800086
+199800151
+(1062, "Duplicate entry '38249' for key 'item_seq'")
+199800270
+199800288
+(1062, "Duplicate entry '54112' for key 'item_seq'")
+199800302
+199800310
+(1062, "Duplicate entry '54170' for key 'item_seq'")
+199800323
+199800324
+199800325
+199800723
+199800724
+199800725
+199800784
+(1062, "Duplicate entry '8863' for key 'item_seq'")
+199801026
+(1062, "Duplicate entry '24657' for key 'item_seq'")
+199801089
+(1062, "Duplicate entry '50815' for key 'item_seq'")
+199801099
+199801158
+(1062, "Duplicate entry '58400' for key 'item_seq'")
+199801258
+(1062, "Duplicate entry '60700' for key 'item_seq'")
+199801263
+199801271
+199801297
+199801374
+199801375
+199801376
+199801473
+(1062, "Duplicate entry '23210' for key 'item_seq'")
+199801560
+199801568
+199801575
+199801581
+199801582
+199801619
+(1062, "Duplicate entry '3150' for key 'item_seq'")
+199801634
+(1062, "Duplicate entry '3153' for key 'item_seq'")
+199801752
+(1062, "Duplicate entry '31679' for key 'item_seq'")
+199801795
+199801916
+(1062, "Duplicate entry '13828' for key 'item_seq'")
+199801972
+199802096
+199802257
+199802438
+199802439
+199803107
+199803108
+199803668
+(1062, "Duplicate entry '57782' for key 'item_seq'")
+199803957
+(1062, "Duplicate entry '76552' for key 'item_seq'")
+199803971
+199806329
+199806462
+199806463
+199806464
+199806478
+199806500
+199806573
+199806630
+199806631
+199806679
+199806820
+199807018
+199900073
+(1062, "Duplicate entry '262' for key 'item_seq'")
+199900156
+(1062, "Duplicate entry '38237' for key 'item_seq'")
+199900176
+(1062, "Duplicate entry '29420' for key 'item_seq'")
+199900203
+199900204
+199900295
+(1062, "Duplicate entry '54273' for key 'item_seq'")
+199900305
+199900349
+199900371
+199900599
+(1062, "Duplicate entry '45548' for key 'item_seq'")
+199900600
+(1062, "Duplicate entry '45547' for key 'item_seq'")
+199900727
+199900832
+199900921
+199901137
+199901158
+199901179
+(1062, "Duplicate entry '60637' for key 'item_seq'")
+199901244
+199901509
+199901516
+199901518
+199901519
+199901556
+199901558
+199901631
+199901651
+199901817
+(1062, "Duplicate entry '81329' for key 'item_seq'")
+199901884
+(1062, "Duplicate entry '22518' for key 'item_seq'")
+199901894
+(1062, "Duplicate entry '22405' for key 'item_seq'")
+199902012
+(1062, "Duplicate entry '29516' for key 'item_seq'")
+199902024
+199902264
+199902270
+199902858
+199902973
+(1062, "Duplicate entry '21456' for key 'item_seq'")
+199902974
+199903200
+199903222
+(1062, "Duplicate entry '26308' for key 'item_seq'")
+199903243
+(1062, "Duplicate entry '66616' for key 'item_seq'")
+199903348
+199903735
+199903837
+199904637
+(1062, "Duplicate entry '74915' for key 'item_seq'")
+199904747
+(1062, "Duplicate entry '2031' for key 'item_seq'")
+199906859
+199906916
+199906953
+199906954
+199906977
+199906997
+199907012
+199907013
+199907014
+199907080
+199907081
+199907082
+199907109
+199907110
+199907111
+199907127
+199907248
+199907284
+(1062, "Duplicate entry '34074' for key 'item_seq'")
+199907323
+(1062, "Duplicate entry '45549' for key 'item_seq'")
+200000005
+(1062, "Duplicate entry '48778' for key 'item_seq'")
+200000539
+(1062, "Duplicate entry '30953' for key 'item_seq'")
+200000932
+200000933
+200001126
+(1062, "Duplicate entry '44543' for key 'item_seq'")
+200001290
+200001427
+(1062, "Duplicate entry '58391' for key 'item_seq'")
+200001457
+200001458
+200001487
+(1062, "Duplicate entry '60635' for key 'item_seq'")
+200001565
+200001566
+200001713
+(1062, "Duplicate entry '43577' for key 'item_seq'")
+200001724
+(1062, "Duplicate entry '27583' for key 'item_seq'")
+200001756
+(1062, "Duplicate entry '23492' for key 'item_seq'")
+200001758
+(1062, "Duplicate entry '23444' for key 'item_seq'")
+200001765
+(1062, "Duplicate entry '23252' for key 'item_seq'")
+200001781
+(1062, "Duplicate entry '23279' for key 'item_seq'")
+200001887
+200001894
+200001896
+200001939
+200002269
+(1062, "Duplicate entry '22454' for key 'item_seq'")
+200002386
+(1062, "Duplicate entry '56248' for key 'item_seq'")
+200002393
+(1062, "Duplicate entry '56353' for key 'item_seq'")
+200002422
+(1062, "Duplicate entry '81468' for key 'item_seq'")
+200002468
+200002614
+200002776
+(1062, "Duplicate entry '70878' for key 'item_seq'")
+200002948
+(1062, "Duplicate entry '6278' for key 'item_seq'")
+200003005
+(1062, "Duplicate entry '48203' for key 'item_seq'")
+200003080
+200003086
+200003536
+(1062, "Duplicate entry '55717' for key 'item_seq'")
+200003556
+(1062, "Duplicate entry '21288' for key 'item_seq'")
+200003639
+200004563
+200004566
+200004567
+200004568
+200004571
+200004572
+200004575
+200004576
+200004578
+200004579
+200004580
+200004581
+200004582
+200004583
+200004584
+200004585
+200004586
+200004587
+200004616
+(1062, "Duplicate entry '57779' for key 'item_seq'")
+200004637
+(1062, "Duplicate entry '57897' for key 'item_seq'")
+200004645
+(1062, "Duplicate entry '57883' for key 'item_seq'")
+200004648
+(1062, "Duplicate entry '57997' for key 'item_seq'")
+200004860
+(1062, "Duplicate entry '34534' for key 'item_seq'")
+200004902
+(1062, "Duplicate entry '34802' for key 'item_seq'")
+200004907
+200005559
+(1062, "Duplicate entry '69175' for key 'item_seq'")
+200008571
+200008757
+(1062, "Duplicate entry '52874' for key 'item_seq'")
+200008796
+200008797
+200008815
+200008816
+200008817
+200008864
+200008878
+200008879
+200008880
+200008881
+200008919
+200008930
+200008963
+200009026
+200009027
+200009029
+(1062, "Duplicate entry '72559' for key 'item_seq'")
+200009112
+200009114
+200009154
+200009202
+200009333
+200009363
+200009522
+200009624
+(1062, "Duplicate entry '53951' for key 'item_seq'")
+200100121
+(1062, "Duplicate entry '36680' for key 'item_seq'")
+200100129
+(1062, "Duplicate entry '36587' for key 'item_seq'")
+200100131
+200100155
+(1062, "Duplicate entry '58797' for key 'item_seq'")
+200100175
+200100223
+200100226
+(1062, "Duplicate entry '38064' for key 'item_seq'")
+200100300
+(1062, "Duplicate entry '43750' for key 'item_seq'")
+200100336
+200100410
+200100482
+(1062, "Duplicate entry '18668' for key 'item_seq'")
+200100602
+200100626
+(1062, "Duplicate entry '8847' for key 'item_seq'")
+200100643
+(1062, "Duplicate entry '45443' for key 'item_seq'")
+200100714
+200100858
+200100860
+200100903
+(1062, "Duplicate entry '46369' for key 'item_seq'")
+200100914
+200100932
+200101023
+(1062, "Duplicate entry '58451' for key 'item_seq'")
+200101040
+200101057
+200101120
+(1062, "Duplicate entry '7312' for key 'item_seq'")
+200101229
+(1062, "Duplicate entry '4851' for key 'item_seq'")
+200101307
+(1062, "Duplicate entry '3532' for key 'item_seq'")
+200101309
+(1062, "Duplicate entry '3527' for key 'item_seq'")
+200101331
+200101332
+200101333
+200101495
+(1062, "Duplicate entry '74019' for key 'item_seq'")
+200101499
+(1062, "Duplicate entry '74331' for key 'item_seq'")
+200101514
+(1062, "Duplicate entry '23438' for key 'item_seq'")
+200101536
+200101634
+200101635
+200101717
+(1062, "Duplicate entry '73184' for key 'item_seq'")
+200101725
+(1062, "Duplicate entry '42895' for key 'item_seq'")
+200101731
+200101832
+(1062, "Duplicate entry '81416' for key 'item_seq'")
+200102075
+200102110
+200102138
+(1062, "Duplicate entry '9604' for key 'item_seq'")
+200102143
+200102237
+(1062, "Duplicate entry '38748' for key 'item_seq'")
+200102280
+(1062, "Duplicate entry '70868' for key 'item_seq'")
+200102615
+200102623
+200102708
+(1062, "Duplicate entry '29988' for key 'item_seq'")
+200102789
+(1062, "Duplicate entry '63172' for key 'item_seq'")
+200102845
+200102983
+(1062, "Duplicate entry '26604' for key 'item_seq'")
+200102988
+(1062, "Duplicate entry '26606' for key 'item_seq'")
+200103007
+200103028
+200103136
+200103374
+200103426
+(1062, "Duplicate entry '14124' for key 'item_seq'")
+200103583
+(1062, "Duplicate entry '57982' for key 'item_seq'")
+200103788
+(1062, "Duplicate entry '73146' for key 'item_seq'")
+200103858
+(1062, "Duplicate entry '76481' for key 'item_seq'")
+200104001
+(1062, "Duplicate entry '30388' for key 'item_seq'")
+200108399
+(1062, "Duplicate entry '77269' for key 'item_seq'")
+200108401
+(1062, "Duplicate entry '77186' for key 'item_seq'")
+200108427
+(1062, "Duplicate entry '41560' for key 'item_seq'")
+200108430
+(1062, "Duplicate entry '41564' for key 'item_seq'")
+200108671
+200108672
+200108678
+200108691
+200108692
+200108711
+200108760
+200108815
+200108816
+200108817
+200108818
+200108820
+(1062, "Duplicate entry '77192' for key 'item_seq'")
+200109140
+200109142
+200109171
+200109263
+200109264
+200109266
+(1062, "Duplicate entry '27520' for key 'item_seq'")
+200109267
+200109268
+200109317
+200109947
+200109948
+200110042
+200110047
+(1062, "Duplicate entry '37608' for key 'item_seq'")
+200110219
+200200071
+200200074
+200200085
+(1062, "Duplicate entry '37185' for key 'item_seq'")
+200200131
+(1062, "Duplicate entry '242' for key 'item_seq'")
+200200143
+200200204
+200200214
+(1062, "Duplicate entry '16406' for key 'item_seq'")
+200200233
+200200234
+200200248
+200200351
+200200362
+200200363
+(1062, "Duplicate entry '80715' for key 'item_seq'")
+200200369
+200200443
+200200448
+200200486
+200200514
+200200723
+200200777
+(1062, "Duplicate entry '53986' for key 'item_seq'")
+200200939
+200201028
+200201205
+200201206
+200201207
+200201226
+200201227
+200201242
+200201243
+200201299
+200201339
+200201408
+200201581
+(1062, "Duplicate entry '7741' for key 'item_seq'")
+200201616
+(1062, "Duplicate entry '31635' for key 'item_seq'")
+200201705
+(1062, "Duplicate entry '56202' for key 'item_seq'")
+200201770
+(1062, "Duplicate entry '36087' for key 'item_seq'")
+200201780
+200201883
+200201885
+200201886
+200201919
+(1062, "Duplicate entry '70825' for key 'item_seq'")
+200201926
+(1062, "Duplicate entry '17644' for key 'item_seq'")
+200202302
+200202303
+200202342
+(1062, "Duplicate entry '30047' for key 'item_seq'")
+200202352
+(1062, "Duplicate entry '29967' for key 'item_seq'")
+200202628
+200202753
+200202776
+(1062, "Duplicate entry '6227' for key 'item_seq'")
+200202781
+200202875
+200202888
+200202889
+200202890
+200202994
+200203028
+(1062, "Duplicate entry '57965' for key 'item_seq'")
+200203029
+(1062, "Duplicate entry '57906' for key 'item_seq'")
+200203170
+200203194
+200203208
+200203209
+200203361
+(1062, "Duplicate entry '34613' for key 'item_seq'")
+200204314
+(1062, "Duplicate entry '10032' for key 'item_seq'")
+200204403
+200209410
+(1062, "Duplicate entry '3665' for key 'item_seq'")
+200209417
+(1062, "Duplicate entry '3658' for key 'item_seq'")
+200209418
+(1062, "Duplicate entry '3660' for key 'item_seq'")
+200209419
+(1062, "Duplicate entry '3661' for key 'item_seq'")
+200209420
+(1062, "Duplicate entry '3659' for key 'item_seq'")
+200209421
+(1062, "Duplicate entry '3663' for key 'item_seq'")
+200209422
+(1062, "Duplicate entry '3662' for key 'item_seq'")
+200209423
+(1062, "Duplicate entry '3664' for key 'item_seq'")
+200209450
+(1062, "Duplicate entry '41570' for key 'item_seq'")
+200209623
+200209634
+(1062, "Duplicate entry '1492' for key 'item_seq'")
+200209635
+200209642
+(1062, "Duplicate entry '1458' for key 'item_seq'")
+200209701
+200209709
+(1062, "Duplicate entry '19572' for key 'item_seq'")
+200209715
+200209716
+200209723
+(1062, "Duplicate entry '1672' for key 'item_seq'")
+200209791
+200209806
+200209807
+200209808
+200209809
+200209810
+200209811
+200209830
+200209831
+200209832
+200209850
+200209851
+200210110
+200210228
+200210231
+(1062, "Duplicate entry '21929' for key 'item_seq'")
+200210511
+200210513
+200210698
+200210699
+200210718
+(1062, "Duplicate entry '63163' for key 'item_seq'")
+200300015
+200300026
+200300027
+200300032
+(1062, "Duplicate entry '48706' for key 'item_seq'")
+200300085
+200300087
+200300111
+200300114
+(1062, "Duplicate entry '36483' for key 'item_seq'")
+200300286
+200300305
+200300306
+(1062, "Duplicate entry '80858' for key 'item_seq'")
+200300308
+200300393
+200300405
+200300415
+200300431
+200300523
+(1062, "Duplicate entry '50088' for key 'item_seq'")
+200300540
+200300546
+(1062, "Duplicate entry '39403' for key 'item_seq'")
+200300567
+200300569
+200300660
+200300694
+(1062, "Duplicate entry '51733' for key 'item_seq'")
+200300708
+200300735
+(1062, "Duplicate entry '67852' for key 'item_seq'")
+200300737
+(1062, "Duplicate entry '53990' for key 'item_seq'")
+200300764
+200300768
+200300800
+200300804
+(1062, "Duplicate entry '50822' for key 'item_seq'")
+200300814
+200300864
+200300878
+(1062, "Duplicate entry '58466' for key 'item_seq'")
+200300905
+200300939
+200301032
+200301045
+200301046
+200301068
+(1062, "Duplicate entry '4989' for key 'item_seq'")
+200301078
+200301103
+200301104
+200301107
+200301122
+(1062, "Duplicate entry '60080' for key 'item_seq'")
+200301152
+200301153
+200301154
+200301155
+200301159
+200301161
+200301250
+200301251
+200301261
+200301263
+(1062, "Duplicate entry '73426' for key 'item_seq'")
+200301305
+200301323
+200301430
+200301457
+200301472
+(1062, "Duplicate entry '56367' for key 'item_seq'")
+200301517
+200301518
+(1062, "Duplicate entry '29502' for key 'item_seq'")
+200301568
+(1062, "Duplicate entry '54933' for key 'item_seq'")
+200301683
+200301687
+(1062, "Duplicate entry '56747' for key 'item_seq'")
+200301742
+200301803
+200301819
+(1062, "Duplicate entry '79012' for key 'item_seq'")
+200301825
+200301835
+200301836
+200301870
+(1062, "Duplicate entry '8246' for key 'item_seq'")
+200301925
+200301928
+(1062, "Duplicate entry '57561' for key 'item_seq'")
+200301953
+200301990
+(1062, "Duplicate entry '12936' for key 'item_seq'")
+200301999
+(1062, "Duplicate entry '52238' for key 'item_seq'")
+200302123
+200302156
+(1062, "Duplicate entry '66594' for key 'item_seq'")
+200302174
+200302198
+(1062, "Duplicate entry '15994' for key 'item_seq'")
+200302306
+(1062, "Duplicate entry '78231' for key 'item_seq'")
+200302484
+200302487
+200302575
+200302879
+200302880
+200302881
+(1062, "Duplicate entry '15788' for key 'item_seq'")
+200307655
+200307768
+200307774
+200307775
+200307778
+(1062, "Duplicate entry '1606' for key 'item_seq'")
+200307808
+(1062, "Duplicate entry '71078' for key 'item_seq'")
+200307815
+(1062, "Duplicate entry '71075' for key 'item_seq'")
+200307816
+200307818
+200307819
+200307822
+200307823
+200307824
+200307829
+200307837
+200307838
+200307847
+200307848
+200307868
+200307971
+200308323
+200308353
+200308354
+200308397
+200308578
+200308579
+200308588
+200308836
+200308845
+(1062, "Duplicate entry '23297' for key 'item_seq'")
+200308884
+(1062, "Duplicate entry '40866' for key 'item_seq'")
+200400021
+200400041
+(1062, "Duplicate entry '48781' for key 'item_seq'")
+200400102
+200400110
+200400115
+200400134
+(1062, "Duplicate entry '36578' for key 'item_seq'")
+200400135
+(1062, "Duplicate entry '36500' for key 'item_seq'")
+200400177
+200400229
+200400263
+200400273
+200400298
+(1062, "Duplicate entry '30963' for key 'item_seq'")
+200400299
+200400300
+200400323
+200400343
+200400345
+200400383
+200400385
+200400388
+200400395
+200400407
+200400457
+(1062, "Duplicate entry '4204' for key 'item_seq'")
+200400458
+(1062, "Duplicate entry '4101' for key 'item_seq'")
+200400469
+200400496
+(1062, "Duplicate entry '16906' for key 'item_seq'")
+200400565
+200400581
+200400642
+(1062, "Duplicate entry '49728' for key 'item_seq'")
+200400652
+200400682
+(1062, "Duplicate entry '33196' for key 'item_seq'")
+200400683
+200400704
+(1062, "Duplicate entry '50229' for key 'item_seq'")
+200400724
+(1062, "Duplicate entry '50114' for key 'item_seq'")
+200400753
+(1062, "Duplicate entry '39367' for key 'item_seq'")
+200400787
+200400798
+200400804
+200400895
+(1062, "Duplicate entry '37661' for key 'item_seq'")
+200400909
+200400922
+200400934
+200400946
+200400952
+200400967
+(1062, "Duplicate entry '53605' for key 'item_seq'")
+200400985
+200401062
+200401068
+200401088
+(1062, "Duplicate entry '46413' for key 'item_seq'")
+200401099
+(1062, "Duplicate entry '50812' for key 'item_seq'")
+200401172
+200401202
+200401217
+(1062, "Duplicate entry '58452' for key 'item_seq'")
+200401247
+200401252
+200401257
+200401285
+(1062, "Duplicate entry '60505' for key 'item_seq'")
+200401300
+(1062, "Duplicate entry '60739' for key 'item_seq'")
+200401327
+(1062, "Duplicate entry '82506' for key 'item_seq'")
+200401359
+200401366
+200401369
+(1062, "Duplicate entry '7255' for key 'item_seq'")
+200401370
+(1062, "Duplicate entry '7330' for key 'item_seq'")
+200401371
+(1062, "Duplicate entry '7232' for key 'item_seq'")
+200401412
+200401432
+200401457
+200401478
+(1062, "Duplicate entry '4795' for key 'item_seq'")
+200401511
+200401530
+200401554
+200401583
+200401685
+200401688
+200401694
+(1062, "Duplicate entry '74218' for key 'item_seq'")
+200401705
+(1062, "Duplicate entry '23447' for key 'item_seq'")
+200401722
+200401742
+200401824
+200401825
+200401848
+(1062, "Duplicate entry '3149' for key 'item_seq'")
+200401850
+(1062, "Duplicate entry '3166' for key 'item_seq'")
+200401879
+200401886
+(1062, "Duplicate entry '7836' for key 'item_seq'")
+200401889
+200401905
+(1062, "Duplicate entry '7763' for key 'item_seq'")
+200401974
+(1062, "Duplicate entry '22275' for key 'item_seq'")
+200401991
+200402021
+200402049
+(1062, "Duplicate entry '56106' for key 'item_seq'")
+200402091
+200402097
+200402118
+(1062, "Duplicate entry '35892' for key 'item_seq'")
+200402134
+200402148
+200402157
+(1062, "Duplicate entry '13620' for key 'item_seq'")
+200402182
+(1062, "Duplicate entry '13604' for key 'item_seq'")
+200402292
+200402293
+200402309
+200402318
+200402326
+200402345
+(1062, "Duplicate entry '27903' for key 'item_seq'")
+200402349
+200402352
+200402422
+(1062, "Duplicate entry '17595' for key 'item_seq'")
+200402427
+200402432
+(1062, "Duplicate entry '17667' for key 'item_seq'")
+200402466
+200402476
+(1062, "Duplicate entry '56651' for key 'item_seq'")
+200402483
+200402552
+200402566
+200402610
+(1062, "Duplicate entry '47392' for key 'item_seq'")
+200402620
+(1062, "Duplicate entry '79052' for key 'item_seq'")
+200402648
+(1062, "Duplicate entry '40529' for key 'item_seq'")
+200402681
+200402698
+200402701
+200402702
+200402708
+(1062, "Duplicate entry '23957' for key 'item_seq'")
+200402741
+(1062, "Duplicate entry '23808' for key 'item_seq'")
+200402802
+200402825
+200402827
+200402842
+200402880
+200402885
+(1062, "Duplicate entry '52214' for key 'item_seq'")
+200402943
+200402952
+200402970
+(1062, "Duplicate entry '21367' for key 'item_seq'")
+200402989
+200403001
+(1062, "Duplicate entry '20659' for key 'item_seq'")
+200403040
+(1062, "Duplicate entry '30552' for key 'item_seq'")
+200403086
+200403185
+200403189
+(1062, "Duplicate entry '81700' for key 'item_seq'")
+200403201
+200403215
+200403216
+(1062, "Duplicate entry '40158' for key 'item_seq'")
+200403219
+200403242
+200403244
+200403319
+200403330
+(1062, "Duplicate entry '6070' for key 'item_seq'")
+200403335
+200403345
+200403351
+(1062, "Duplicate entry '2516' for key 'item_seq'")
+200403405
+200403411
+(1062, "Duplicate entry '33779' for key 'item_seq'")
+200403466
+200403474
+(1062, "Duplicate entry '11159' for key 'item_seq'")
+200403507
+200403511
+200403523
+200403536
+200403549
+(1062, "Duplicate entry '5480' for key 'item_seq'")
+200403653
+200403706
+200403726
+200403727
+200403773
+200403799
+200403847
+200403913
+200403914
+200403979
+(1062, "Duplicate entry '76604' for key 'item_seq'")
+200403982
+(1062, "Duplicate entry '76521' for key 'item_seq'")
+200404055
+200404060
+200404214
+(1062, "Duplicate entry '2134' for key 'item_seq'")
+200404215
+(1062, "Duplicate entry '2128' for key 'item_seq'")
+200404419
+200404424
+200404430
+200404585
+(1062, "Duplicate entry '2762' for key 'item_seq'")
+200404606
+(1062, "Duplicate entry '47178' for key 'item_seq'")
+200404643
+200404677
+200404708
+200404719
+200404738
+200404763
+(1062, "Duplicate entry '9960' for key 'item_seq'")
+200404771
+(1062, "Duplicate entry '9919' for key 'item_seq'")
+200404773
+200404774
+200404892
+200409931
+200409932
+200409933
+200409973
+200409980
+200409984
+200410069
+(1062, "Duplicate entry '71050' for key 'item_seq'")
+200410070
+(1062, "Duplicate entry '71097' for key 'item_seq'")
+200410081
+200410082
+200410083
+200410085
+200410086
+200410087
+200410088
+200410089
+200410090
+200410091
+(1062, "Duplicate entry '77234' for key 'item_seq'")
+200410141
+200410142
+200410143
+200410144
+200410362
+200410363
+200410377
+200410506
+200410511
+200410512
+200410513
+200410660
+(1062, "Duplicate entry '6758' for key 'item_seq'")
+200410725
+200410875
+200410876
+200410883
+200410884
+200410885
+200410892
+200411009
+200411015
+(1062, "Duplicate entry '27704' for key 'item_seq'")
+200411042
+200411062
+200411064
+200411086
+200411095
+(1062, "Duplicate entry '45136' for key 'item_seq'")
+200500033
+200500036
+200500037
+(1062, "Duplicate entry '48791' for key 'item_seq'")
+200500048
+(1062, "Duplicate entry '48831' for key 'item_seq'")
+200500132
+200500147
+200500148
+200500161
+200500169
+200500183
+(1062, "Duplicate entry '36820' for key 'item_seq'")
+200500210
+200500213
+200500216
+200500225
+200500228
+200500250
+200500251
+200500259
+200500300
+200500301
+200500320
+(1062, "Duplicate entry '43774' for key 'item_seq'")
+200500330
+200500361
+(1062, "Duplicate entry '54312' for key 'item_seq'")
+200500375
+(1062, "Duplicate entry '35669' for key 'item_seq'")
+200500416
+200500501
+200500540
+200500545
+200500568
+200500573
+200500574
+200500576
+200500587
+200500622
+200500643
+200500659
+(1062, "Duplicate entry '33135' for key 'item_seq'")
+200500686
+200500753
+200500834
+(1062, "Duplicate entry '51312' for key 'item_seq'")
+200500849
+200500854
+200500857
+200500872
+200500928
+(1062, "Duplicate entry '53759' for key 'item_seq'")
+200501044
+200501045
+200501046
+200501047
+200501048
+200501069
+200501091
+(1062, "Duplicate entry '69376' for key 'item_seq'")
+200501092
+(1062, "Duplicate entry '69398' for key 'item_seq'")
+200501120
+(1062, "Duplicate entry '41976' for key 'item_seq'")
+200501159
+(1062, "Duplicate entry '40843' for key 'item_seq'")
+200501162
+200501199
+200501202
+200501236
+200501237
+200501244
+200501349
+200501356
+200501395
+200501423
+200501428
+200501473
+200501485
+200501506
+(1062, "Duplicate entry '74124' for key 'item_seq'")
+200501521
+200501523
+200501534
+200501537
+200501541
+200501542
+200501557
+200501568
+(1062, "Duplicate entry '45986' for key 'item_seq'")
+200501611
+200501647
+(1062, "Duplicate entry '73712' for key 'item_seq'")
+200501656
+(1062, "Duplicate entry '42852' for key 'item_seq'")
+200501687
+200501708
+(1062, "Duplicate entry '81080' for key 'item_seq'")
+200501748
+(1062, "Duplicate entry '7739' for key 'item_seq'")
+200501750
+(1062, "Duplicate entry '7724' for key 'item_seq'")
+200501773
+(1062, "Duplicate entry '22630' for key 'item_seq'")
+200501774
+(1062, "Duplicate entry '52472' for key 'item_seq'")
+200501776
+(1062, "Duplicate entry '52476' for key 'item_seq'")
+200501784
+200501788
+(1062, "Duplicate entry '52525' for key 'item_seq'")
+200501826
+(1062, "Duplicate entry '56306' for key 'item_seq'")
+200501936
+200501979
+200502033
+(1062, "Duplicate entry '56657' for key 'item_seq'")
+200502082
+(1062, "Duplicate entry '22104' for key 'item_seq'")
+200502087
+200502090
+(1062, "Duplicate entry '70184' for key 'item_seq'")
+200502110
+200502119
+(1062, "Duplicate entry '41119' for key 'item_seq'")
+200502186
+200502188
+200502214
+200502216
+200502251
+200502252
+200502256
+200502262
+200502263
+200502273
+200502274
+200502291
+(1062, "Duplicate entry '8403' for key 'item_seq'")
+200502322
+200502326
+200502339
+200502348
+200502370
+200502385
+200502426
+200502429
+200502449
+(1062, "Duplicate entry '52167' for key 'item_seq'")
+200502493
+200502633
+(1062, "Duplicate entry '26310' for key 'item_seq'")
+200502654
+200502690
+200502710
+200502720
+200502737
+200502744
+200502770
+200502866
+200502871
+200502902
+200503063
+200503065
+200503069
+200503080
+(1062, "Duplicate entry '57829' for key 'item_seq'")
+200503081
+200503106
+(1062, "Duplicate entry '57989' for key 'item_seq'")
+200503108
+200503160
+200503229
+(1062, "Duplicate entry '76542' for key 'item_seq'")
+200503255
+200503256
+200503263
+(1062, "Duplicate entry '74790' for key 'item_seq'")
+200503303
+200503315
+200503318
+200503334
+200503453
+200503569
+200503570
+200503586
+(1062, "Duplicate entry '72725' for key 'item_seq'")
+200503659
+(1062, "Duplicate entry '9978' for key 'item_seq'")
+200503678
+200503771
+200510992
+200511001
+(1062, "Duplicate entry '1483' for key 'item_seq'")
+200511008
+(1062, "Duplicate entry '1547' for key 'item_seq'")
+200511034
+200511037
+200511046
+200511047
+200511049
+200511051
+200511064
+200511065
+200511066
+200511068
+200511077
+200511104
+200511105
+200511106
+200511107
+200511108
+200511255
+200511266
+200511272
+(1062, "Duplicate entry '77871' for key 'item_seq'")
+200511275
+200511276
+200511277
+200511278
+200511279
+200511280
+200511382
+200511383
+200511384
+200511387
+200512147
+(1062, "Duplicate entry '59628' for key 'item_seq'")
+200512148
+(1062, "Duplicate entry '4094' for key 'item_seq'")
+200512186
+200512187
+200512189
+200512192
+(1062, "Duplicate entry '53827' for key 'item_seq'")
+200512250
+200512313
+200512344
+(1062, "Duplicate entry '1554' for key 'item_seq'")
+200600006
+200600024
+200600026
+(1062, "Duplicate entry '19007' for key 'item_seq'")
+200600034
+200600081
+200600085
+(1062, "Duplicate entry '59458' for key 'item_seq'")
+200600113
+200600128
+(1062, "Duplicate entry '8762' for key 'item_seq'")
+200600133
+(1062, "Duplicate entry '8773' for key 'item_seq'")
+200600138
+(1062, "Duplicate entry '45429' for key 'item_seq'")
+200600140
+(1062, "Duplicate entry '24034' for key 'item_seq'")
+200600241
+(1062, "Duplicate entry '41824' for key 'item_seq'")
+200600247
+200600252
+(1062, "Duplicate entry '42241' for key 'item_seq'")
+200600254
+200600323
+200600327
+(1062, "Duplicate entry '74363' for key 'item_seq'")
+200600347
+200600348
+200600352
+200600360
+200600416
+200600418
+200600470
+(1062, "Duplicate entry '48179' for key 'item_seq'")
+200600491
+200600524
+200600534
+(1062, "Duplicate entry '20059' for key 'item_seq'")
+200600543
+200600567
+200600570
+200600572
+(1062, "Duplicate entry '2533' for key 'item_seq'")
+200600811
+(1062, "Duplicate entry '75919' for key 'item_seq'")
+200600820
+(1062, "Duplicate entry '13224' for key 'item_seq'")
+200600841
+200600858
+200603852
+(1062, "Duplicate entry '1566' for key 'item_seq'")
+200603857
+200603867
+200603875
+200603876
+200603899
+200603902
+200603903
+200603916
+200603927
+200603929
+200603984
+200603990
+200604178
+200604181
+200604197
+200604204
+200604212
+200604217
+(1062, "Duplicate entry '37630' for key 'item_seq'")
+200604222
+200604228
+200604237
+(1062, "Duplicate entry '7234' for key 'item_seq'")
+200604245
+200604256
+200604258
+200604298
+(1062, "Duplicate entry '29951' for key 'item_seq'")
+200604323
+200604331
+200604358
+200604373
+200605332
+200605340
+200605341
+200605344
+200605349
+200605367
+200605406
+200605410
+200605443
+(1062, "Duplicate entry '48145' for key 'item_seq'")
+200605461
+200605499
+200606180
+200606181
+200606182
+200606300
+200606305
+(1062, "Duplicate entry '43826' for key 'item_seq'")
+200606468
+(1062, "Duplicate entry '13260' for key 'item_seq'")
+200606551
+200606553
+200606554
+200606563
+200606564
+200607043
+(1062, "Duplicate entry '76446' for key 'item_seq'")
+200607388
+200607412
+(1062, "Duplicate entry '10988' for key 'item_seq'")
+200607491
+(1062, "Duplicate entry '10007' for key 'item_seq'")
+200607634
+200607636
+200607712
+200607713
+200607725
+200607807
+200607851
+200607852
+200607889
+200607910
+200607944
+(1062, "Duplicate entry '7801' for key 'item_seq'")
+200607998
+200608004
+200608035
+(1062, "Duplicate entry '56673' for key 'item_seq'")
+200608100
+200608151
+(1062, "Duplicate entry '48188' for key 'item_seq'")
+200608152
+(1062, "Duplicate entry '48187' for key 'item_seq'")
+200608166
+200608183
+200608206
+200608207
+200608210
+200608240
+200608297
+(1062, "Duplicate entry '45058' for key 'item_seq'")
+200608418
+(1062, "Duplicate entry '28612' for key 'item_seq'")
+200608461
+(1062, "Duplicate entry '13237' for key 'item_seq'")
+200610651
+200610667
+200610676
+200610724
+200610733
+200610867
+200610874
+200610964
+(1062, "Duplicate entry '61866' for key 'item_seq'")
+200610978
+(1062, "Duplicate entry '37317' for key 'item_seq'")
+200611019
+200611058
+(1062, "Duplicate entry '73694' for key 'item_seq'")
+200611060
+200611319
+200611515
+200611516
+200612038
+(1062, "Duplicate entry '35486' for key 'item_seq'")
+200612058
+(1062, "Duplicate entry '7198' for key 'item_seq'")
+200612350
+200612351
+200612559
+(1062, "Duplicate entry '6219' for key 'item_seq'")
+200612573
+200612721
+(1062, "Duplicate entry '16026' for key 'item_seq'")
+200612722
+200612740
+(1062, "Duplicate entry '3117' for key 'item_seq'")
+200700022
+200700023
+200700191
+200700538
+200700547
+(1062, "Duplicate entry '38215' for key 'item_seq'")
+200700557
+(1062, "Duplicate entry '61311' for key 'item_seq'")
+200700558
+(1062, "Duplicate entry '61314' for key 'item_seq'")
+200700594
+200700696
+(1062, "Duplicate entry '6486' for key 'item_seq'")
+200700854
+200700867
+200700868
+200700869
+200700906
+200700949
+(1062, "Duplicate entry '22876' for key 'item_seq'")
+200701021
+200701022
+200701028
+200701030
+200701033
+200701042
+200701043
+200701044
+200701045
+200701046
+200701085
+200701086
+200701087
+200701187
+200701226
+200701231
+200701251
+(1062, "Duplicate entry '74090' for key 'item_seq'")
+200701284
+(1062, "Duplicate entry '54709' for key 'item_seq'")
+200701304
+(1062, "Duplicate entry '13261' for key 'item_seq'")
+200701331
+(1062, "Duplicate entry '1366' for key 'item_seq'")
+200701474
+200701488
+200701745
+(1062, "Duplicate entry '46286' for key 'item_seq'")
+200701814
+(1062, "Duplicate entry '45950' for key 'item_seq'")
+200701823
+200701826
+200701830
+200701831
+200702019
+200702191
+200702193
+200702194
+200702195
+200702196
+200702197
+200702198
+200702199
+200702200
+200702202
+200702203
+200702205
+200702257
+(1062, "Duplicate entry '50148' for key 'item_seq'")
+200702261
+200702367
+200702392
+200702451
+200702506
+200702512
+(1062, "Duplicate entry '66954' for key 'item_seq'")
+200702521
+200702525
+200702555
+200702558
+200702559
+200702561
+200702563
+200702568
+200702570
+200702571
+200702574
+200702692
+200702694
+200702697
+200702710
+200702738
+(1062, "Duplicate entry '58869' for key 'item_seq'")
+200702746
+200702802
+200702900
+(1062, "Duplicate entry '3169' for key 'item_seq'")
+200702917
+(1062, "Duplicate entry '12838' for key 'item_seq'")
+200702963
+200703120
+200703121
+200703201
+200703202
+200703204
+200703205
+200703207
+200703208
+200703229
+200703230
+200703233
+200703236
+200703261
+200703275
+200703277
+200703298
+(1062, "Duplicate entry '67298' for key 'item_seq'")
+200703452
+200703458
+200703459
+200703460
+200703462
+200703463
+200703464
+200703543
+200703589
+(1062, "Duplicate entry '78869' for key 'item_seq'")
+200703600
+200703601
+200703602
+200703666
+(1062, "Duplicate entry '74165' for key 'item_seq'")
+200703700
+200703756
+200703757
+200703796
+200703869
+200703870
+200703873
+200703876
+200703877
+200703878
+200703881
+200703926
+200703932
+200703975
+(1062, "Duplicate entry '69387' for key 'item_seq'")
+200704005
+200704268
+(1062, "Duplicate entry '52216' for key 'item_seq'")
+200704284
+200704285
+200704286
+200704287
+200704289
+200704290
+200704291
+200704316
+200704317
+200704318
+200704321
+200704421
+200704534
+200704662
+200704762
+200704765
+(1062, "Duplicate entry '50151' for key 'item_seq'")
+200704769
+200704770
+200704858
+200704952
+200704955
+200704956
+200704958
+200704959
+200704960
+200704967
+200704968
+200704997
+200705002
+200705003
+200705004
+200705007
+200705008
+200705082
+200705095
+200705098
+200705318
+200705319
+200705399
+200705401
+200705476
+200705479
+200705480
+200705482
+200705484
+200705500
+200705501
+200705603
+200705736
+200705808
+200705821
+200705822
+200706038
+(1062, "Duplicate entry '74460' for key 'item_seq'")
+200706058
+(1062, "Duplicate entry '10111' for key 'item_seq'")
+200706088
+200706103
+200706123
+200706252
+200706269
+200706270
+200706272
+200706313
+200706331
+200706332
+200706333
+200706386
+200706529
+200706541
+200706633
+(1062, "Duplicate entry '35564' for key 'item_seq'")
+200706782
+(1062, "Duplicate entry '40323' for key 'item_seq'")
+200706785
+(1062, "Duplicate entry '53836' for key 'item_seq'")
+200706788
+(1062, "Duplicate entry '18103' for key 'item_seq'")
+200706890
+200706891
+200706892
+200706894
+200706924
+200706984
+200706985
+200707213
+200707214
+200707228
+200707250
+200707347
+200707442
+200707458
+200707463
+200707542
+200707586
+200707684
+(1062, "Duplicate entry '77253' for key 'item_seq'")
+200707723
+(1062, "Duplicate entry '57868' for key 'item_seq'")
+200707725
+200707750
+200707755
+(1062, "Duplicate entry '77188' for key 'item_seq'")
+200707791
+(1062, "Duplicate entry '77277' for key 'item_seq'")
+200707894
+(1062, "Duplicate entry '896' for key 'item_seq'")
+200707895
+(1062, "Duplicate entry '922' for key 'item_seq'")
+200707896
+(1062, "Duplicate entry '921' for key 'item_seq'")
+200707947
+200707959
+(1062, "Duplicate entry '45087' for key 'item_seq'")
+200708100
+(1062, "Duplicate entry '4784' for key 'item_seq'")
+200708136
+(1062, "Duplicate entry '40062' for key 'item_seq'")
+200708355
+200708362
+200708363
+200708365
+200708366
+200708367
+200708368
+200708369
+200708372
+200708373
+200708374
+200708426
+200708428
+200708510
+(1062, "Duplicate entry '888' for key 'item_seq'")
+200708529
+(1062, "Duplicate entry '6255' for key 'item_seq'")
+200708537
+(1062, "Duplicate entry '44616' for key 'item_seq'")
+200708548
+200708600
+200708685
+200708738
+200708741
+200708750
+(1062, "Duplicate entry '58867' for key 'item_seq'")
+200708752
+(1062, "Duplicate entry '4783' for key 'item_seq'")
+200708787
+200708838
+200708839
+200708842
+200708888
+200708899
+(1062, "Duplicate entry '38872' for key 'item_seq'")
+200709019
+200709038
+(1062, "Duplicate entry '76587' for key 'item_seq'")
+200709071
+(1062, "Duplicate entry '69231' for key 'item_seq'")
+200709072
+(1062, "Duplicate entry '33159' for key 'item_seq'")
+200709077
+200709554
+200709600
+200709601
+200709624
+(1062, "Duplicate entry '52831' for key 'item_seq'")
+200709627
+(1062, "Duplicate entry '4885' for key 'item_seq'")
+200709825
+(1062, "Duplicate entry '5156' for key 'item_seq'")
+200709903
+200709904
+200709905
+200710017
+(1062, "Duplicate entry '6350' for key 'item_seq'")
+200710066
+200710247
+(1062, "Duplicate entry '61248' for key 'item_seq'")
+200710496
+200710513
+(1062, "Duplicate entry '886' for key 'item_seq'")
+200710607
+200710608
+200710864
+(1062, "Duplicate entry '18025' for key 'item_seq'")
+200710887
+(1062, "Duplicate entry '11945' for key 'item_seq'")
+200710998
+200711114
+(1062, "Duplicate entry '49709' for key 'item_seq'")
+200711148
+200711211
+200711216
+200711297
+(1062, "Duplicate entry '53211' for key 'item_seq'")
+200711302
+(1062, "Duplicate entry '52964' for key 'item_seq'")
+200711303
+(1062, "Duplicate entry '52965' for key 'item_seq'")
+200711318
+(1062, "Duplicate entry '71425' for key 'item_seq'")
+200711319
+(1062, "Duplicate entry '71426' for key 'item_seq'")
+200711422
+200711426
+200711525
+(1062, "Duplicate entry '24647' for key 'item_seq'")
+200711530
+(1062, "Duplicate entry '68161' for key 'item_seq'")
+200711538
+200711587
+(1062, "Duplicate entry '78925' for key 'item_seq'")
+200711655
+200711678
+200711679
+200711681
+200711682
+200711720
+(1062, "Duplicate entry '39798' for key 'item_seq'")
+200711797
+200711828
+(1062, "Duplicate entry '39800' for key 'item_seq'")
+200711829
+(1062, "Duplicate entry '39801' for key 'item_seq'")
+200711855
+200711927
+(1062, "Duplicate entry '6236' for key 'item_seq'")
+200711931
+(1062, "Duplicate entry '78426' for key 'item_seq'")
+200711937
+(1062, "Duplicate entry '3131' for key 'item_seq'")
+200712117
+200712240
+200712241
+(1062, "Duplicate entry '21474' for key 'item_seq'")
+200712332
+(1062, "Duplicate entry '70418' for key 'item_seq'")
+200712404
+200712668
+(1062, "Duplicate entry '70087' for key 'item_seq'")
+200712757
+(1062, "Duplicate entry '52258' for key 'item_seq'")
+200712772
+(1062, "Duplicate entry '70088' for key 'item_seq'")
+200713032
+(1062, "Duplicate entry '53313' for key 'item_seq'")
+200713053
+200713060
+(1062, "Duplicate entry '27632' for key 'item_seq'")
+200713096
+200713244
+200713325
+(1062, "Duplicate entry '68104' for key 'item_seq'")
+200713326
+(1062, "Duplicate entry '68105' for key 'item_seq'")
+200713327
+(1062, "Duplicate entry '6779' for key 'item_seq'")
+200713379
+(1062, "Duplicate entry '46415' for key 'item_seq'")
+200713452
+(1062, "Duplicate entry '24774' for key 'item_seq'")
+200713519
+200713706
+200713771
+200713772
+200713904
+(1062, "Duplicate entry '23626' for key 'item_seq'")
+200800233
+200800437
+200800494
+200800495
+200800687
+200800688
+200800694
+200800862
+(1062, "Duplicate entry '528' for key 'item_seq'")
+200800964
+200800965
+200800966
+200800969
+200800971
+200801090
+200801139
+(1062, "Duplicate entry '80885' for key 'item_seq'")
+200801407
+(1062, "Duplicate entry '6374' for key 'item_seq'")
+200801495
+(1062, "Duplicate entry '14975' for key 'item_seq'")
+200801540
+200801541
+200801546
+(1062, "Duplicate entry '26640' for key 'item_seq'")
+200801549
+200801550
+200801561
+200801586
+200801708
+(1062, "Duplicate entry '58933' for key 'item_seq'")
+200801900
+200801933
+200801972
+(1062, "Duplicate entry '10121' for key 'item_seq'")
+200802021
+200802066
+(1062, "Duplicate entry '19261' for key 'item_seq'")
+200802222
+(1062, "Duplicate entry '75711' for key 'item_seq'")
+200802225
+(1062, "Duplicate entry '58982' for key 'item_seq'")
+200802293
+(1062, "Duplicate entry '24765' for key 'item_seq'")
+200802328
+(1062, "Duplicate entry '24405' for key 'item_seq'")
+200802393
+(1062, "Duplicate entry '73726' for key 'item_seq'")
+200802488
+200802489
+200802500
+(1062, "Duplicate entry '52259' for key 'item_seq'")
+200802513
+(1062, "Duplicate entry '22169' for key 'item_seq'")
+200802524
+(1062, "Duplicate entry '72729' for key 'item_seq'")
+200802556
+200802595
+200802604
+(1062, "Duplicate entry '7944' for key 'item_seq'")
+200802609
+(1062, "Duplicate entry '45199' for key 'item_seq'")
+200802649
+200802658
+200802659
+200802671
+(1062, "Duplicate entry '10013' for key 'item_seq'")
+200802691
+200802700
+200802701
+(1062, "Duplicate entry '11991' for key 'item_seq'")
+200802702
+(1062, "Duplicate entry '11998' for key 'item_seq'")
+200802704
+(1062, "Duplicate entry '16129' for key 'item_seq'")
+200802739
+(1062, "Duplicate entry '58934' for key 'item_seq'")
+200802853
+200802887
+(1062, "Duplicate entry '75360' for key 'item_seq'")
+200803211
+200803252
+(1062, "Duplicate entry '17056' for key 'item_seq'")
+200803300
+(1062, "Duplicate entry '71226' for key 'item_seq'")
+200803322
+200803323
+(1062, "Duplicate entry '19698' for key 'item_seq'")
+200803325
+(1062, "Duplicate entry '19697' for key 'item_seq'")
+200803372
+200803373
+200803380
+200803410
+(1062, "Duplicate entry '17057' for key 'item_seq'")
+200803424
+200803427
+200803434
+(1062, "Duplicate entry '13939' for key 'item_seq'")
+200803480
+(1062, "Duplicate entry '38258' for key 'item_seq'")
+200803520
+200803581
+(1062, "Duplicate entry '74510' for key 'item_seq'")
+200803606
+200803829
+(1062, "Duplicate entry '68238' for key 'item_seq'")
+200803835
+(1062, "Duplicate entry '24275' for key 'item_seq'")
+200803868
+200803961
+'NoneType' object is not subscriptable
+200804001
+(1062, "Duplicate entry '21013' for key 'item_seq'")
+200804089
+200804170
+(1062, "Duplicate entry '24661' for key 'item_seq'")
+200804190
+200804193
+(1062, "Duplicate entry '13726' for key 'item_seq'")
+200804235
+(1062, "Duplicate entry '1613' for key 'item_seq'")
+200804337
+(1062, "Duplicate entry '23587' for key 'item_seq'")
+200804412
+(1062, "Duplicate entry '81517' for key 'item_seq'")
+200804414
+(1062, "Duplicate entry '55349' for key 'item_seq'")
+200804449
+200804451
+200804552
+200804586
+(1062, "Duplicate entry '76680' for key 'item_seq'")
+200804588
+200804589
+(1062, "Duplicate entry '39413' for key 'item_seq'")
+200804590
+'NoneType' object is not subscriptable
+200804770
+(1062, "Duplicate entry '23996' for key 'item_seq'")
+200804773
+200804781
+(1062, "Duplicate entry '50967' for key 'item_seq'")
+200804811
+200804907
+(1062, "Duplicate entry '22090' for key 'item_seq'")
+200804958
+(1062, "Duplicate entry '58937' for key 'item_seq'")
+200804995
+200805092
+(1062, "Duplicate entry '48257' for key 'item_seq'")
+200805114
+(1062, "Duplicate entry '71959' for key 'item_seq'")
+200805137
+(1062, "Duplicate entry '23985' for key 'item_seq'")
+200805159
+200805165
+(1062, "Duplicate entry '58190' for key 'item_seq'")
+200805228
+200805255
+(1062, "Duplicate entry '23986' for key 'item_seq'")
+200805294
+(1062, "Duplicate entry '58191' for key 'item_seq'")
+200805379
+200805470
+(1062, "Duplicate entry '77551' for key 'item_seq'")
+200805495
+(1062, "Duplicate entry '19283' for key 'item_seq'")
+200805521
+(1062, "Duplicate entry '1615' for key 'item_seq'")
+200805610
+(1062, "Duplicate entry '8586' for key 'item_seq'")
+200805710
+(1062, "Duplicate entry '58516' for key 'item_seq'")
+200805738
+200805785
+(1062, "Duplicate entry '58936' for key 'item_seq'")
+200805818
+200805883
+200805905
+200805912
+(1062, "Duplicate entry '38347' for key 'item_seq'")
+200805920
+200805921
+200805946
+200805962
+200805986
+200805988
+(1062, "Duplicate entry '72201' for key 'item_seq'")
+200806021
+(1062, "Duplicate entry '955' for key 'item_seq'")
+200806022
+200806190
+(1062, "Duplicate entry '4268' for key 'item_seq'")
+200806294
+200806299
+200806300
+200806312
+200806365
+(1062, "Duplicate entry '26655' for key 'item_seq'")
+200806414
+(1062, "Duplicate entry '21767' for key 'item_seq'")
+200806415
+(1062, "Duplicate entry '963' for key 'item_seq'")
+200806422
+(1062, "Duplicate entry '41773' for key 'item_seq'")
+200806454
+200806456
+(1062, "Duplicate entry '16432' for key 'item_seq'")
+200806459
+(1062, "Duplicate entry '30693' for key 'item_seq'")
+200806463
+(1062, "Duplicate entry '8153' for key 'item_seq'")
+200806488
+200806603
+200806604
+200806606
+200806624
+(1062, "Duplicate entry '50971' for key 'item_seq'")
+200806631
+200806695
+200806723
+(1062, "Duplicate entry '68235' for key 'item_seq'")
+200806753
+200806769
+200806770
+(1062, "Duplicate entry '6382' for key 'item_seq'")
+200806774
+200806777
+(1062, "Duplicate entry '69559' for key 'item_seq'")
+200806793
+200806806
+(1062, "Duplicate entry '38909' for key 'item_seq'")
+200806842
+200806843
+(1062, "Duplicate entry '10576' for key 'item_seq'")
+200806908
+200806911
+(1062, "Duplicate entry '6387' for key 'item_seq'")
+200806912
+(1062, "Duplicate entry '6385' for key 'item_seq'")
+200806977
+200806998
+(1062, "Duplicate entry '6383' for key 'item_seq'")
+200806999
+200807006
+(1062, "Duplicate entry '30694' for key 'item_seq'")
+200807011
+(1062, "Duplicate entry '78508' for key 'item_seq'")
+200807016
+(1062, "Duplicate entry '5080' for key 'item_seq'")
+200807029
+200807091
+200807127
+200807205
+200807207
+200807264
+(1062, "Duplicate entry '19699' for key 'item_seq'")
+200807359
+(1062, "Duplicate entry '48894' for key 'item_seq'")
+200807360
+200807369
+200807391
+(1062, "Duplicate entry '26656' for key 'item_seq'")
+200807400
+200807414
+200807469
+(1062, "Duplicate entry '72890' for key 'item_seq'")
+200807491
+200807492
+200807526
+(1062, "Duplicate entry '72889' for key 'item_seq'")
+200807527
+(1062, "Duplicate entry '72891' for key 'item_seq'")
+200807528
+(1062, "Duplicate entry '72892' for key 'item_seq'")
+200807540
+(1062, "Duplicate entry '14991' for key 'item_seq'")
+200807555
+200807565
+200807573
+(1062, "Duplicate entry '7457' for key 'item_seq'")
+200807644
+200807654
+(1062, "Duplicate entry '53334' for key 'item_seq'")
+200807683
+(1062, "Duplicate entry '4261' for key 'item_seq'")
+200807684
+(1062, "Duplicate entry '4260' for key 'item_seq'")
+200807717
+(1062, "Duplicate entry '30695' for key 'item_seq'")
+200807723
+200807836
+200807944
+(1062, "Duplicate entry '62198' for key 'item_seq'")
+200807988
+200808091
+200808170
+(1062, "Duplicate entry '28984' for key 'item_seq'")
+200808211
+200808226
+200808270
+(1062, "Duplicate entry '59308' for key 'item_seq'")
+200808280
+200808362
+200808414
+200808451
+200808507
+200808565
+(1062, "Duplicate entry '14862' for key 'item_seq'")
+200808683
+200808754
+200808802
+(1062, "Duplicate entry '72202' for key 'item_seq'")
+200808916
+200809084
+200809103
+200809174
+200809175
+200809245
+200809300
+200809318
+200809319
+200809337
+200809387
+(1062, "Duplicate entry '51024' for key 'item_seq'")
+200809389
+200809404
+200809416
+(1062, "Duplicate entry '2584' for key 'item_seq'")
+200809427
+200809437
+(1062, "Duplicate entry '27653' for key 'item_seq'")
+200809447
+200809448
+200809450
+200809452
+200809458
+200809496
+(1062, "Duplicate entry '52314' for key 'item_seq'")
+200809514
+200809575
+200809576
+200809664
+(1062, "Duplicate entry '1622' for key 'item_seq'")
+200809695
+(1062, "Duplicate entry '36117' for key 'item_seq'")
+200809725
+200809776
+200809785
+200809787
+200809806
+200809813
+200809825
+200809862
+200809975
+(1062, "Duplicate entry '75122' for key 'item_seq'")
+200810031
+(1062, "Duplicate entry '72894' for key 'item_seq'")
+200810125
+200810237
+200810322
+(1062, "Duplicate entry '71552' for key 'item_seq'")
+200810543
+200810634
+200810810
+(1062, "Duplicate entry '47827' for key 'item_seq'")
+200810853
+(1062, "Duplicate entry '3355' for key 'item_seq'")
+200810973
+200811019
+200811020
+200811103
+(1062, "Duplicate entry '22805' for key 'item_seq'")
+200811106
+(1062, "Duplicate entry '14330' for key 'item_seq'")
+200811126
+(1062, "Duplicate entry '72893' for key 'item_seq'")
+200811252
+(1062, "Duplicate entry '79142' for key 'item_seq'")
+200811459
+(1062, "Duplicate entry '79833' for key 'item_seq'")
+200811608
+(1062, "Duplicate entry '72895' for key 'item_seq'")
+200811653
+(1062, "Duplicate entry '79744' for key 'item_seq'")
+200811664
+(1062, "Duplicate entry '79851' for key 'item_seq'")
+200811754
+(1062, "Duplicate entry '80923' for key 'item_seq'")
+200811812
+200812039
+200900300
+200900321
+(1062, "Duplicate entry '52315' for key 'item_seq'")
+200900347
+200900595
+(1062, "Duplicate entry '557' for key 'item_seq'")
+200900737
+(1062, "Duplicate entry '58201' for key 'item_seq'")
+200900740
+(1062, "Duplicate entry '10287' for key 'item_seq'")
+200900844
+(1062, "Duplicate entry '71964' for key 'item_seq'")
+200900880
+(1062, "Duplicate entry '10293' for key 'item_seq'")
+200900881
+(1062, "Duplicate entry '4384' for key 'item_seq'")
+200900889
+200900964
+200900970
+200900974
+(1062, "Duplicate entry '71966' for key 'item_seq'")
+200900976
+200901033
+(1062, "Duplicate entry '71968' for key 'item_seq'")
+200901178
+(1062, "Duplicate entry '30704' for key 'item_seq'")
+200901181
+(1062, "Duplicate entry '10288' for key 'item_seq'")
+200901257
+(1062, "Duplicate entry '10291' for key 'item_seq'")
+200901404
+(1062, "Duplicate entry '13921' for key 'item_seq'")
+200901408
+200901546
+200901548
+200901621
+(1062, "Duplicate entry '55925' for key 'item_seq'")
+200901633
+200901637
+200901660
+200901870
+(1062, "Duplicate entry '46487' for key 'item_seq'")
+200901952
+(1062, "Duplicate entry '39847' for key 'item_seq'")
+200901953
+200901990
+200902175
+(1062, "Duplicate entry '5173' for key 'item_seq'")
+200902348
+200902498
+(1062, "Duplicate entry '5174' for key 'item_seq'")
+200902558
+200902559
+200902650
+200902684
+(1062, "Duplicate entry '77559' for key 'item_seq'")
+200902756
+200902796
+200902797
+200902888
+200903046
+200903088
+(1062, "Duplicate entry '72907' for key 'item_seq'")
+200903117
+(1062, "Duplicate entry '46493' for key 'item_seq'")
+200903225
+200903228
+200903246
+200903261
+(1062, "Duplicate entry '51533' for key 'item_seq'")
+200903262
+(1062, "Duplicate entry '51531' for key 'item_seq'")
+200903800
+200903829
+200903830
+200903885
+(1062, "Duplicate entry '45278' for key 'item_seq'")
+200903896
+200903962
+(1062, "Duplicate entry '18379' for key 'item_seq'")
+200903974
+200904004
+200904074
+200904275
+200904276
+200904353
+(1062, "Duplicate entry '27679' for key 'item_seq'")
+200904445
+200904515
+(1062, "Duplicate entry '63284' for key 'item_seq'")
+200904535
+200904536
+200904558
+(1062, "Duplicate entry '22818' for key 'item_seq'")
+200904672
+(1062, "Duplicate entry '73879' for key 'item_seq'")
+200904944
+(1062, "Duplicate entry '49237' for key 'item_seq'")
+200905066
+200905067
+200905110
+(1062, "Duplicate entry '76768' for key 'item_seq'")
+200905144
+(1062, "Duplicate entry '17124' for key 'item_seq'")
+200905218
+200905332
+200905339
+200905402
+(1062, "Duplicate entry '10122' for key 'item_seq'")
+200905483
+(1062, "Duplicate entry '76033' for key 'item_seq'")
+200905531
+(1062, "Duplicate entry '44259' for key 'item_seq'")
+200905692
+(1062, "Duplicate entry '17077' for key 'item_seq'")
+200905775
+(1062, "Duplicate entry '27721' for key 'item_seq'")
+200905814
+200905929
+200905956
+200905961
+200905962
+200906056
+(1062, "Duplicate entry '54016' for key 'item_seq'")
+200906060
+(1062, "Duplicate entry '76786' for key 'item_seq'")
+200906065
+200906066
+200906190
+200906306
+(1062, "Duplicate entry '73883' for key 'item_seq'")
+200906478
+(1062, "Duplicate entry '10290' for key 'item_seq'")
+200906482
+(1062, "Duplicate entry '58240' for key 'item_seq'")
+200906525
+200906538
+200906541
+200906550
+200906557
+200906578
+200906599
+200906607
+(1062, "Duplicate entry '65409' for key 'item_seq'")
+200906613
+(1062, "Duplicate entry '18142' for key 'item_seq'")
+200906708
+200906740
+(1062, "Duplicate entry '71995' for key 'item_seq'")
+200906807
+(1062, "Duplicate entry '75428' for key 'item_seq'")
+200906974
+200907427
+200907655
+(1062, "Duplicate entry '75388' for key 'item_seq'")
+200907781
+200907782
+200907790
+200907796
+200907809
+200908159
+200908160
+200908161
+200908347
+200908348
+200908349
+200908367
+200908438
+200908470
+(1062, "Duplicate entry '1660' for key 'item_seq'")
+200908471
+200908761
+200908906
+200909045
+200909214
+200909215
+200909282
+200909377
+200909429
+200909430
+201000513
+201000663
+201000664
+201000674
+(1062, "Duplicate entry '19381' for key 'item_seq'")
+201000774
+(1062, "Duplicate entry '23070' for key 'item_seq'")
+201000775
+(1062, "Duplicate entry '23071' for key 'item_seq'")
+201000776
+(1062, "Duplicate entry '23072' for key 'item_seq'")
+201000777
+201000827
+201000828
+201000860
+201000861
+201000865
+201000866
+201000867
+201000872
+(1062, "Duplicate entry '15002' for key 'item_seq'")
+201000877
+201000878
+201000888
+201000889
+201000949
+201000950
+201000987
+201001017
+201001018
+201001021
+201001022
+201001023
+201001024
+201001057
+201001176
+201001266
+201001267
+201001393
+201001413
+(1062, "Duplicate entry '51517' for key 'item_seq'")
+201001418
+201001639
+201001654
+(1062, "Duplicate entry '17763' for key 'item_seq'")
+201001655
+201001677
+201001683
+201001684
+201001685
+201001686
+201001687
+201001688
+201001698
+(1062, "Duplicate entry '52320' for key 'item_seq'")
+201001706
+201001708
+201001709
+201001722
+201001744
+201001804
+(1062, "Duplicate entry '79207' for key 'item_seq'")
+201001858
+201002060
+201002061
+201002065
+201002073
+(1062, "Duplicate entry '29267' for key 'item_seq'")
+201002299
+201002447
+201002448
+201002449
+201002450
+201002550
+(1062, "Duplicate entry '79929' for key 'item_seq'")
+201002769
+201002770
+201002997
+201002998
+201002999
+201003060
+201003061
+201003062
+201003094
+201003095
+201003096
+201003097
+201003152
+201003153
+201003154
+201003155
+201003168
+201003177
+201003178
+201003391
+201003401
+201003518
+(1062, "Duplicate entry '75397' for key 'item_seq'")
+201003545
+201003648
+(1062, "Duplicate entry '14361' for key 'item_seq'")
+201003669
+201003710
+201003734
+201003735
+201003758
+201003887
+201003980
+(1062, "Duplicate entry '60382' for key 'item_seq'")
+201004129
+(1062, "Duplicate entry '75420' for key 'item_seq'")
+201004157
+201004349
+201004413
+(1062, "Duplicate entry '36247' for key 'item_seq'")
+201004440
+(1062, "Duplicate entry '10147' for key 'item_seq'")
+201004449
+201004450
+201004573
+201004643
+201004648
+201004680
+201004688
+201004689
+201004690
+201004691
+201004692
+201004700
+201004715
+201004716
+201004728
+201004763
+201004765
+201004772
+201004918
+201004926
+201004962
+201004963
+201004964
+201004965
+201004970
+201004971
+201005025
+201005027
+201005031
+201005041
+201005047
+201005059
+201005060
+201005076
+201005078
+201005079
+201005107
+201005133
+201005134
+201005225
+201005226
+201005234
+201005235
+201005236
+201005527
+(1062, "Duplicate entry '10148' for key 'item_seq'")
+201005537
+201005704
+201005770
+201005774
+201005775
+201005800
+(1062, "Duplicate entry '44720' for key 'item_seq'")
+201006076
+201006077
+201006155
+201006371
+201006372
+201006470
+(1062, "Duplicate entry '2638' for key 'item_seq'")
+201006491
+(1062, "Duplicate entry '14826' for key 'item_seq'")
+201006527
+201006592
+(1062, "Duplicate entry '76025' for key 'item_seq'")
+201006784
+(1062, "Duplicate entry '68827' for key 'item_seq'")
+201006796
+201006797
+201006798
+201006879
+201006974
+(1062, "Duplicate entry '27468' for key 'item_seq'")
+201007652
+201007672
+201007692
+201007750
+201007762
+201100113
+(1062, "Duplicate entry '81925' for key 'item_seq'")
+201100186
+201100215
+201100216
+201100256
+201100298
+201100299
+201100657
+(1062, "Duplicate entry '68956' for key 'item_seq'")
+201100731
+201100747
+201100749
+201100758
+(1062, "Duplicate entry '4449' for key 'item_seq'")
+201100905
+(1062, "Duplicate entry '58242' for key 'item_seq'")
+201100958
+(1062, "Duplicate entry '70536' for key 'item_seq'")
+201100960
+(1062, "Duplicate entry '37306' for key 'item_seq'")
+201100964
+(1062, "Duplicate entry '37307' for key 'item_seq'")
+201101018
+201101639
+(1062, "Duplicate entry '41311' for key 'item_seq'")
+201101757
+201101758
+201101834
+201101835
+201101855
+201101856
+201101857
+201101858
+201101884
+201101885
+201102118
+(1062, "Duplicate entry '78566' for key 'item_seq'")
+201102229
+201102310
+201102450
+(1062, "Duplicate entry '4450' for key 'item_seq'")
+201102476
+201102477
+201102762
+201102775
+(1062, "Duplicate entry '42601' for key 'item_seq'")
+201103179
+201103323
+(1062, "Duplicate entry '3694' for key 'item_seq'")
+201103325
+201103326
+201103467
+(1062, "Duplicate entry '44296' for key 'item_seq'")
+201103513
+201103607
+201103629
+201103701
+201103779
+201103840
+201103996
+201104024
+201104026
+201104206
+(1062, "Duplicate entry '33423' for key 'item_seq'")
+201104296
+201104297
+201104376
+201104377
+201104436
+201104437
+201104470
+201104578
+201104798
+201104799
+201104800
+201104801
+201104802
+(1062, "Duplicate entry '38368' for key 'item_seq'")
+201105148
+(1062, "Duplicate entry '40459' for key 'item_seq'")
+201105149
+(1062, "Duplicate entry '40461' for key 'item_seq'")
+201105150
+(1062, "Duplicate entry '40462' for key 'item_seq'")
+201105270
+201105272
+(1062, "Duplicate entry '591' for key 'item_seq'")
+201105860
+(1062, "Duplicate entry '30189' for key 'item_seq'")
+201106064
+201106175
+201106228
+(1062, "Duplicate entry '60867' for key 'item_seq'")
+201106252
+201106954
+201107203
+201107206
+201107222
+201107223
+201107539
+201107631
+201107814
+201108443
+201108885
+201109291
+(1062, "Duplicate entry '58249' for key 'item_seq'")
+201109654
+201109899
+201110055
+201110056
+201110057
+201110062
+201110501
+201110502
+201110510
+201110540
+201110717
+(1062, "Duplicate entry '51999' for key 'item_seq'")
+201110777
+201111097
+(1062, "Duplicate entry '46066' for key 'item_seq'")
+201111148
+201111149
+201111150
+201111225
+201111226
+201112194
+201112195
+201112299
+201112301
+201112302
+201112304
+201112331
+201200120
+201200121
+201200186
+201200212
+(1062, "Duplicate entry '8994' for key 'item_seq'")
+201200277
+201200401
+201200403
+201200435
+201200587
+201200633
+201200634
+201200635
+201200636
+201200677
+201200700
+(1062, "Duplicate entry '40473' for key 'item_seq'")
+201200727
+201201024
+(1062, "Duplicate entry '68253' for key 'item_seq'")
+201201123
+(1062, "Duplicate entry '26792' for key 'item_seq'")
+201201161
+(1062, "Duplicate entry '1004' for key 'item_seq'")
+201201164
+(1062, "Duplicate entry '1005' for key 'item_seq'")
+201201263
+201201264
+201201271
+201201272
+201201433
+(1062, "Duplicate entry '10591' for key 'item_seq'")
+201201436
+201201693
+201201694
+201201796
+201202239
+(1062, "Duplicate entry '73907' for key 'item_seq'")
+201202447
+201202448
+201202449
+201202450
+201202451
+201202452
+201202455
+201202456
+201202719
+201202740
+201202770
+201202870
+201203016
+201203072
+201203073
+201203095
+(1062, "Duplicate entry '24417' for key 'item_seq'")
+201203101
+201203484
+201203485
+201203534
+201203612
+201203613
+201203744
+201203745
+201203772
+201203788
+201203789
+201204544
+201204547
+201204548
+201204549
+201204550
+201204602
+201204603
+201204687
+(1062, "Duplicate entry '68853' for key 'item_seq'")
+201204936
+201204970
+201204971
+201204975
+201205036
+201205037
+201205093
+201205094
+201205130
+(1062, "Duplicate entry '77321' for key 'item_seq'")
+201205252
+201205259
+201205260
+201205264
+201205265
+201205266
+201205274
+201205329
+201205330
+201205347
+201205378
+201205379
+201205380
+201205381
+201205382
+201205383
+201205384
+201205398
+201205400
+201205499
+201205536
+201205539
+201205573
+201205623
+201205654
+201205821
+201205830
+201205833
+201205890
+(1062, "Duplicate entry '44301' for key 'item_seq'")
+201205929
+201205930
+201205931
+201205940
+201205941
+201205942
+201205945
+201205946
+201205950
+201205951
+201205953
+201205974
+201206020
+201206061
+201206081
+201206082
+201206148
+201206161
+(1062, "Duplicate entry '51057' for key 'item_seq'")
+201206166
+(1062, "Duplicate entry '76891' for key 'item_seq'")
+201206204
+201206251
+201206308
+201206317
+201206325
+201206326
+201206330
+201206331
+(1062, "Duplicate entry '7955' for key 'item_seq'")
+201206335
+201206385
+201206389
+201206409
+201206410
+201206436
+201206457
+201206473
+201206494
+(1062, "Duplicate entry '16235' for key 'item_seq'")
+201206498
+201206650
+201206706
+201206741
+201206742
+201206750
+201206778
+201206779
+201206780
+201206781
+201206782
+201206816
+201206823
+201206827
+(1062, "Duplicate entry '600' for key 'item_seq'")
+201206831
+201206851
+201206859
+(1062, "Duplicate entry '24414' for key 'item_seq'")
+201206934
+201206935
+201206936
+201206939
+201206940
+(1062, "Duplicate entry '61067' for key 'item_seq'")
+201206981
+(1062, "Duplicate entry '53910' for key 'item_seq'")
+201206997
+(1062, "Duplicate entry '17161' for key 'item_seq'")
+201207003
+201207007
+201207008
+201207067
+201207122
+201207215
+201207240
+201207294
+201207301
+201207318
+(1062, "Duplicate entry '61281' for key 'item_seq'")
+201207343
+201207344
+201207367
+201207400
+201207401
+201207445
+201207486
+201207501
+201207504
+(1062, "Duplicate entry '55470' for key 'item_seq'")
+201207507
+201207516
+201207572
+201207575
+201207585
+201207586
+201207587
+201207594
+201207689
+201208193
+201208290
+201208291
+201208292
+201208464
+201208467
+(1062, "Duplicate entry '55940' for key 'item_seq'")
+201208474
+(1062, "Duplicate entry '50416' for key 'item_seq'")
+201208480
+(1062, "Duplicate entry '55473' for key 'item_seq'")
+201208653
+201208654
+201208755
+201208995
+201209006
+201209143
+201209301
+(1062, "Duplicate entry '69660' for key 'item_seq'")
+201209303
+201209444
+201209552
+(1062, "Duplicate entry '9831' for key 'item_seq'")
+201209554
+(1062, "Duplicate entry '49026' for key 'item_seq'")
+201209572
+201209573
+201209647
+201209648
+201209663
+201209664
+201209665
+201209669
+201209670
+201209718
+201209719
+201209757
+201210137
+201210141
+(1062, "Duplicate entry '14465' for key 'item_seq'")
+201210154
+(1062, "Duplicate entry '55081' for key 'item_seq'")
+201210157
+(1062, "Duplicate entry '10308' for key 'item_seq'")
+201210158
+(1062, "Duplicate entry '10309' for key 'item_seq'")
+201210159
+201210160
+(1062, "Duplicate entry '10303' for key 'item_seq'")
+201210161
+201210162
+201210188
+201210746
+201210747
+201210748
+201211101
+201211102
+201211103
+201211105
+201211106
+201211108
+201300021
+201300128
+(1062, "Duplicate entry '20340' for key 'item_seq'")
+201300145
+201300146
+201300149
+(1062, "Duplicate entry '31223' for key 'item_seq'")
+201300262
+201300338
+201300339
+201300641
+201300891
+(1062, "Duplicate entry '55941' for key 'item_seq'")
+201301373
+201301498
+(1062, "Duplicate entry '76883' for key 'item_seq'")
+201301613
+(1062, "Duplicate entry '38956' for key 'item_seq'")
+201301617
+201301619
+201301655
+201301695
+201302166
+201302167
+201302168
+201302169
+(1062, "Duplicate entry '70552' for key 'item_seq'")
+201302240
+201302258
+(1062, "Duplicate entry '10310' for key 'item_seq'")
+201302423
+201302469
+(1062, "Duplicate entry '51565' for key 'item_seq'")
+201302494
+(1062, "Duplicate entry '10311' for key 'item_seq'")
+201302668
+201302669
+201302670
+(1062, "Duplicate entry '11302' for key 'item_seq'")
+201302679
+201302828
+201302990
+201303030
+(1062, "Duplicate entry '55474' for key 'item_seq'")
+201303032
+(1062, "Duplicate entry '31226' for key 'item_seq'")
+201303082
+201303188
+201303269
+201303270
+201303606
+201304376
+201304734
+(1062, "Duplicate entry '19429' for key 'item_seq'")
+201304813
+201304997
+201304998
+201305025
+201305036
+201305040
+201305271
+201305399
+201305533
+201305784
+(1062, "Duplicate entry '21167' for key 'item_seq'")
+201305785
+(1062, "Duplicate entry '24070' for key 'item_seq'")
+201305825
+201305826
+201305918
+201305957
+(1062, "Duplicate entry '73920' for key 'item_seq'")
+201306110
+201306136
+201306167
+201306202
+201306210
+201306253
+201306262
+201306264
+201306265
+201306285
+201306286
+201306312
+201306321
+(1062, "Duplicate entry '26059' for key 'item_seq'")
+201306324
+201306325
+201306331
+201306340
+201306344
+201306345
+201306352
+201306362
+201306365
+201306373
+201306374
+201306380
+(1062, "Duplicate entry '58267' for key 'item_seq'")
+201306386
+201306399
+(1062, "Duplicate entry '46536' for key 'item_seq'")
+201306400
+201306412
+201306413
+201306416
+201306427
+201306430
+201306431
+201306448
+201306449
+201306450
+201306453
+201306455
+201306526
+(1062, "Duplicate entry '30229' for key 'item_seq'")
+201306538
+201306622
+201306836
+201306837
+201306838
+201306902
+201306905
+201306906
+201306920
+201306980
+201306999
+201307079
+201307087
+(1062, "Duplicate entry '69666' for key 'item_seq'")
+201307092
+201307106
+'NoneType' object is not subscriptable
+201307119
+201307122
+201307123
+201307124
+201307135
+201307149
+201307227
+201307231
+(1062, "Duplicate entry '9830' for key 'item_seq'")
+201307248
+201307306
+201307373
+201307401
+201307453
+201307484
+201307489
+201307515
+(1062, "Duplicate entry '76918' for key 'item_seq'")
+201307524
+201307536
+201307539
+(1062, "Duplicate entry '45299' for key 'item_seq'")
+201307553
+201307574
+201307575
+(1062, "Duplicate entry '47872' for key 'item_seq'")
+201307576
+(1062, "Duplicate entry '51067' for key 'item_seq'")
+201307583
+201307584
+201307606
+201307676
+(1062, "Duplicate entry '41364' for key 'item_seq'")
+201307681
+(1062, "Duplicate entry '47341' for key 'item_seq'")
+201307724
+(1062, "Duplicate entry '76921' for key 'item_seq'")
+201307808
+201307815
+201307854
+201307881
+201307924
+201307925
+201307926
+201307927
+(1062, "Duplicate entry '57619' for key 'item_seq'")
+201307944
+201307946
+201308031
+201308035
+(1062, "Duplicate entry '2233' for key 'item_seq'")
+201308057
+201308067
+201308095
+(1062, "Duplicate entry '58751' for key 'item_seq'")
+201308207
+201308208
+201308261
+201308285
+201308307
+(1062, "Duplicate entry '82408' for key 'item_seq'")
+201308345
+201308346
+201308351
+201308371
+201308437
+201308588
+201308594
+201308598
+201308667
+201308672
+201308680
+201308712
+201308821
+201308822
+201308823
+201308845
+201308903
+201308906
+(1062, "Duplicate entry '18224' for key 'item_seq'")
+201308932
+201308943
+201309032
+201309043
+201309044
+201309053
+201309066
+201309105
+(1062, "Duplicate entry '43014' for key 'item_seq'")
+201309128
+(1062, "Duplicate entry '604' for key 'item_seq'")
+201309162
+201309177
+201309179
+201309184
+(1062, "Duplicate entry '70979' for key 'item_seq'")
+201309195
+201309277
+201309291
+201309336
+201309345
+(1062, "Duplicate entry '77587' for key 'item_seq'")
+201309384
+201309412
+201309415
+201309457
+201309480
+201309481
+201309484
+(1062, "Duplicate entry '74594' for key 'item_seq'")
+201309489
+201309497
+(1062, "Duplicate entry '25849' for key 'item_seq'")
+201309508
+201309519
+(1062, "Duplicate entry '20544' for key 'item_seq'")
+201309520
+201309521
+201309539
+201309540
+(1062, "Duplicate entry '68995' for key 'item_seq'")
+201309564
+201309565
+(1062, "Duplicate entry '9839' for key 'item_seq'")
+201309580
+(1062, "Duplicate entry '39' for key 'item_seq'")
+201309647
+201309648
+201309697
+201309732
+201309770
+(1062, "Duplicate entry '14860' for key 'item_seq'")
+201309778
+201309798
+201309799
+201309807
+201309842
+201309843
+(1062, "Duplicate entry '56560' for key 'item_seq'")
+201309846
+201309954
+201309973
+201309976
+(1062, "Duplicate entry '41350' for key 'item_seq'")
+201309978
+201309981
+201309982
+201310001
+201310113
+(1062, "Duplicate entry '23661' for key 'item_seq'")
+201310150
+201310204
+201310205
+201310210
+201310213
+201310298
+201310306
+201310307
+201310308
+201310330
+(1062, "Duplicate entry '73938' for key 'item_seq'")
+201310352
+201310386
+201310391
+(1062, "Duplicate entry '14482' for key 'item_seq'")
+201310500
+(1062, "Duplicate entry '82414' for key 'item_seq'")
+201310573
+201310585
+(1062, "Duplicate entry '73936' for key 'item_seq'")
+201310621
+(1062, "Duplicate entry '2771' for key 'item_seq'")
+201310633
+201310664
+201310682
+(1062, "Duplicate entry '36288' for key 'item_seq'")
+201310780
+(1062, "Duplicate entry '20355' for key 'item_seq'")
+201310826
+201310835
+(1062, "Duplicate entry '76113' for key 'item_seq'")
+201310839
+201310840
+201310897
+201310901
+201310904
+201310905
+201310914
+201310915
+201310926
+201310927
+201310933
+201310934
+201310937
+201310949
+201310976
+201310981
+201310983
+201310992
+201400023
+201400024
+201400049
+201400115
+(1062, "Duplicate entry '46548' for key 'item_seq'")
+201400120
+201400158
+201400159
+201400192
+201400326
+201400327
+201400328
+(1062, "Duplicate entry '35040' for key 'item_seq'")
+201400360
+201400416
+201400417
+201400420
+201400421
+201400441
+201400443
+201400444
+201400463
+(1062, "Duplicate entry '20363' for key 'item_seq'")
+201400490
+201400532
+(1062, "Duplicate entry '45681' for key 'item_seq'")
+201400608
+201400634
+(1062, "Duplicate entry '73939' for key 'item_seq'")
+201400635
+201400754
+201400755
+201400864
+(1062, "Duplicate entry '75513' for key 'item_seq'")
+201400878
+(1062, "Duplicate entry '36982' for key 'item_seq'")
+201400899
+201400901
+201400967
+(1062, "Duplicate entry '47239' for key 'item_seq'")
+201401064
+201401098
+201401106
+201401129
+201401236
+201401281
+201401303
+201401314
+201401382
+201401399
+201401471
+(1062, "Duplicate entry '56940' for key 'item_seq'")
+201401472
+(1062, "Duplicate entry '56941' for key 'item_seq'")
+201401482
+'NoneType' object is not subscriptable
+201401506
+201401569
+201401782
+201401783
+201401785
+201401786
+201401792
+201401794
+201401795
+201401796
+201401797
+201401825
+201401876
+(1062, "Duplicate entry '39593' for key 'item_seq'")
+201401931
+201401956
+201401965
+201401966
+201401970
+201401984
+201401985
+201401986
+201402143
+'NoneType' object is not subscriptable
+201402150
+201402151
+201402171
+201402190
+201402238
+201402239
+201402240
+201402270
+201402273
+201402275
+201402285
+'NoneType' object is not subscriptable
+201402294
+201402353
+201402359
+201402365
+201402369
+(1062, "Duplicate entry '48380' for key 'item_seq'")
+201402376
+201402409
+201402410
+201402416
+201402460
+201402461
+201402463
+201402464
+201402502
+(1062, "Duplicate entry '59870' for key 'item_seq'")
+201402566
+(1062, "Duplicate entry '41370' for key 'item_seq'")
+201402610
+201402611
+201402613
+201402614
+201402615
+201402639
+201402806
+201402853
+201402854
+201402856
+201402859
+201402868
+201402869
+201402874
+(1062, "Duplicate entry '59030' for key 'item_seq'")
+201402878
+201402912
+201402913
+201402914
+201402934
+201402935
+201402937
+201402969
+(1062, "Duplicate entry '47242' for key 'item_seq'")
+201402989
+(1062, "Duplicate entry '47884' for key 'item_seq'")
+201403000
+'NoneType' object is not subscriptable
+201403024
+201403057
+201403058
+201403123
+201403144
+(1062, "Duplicate entry '56569' for key 'item_seq'")
+201403151
+201403152
+201403184
+201403185
+201403197
+201403207
+(1062, "Duplicate entry '55110' for key 'item_seq'")
+201403255
+201403274
+201403276
+201403317
+201403335
+201403348
+201403414
+201403417
+(1062, "Duplicate entry '30772' for key 'item_seq'")
+201403418
+201403448
+201403449
+201403489
+201403490
+201403491
+(1062, "Duplicate entry '24086' for key 'item_seq'")
+201403503
+201403514
+201403518
+201403519
+201403521
+201403539
+201403542
+201403543
+201403545
+(1062, "Duplicate entry '75518' for key 'item_seq'")
+201403553
+201403554
+201403572
+201403573
+201403578
+201403599
+201403606
+201403607
+201403608
+201403609
+201403625
+201403627
+201403632
+(1062, "Duplicate entry '77612' for key 'item_seq'")
+201403643
+201403662
+201403692
+201403715
+201403736
+201403737
+201403740
+(1062, "Duplicate entry '56948' for key 'item_seq'")
+201403744
+201403745
+201403785
+201403786
+201403797
+201403798
+201403817
+201403818
+201403819
+201403820
+201403827
+201403828
+201403832
+201403835
+201403836
+201403837
+201403838
+201403868
+201403869
+201403876
+(1062, "Duplicate entry '26866' for key 'item_seq'")
+201403881
+(1062, "Duplicate entry '21808' for key 'item_seq'")
+201403919
+(1062, "Duplicate entry '30778' for key 'item_seq'")
+201403941
+201403950
+201403971
+201403976
+201403977
+(1062, "Duplicate entry '56949' for key 'item_seq'")
+201403978
+201403996
+201403997
+201404005
+(1062, "Duplicate entry '3458' for key 'item_seq'")
+201404011
+201404026
+201404029
+201404031
+201404032
+201404038
+201404050
+201404052
+201404058
+201404064
+201404103
+201404124
+(1062, "Duplicate entry '23710' for key 'item_seq'")
+201404170
+201404183
+201404184
+201404185
+201404222
+201404233
+201404285
+201404311
+201404313
+201404314
+201404315
+201404339
+201404361
+201404384
+201404385
+201404400
+201404404
+201404418
+201404419
+201404423
+201404424
+201404425
+201404426
+201404440
+201404441
+201404444
+(1062, "Duplicate entry '20385' for key 'item_seq'")
+201404445
+(1062, "Duplicate entry '20384' for key 'item_seq'")
+201404452
+201404476
+(1062, "Duplicate entry '72135' for key 'item_seq'")
+201404486
+201404488
+201404503
+201404504
+201404505
+201404506
+201404507
+201404508
+201404509
+201404510
+201404511
+201404514
+201404527
+201404528
+201404587
+201404588
+201404633
+201404634
+201404635
+201404636
+201404651
+201404652
+201404654
+201404655
+201404665
+201404666
+201404690
+201404713
+(1062, "Duplicate entry '21563' for key 'item_seq'")
+201404719
+(1062, "Duplicate entry '619' for key 'item_seq'")
+201404760
+201404761
+201404800
+201404801
+201404823
+201404824
+201404825
+201404859
+(1062, "Duplicate entry '79946' for key 'item_seq'")
+201404896
+201404897
+201404898
+201404899
+201404976
+201405001
+201405026
+(1062, "Duplicate entry '18246' for key 'item_seq'")
+201405056
+201405069
+201405070
+201405083
+201405093
+201405108
+201405109
+201405111
+201405120
+201405121
+201405122
+201405123
+201405163
+(1062, "Duplicate entry '29709' for key 'item_seq'")
+201405194
+201405195
+201405223
+201405262
+201405282
+201405290
+201405291
+(1062, "Duplicate entry '67138' for key 'item_seq'")
+201405309
+201405333
+201405403
+201405404
+201405432
+201405445
+201405482
+(1062, "Duplicate entry '51093' for key 'item_seq'")
+201405495
+201405502
+201405513
+(1062, "Duplicate entry '23683' for key 'item_seq'")
+201405527
+201405528
+201405547
+201405584
+201405618
+201405629
+201405633
+201405634
+201405708
+(1062, "Duplicate entry '77001' for key 'item_seq'")
+201405769
+201405770
+201405792
+201405793
+201405813
+201405865
+201405889
+(1062, "Duplicate entry '13099' for key 'item_seq'")
+201405891
+201405930
+201405960
+201406033
+(1062, "Duplicate entry '58274' for key 'item_seq'")
+201406034
+(1062, "Duplicate entry '27823' for key 'item_seq'")
+201406136
+201406151
+201406165
+(1062, "Duplicate entry '2259' for key 'item_seq'")
+201406168
+(1062, "Duplicate entry '69692' for key 'item_seq'")
+201406187
+201406190
+201500066
+(1062, "Duplicate entry '28205' for key 'item_seq'")
+201500073
+(1062, "Duplicate entry '61072' for key 'item_seq'")
+201500074
+(1062, "Duplicate entry '61073' for key 'item_seq'")
+201500075
+(1062, "Duplicate entry '61071' for key 'item_seq'")
+201500080
+201500085
+'NoneType' object is not subscriptable
+201500087
+(1062, "Duplicate entry '75135' for key 'item_seq'")
+201500088
+(1062, "Duplicate entry '75136' for key 'item_seq'")
+201500104
+201500105
+201500107
+201500108
+201500111
+201500149
+201500208
+201500209
+201500247
+201500294
+201500295
+201500296
+201500297
+201500364
+201500365
+201500366
+201500367
+201500384
+201500422
+201500429
+201500509
+(1062, "Duplicate entry '6986' for key 'item_seq'")
+201500514
+201500517
+201500518
+201500636
+(1062, "Duplicate entry '38731' for key 'item_seq'")
+201500640
+(1062, "Duplicate entry '68262' for key 'item_seq'")
+201500660
+(1062, "Duplicate entry '39588' for key 'item_seq'")
+201500676
+(1062, "Duplicate entry '55505' for key 'item_seq'")
+201500677
+201500679
+'NoneType' object is not subscriptable
+201500695
+201500717
+201500735
+201500737
+201500753
+201500855
+201500856
+201500861
+201500863
+(1062, "Duplicate entry '41027' for key 'item_seq'")
+201500939
+(1062, "Duplicate entry '59330' for key 'item_seq'")
+201500950
+(1062, "Duplicate entry '76152' for key 'item_seq'")
+201500956
+201500970
+(1062, "Duplicate entry '79351' for key 'item_seq'")
+201500978
+201501046
+201501047
+201501048
+201501051
+201501056
+201501057
+201501071
+201501115
+201501120
+201501271
+201501273
+201501278
+201501405
+(1062, "Duplicate entry '75573' for key 'item_seq'")
+201501414
+201501438
+(1062, "Duplicate entry '61075' for key 'item_seq'")
+201501443
+(1062, "Duplicate entry '9063' for key 'item_seq'")
+201501484
+201501485
+201501486
+201501487
+201501492
+201501493
+201501541
+201501542
+201501548
+201501650
+201501651
+201501678
+201501679
+201501714
+201501724
+201501728
+(1062, "Duplicate entry '71585' for key 'item_seq'")
+201501774
+201501851
+201501923
+201501973
+201501974
+201502219
+(1062, "Duplicate entry '46576' for key 'item_seq'")
+201502262
+201502263
+201502268
+201502274
+201502292
+201502313
+201502314
+201502342
+201502350
+(1062, "Duplicate entry '14611' for key 'item_seq'")
+201502375
+(1062, "Duplicate entry '48387' for key 'item_seq'")
+201502377
+201502379
+(1062, "Duplicate entry '58277' for key 'item_seq'")
+201502411
+(1062, "Duplicate entry '11504' for key 'item_seq'")
+201502417
+201502454
+201502456
+(1062, "Duplicate entry '54387' for key 'item_seq'")
+201502464
+201502467
+201502468
+201502469
+201502472
+201502493
+(1062, "Duplicate entry '77640' for key 'item_seq'")
+201502556
+201502566
+201502567
+201502571
+201502572
+201502573
+201502601
+201502602
+201502603
+201502604
+201502605
+201502620
+201502621
+201502685
+201502686
+201502687
+201502717
+201502758
+201502796
+201502799
+201502874
+201502948
+201502949
+201502982
+201502986
+201502987
+201503017
+201503025
+201503026
+201503027
+201503028
+201503029
+201503030
+201503032
+201503037
+201503038
+201503039
+201503040
+201503041
+201503049
+201503050
+201503051
+201503052
+201503145
+201503147
+201503164
+201503166
+201503196
+(1062, "Duplicate entry '3705' for key 'item_seq'")
+201503208
+(1062, "Duplicate entry '60936' for key 'item_seq'")
+201503210
+201503271
+201503272
+201503273
+201503320
+201503335
+201503336
+201503468
+201503469
+201503474
+201503482
+201503484
+201503486
+201503487
+201503488
+201503498
+(1062, "Duplicate entry '43693' for key 'item_seq'")
+201503499
+201503500
+201503501
+201503506
+201503517
+201503520
+(1062, "Duplicate entry '15214' for key 'item_seq'")
+201503532
+(1062, "Duplicate entry '50466' for key 'item_seq'")
+201503571
+201503630
+201503631
+201503632
+201503635
+201503682
+(1062, "Duplicate entry '51706' for key 'item_seq'")
+201503689
+201503760
+201503764
+201503768
+201503842
+201503909
+(1062, "Duplicate entry '12064' for key 'item_seq'")
+201503922
+201503927
+201504059
+201504062
+201504095
+201504096
+201504097
+201504098
+201504135
+201504136
+201504137
+201504138
+201504150
+201504151
+201504182
+201504186
+201504200
+201504201
+201504226
+201504248
+(1062, "Duplicate entry '51116' for key 'item_seq'")
+201504250
+201504257
+201504274
+201504347
+201504638
+(1062, "Duplicate entry '67139' for key 'item_seq'")
+201504720
+(1062, "Duplicate entry '20416' for key 'item_seq'")
+201504729
+201504769
+201504770
+201504771
+201504772
+201504773
+201504774
+201504775
+201504776
+201504789
+(1062, "Duplicate entry '81582' for key 'item_seq'")
+201504893
+(1062, "Duplicate entry '69064' for key 'item_seq'")
+201504895
+201504917
+'NoneType' object is not subscriptable
+201504988
+201505004
+201505008
+201505062
+(1062, "Duplicate entry '54408' for key 'item_seq'")
+201505088
+201505130
+201505151
+201505192
+201505196
+201505197
+201505198
+201505199
+201505216
+(1062, "Duplicate entry '15243' for key 'item_seq'")
+201505259
+201505521
+(1062, "Duplicate entry '13220' for key 'item_seq'")
+201505607
+201505621
+(1062, "Duplicate entry '57649' for key 'item_seq'")
+201505737
+(1062, "Duplicate entry '76176' for key 'item_seq'")
+201505796
+201505797
+201505853
+201505881
+(1062, "Duplicate entry '71197' for key 'item_seq'")
+201505882
+(1062, "Duplicate entry '72143' for key 'item_seq'")
+201505883
+(1062, "Duplicate entry '72144' for key 'item_seq'")
+201505903
+201505918
+201505923
+201505935
+201505959
+(1062, "Duplicate entry '73970' for key 'item_seq'")
+201506003
+201506027
+201506028
+201506097
+201506121
+(1062, "Duplicate entry '13967' for key 'item_seq'")
+201506136
+201506144
+201506179
+201506190
+201506192
+201506388
+201506402
+(1062, "Duplicate entry '15226' for key 'item_seq'")
+201506496
+201506534
+201506538
+201506540
+201506541
+201506623
+201506624
+201506634
+201506635
+201506636
+201506653
+201506654
+201506664
+201506665
+201506666
+201506668
+201506669
+201506685
+201506686
+201506736
+201506737
+201506743
+201506744
+201506765
+(1062, "Duplicate entry '78665' for key 'item_seq'")
+201506789
+201506817
+201506818
+201506819
+201506820
+201506821
+201506822
+201506832
+201506833
+201506839
+201506846
+201506847
+201506865
+201506866
+201506867
+201506873
+201506874
+201506890
+201506891
+201506894
+201507057
+201507059
+201507070
+201507071
+201507072
+201507074
+201507075
+201507090
+201507099
+201507122
+201507219
+201507252
+(1062, "Duplicate entry '20295' for key 'item_seq'")
+201507270
+201507272
+201507290
+201507291
+201507323
+201507362
+201507364
+201507370
+201507371
+201507408
+201507409
+201507410
+201507411
+201507423
+'NoneType' object is not subscriptable
+201507426
+201507440
+201507441
+201507464
+201507465
+201507471
+201507477
+201507478
+201507501
+201507502
+201507504
+201507536
+201507554
+201507644
+201507645
+201507681
+201507691
+201507692
+201507709
+201507710
+201507716
+201507736
+201507741
+201507775
+201507785
+201507786
+201507815
+201507818
+201507831
+201507839
+201507840
+201507846
+201507892
+201507893
+201507941
+201507947
+201507948
+201507979
+201507980
+201507981
+201507988
+(1062, "Duplicate entry '12807' for key 'item_seq'")
+201508003
+201508004
+201508007
+201508008
+201508018
+201508019
+201508039
+(1062, "Duplicate entry '28662' for key 'item_seq'")
+201508045
+201508116
+201508122
+201508158
+201508187
+201508280
+201508299
+(1062, "Duplicate entry '77661' for key 'item_seq'")
+201508308
+201508343
+201508347
+201508351
+201508378
+201508382
+201508404
+201508405
+201508409
+201508410
+201508411
+201508422
+201508423
+201508426
+201508428
+201508441
+201508452
+201508461
+201508476
+201508477
+201508497
+201508499
+201508505
+201508509
+201508511
+201508512
+201508531
+201508532
+201600081
+(1062, "Duplicate entry '54404' for key 'item_seq'")
+201600190
+201600191
+201600209
+201600210
+201600243
+(1062, "Duplicate entry '22050' for key 'item_seq'")
+201600250
+201600278
+201600298
+201600316
+201600317
+201600318
+201600320
+201600339
+201600340
+201600366
+(1062, "Duplicate entry '62299' for key 'item_seq'")
+201600385
+201600386
+201600387
+201600388
+201600389
+201600390
+201600438
+'NoneType' object is not subscriptable
+201600453
+201600487
+201600488
+201600507
+201600516
+(1062, "Duplicate entry '9049' for key 'item_seq'")
+201600519
+201600613
+201600614
+201600615
+201600623
+201600679
+201600708
+201600709
+201600710
+201600711
+201600712
+201600713
+201600714
+201600715
+201600716
+201600717
+201600730
+201600759
+201600760
+201600801
+201600803
+201600804
+201600805
+201600806
+201600848
+201600849
+201600871
+201600872
+201600873
+201600875
+201600889
+201600893
+(1062, "Duplicate entry '75550' for key 'item_seq'")
+201600897
+201600962
+201600979
+201600986
+201601111
+201601112
+201601127
+201601149
+201601165
+201601168
+(1062, "Duplicate entry '17354' for key 'item_seq'")
+201601242
+201601247
+201601452
+201601492
+201601493
+201601501
+201601534
+(1062, "Duplicate entry '14532' for key 'item_seq'")
+201601546
+201601554
+201601595
+201601608
+201601609
+201601663
+201601692
+201601693
+201601739
+(1062, "Duplicate entry '76196' for key 'item_seq'")
+201601760
+201601785
+201601786
+201601898
+201601899
+201601916
+201602080
+(1062, "Duplicate entry '70626' for key 'item_seq'")
+201602096
+(1062, "Duplicate entry '36320' for key 'item_seq'")
+201602103
+201602109
+201602110
+201602111
+201602112
+201602113
+201602114
+201602142
+201602152
+201602155
+201602158
+201602179
+201602221
+201602222
+201602235
+(1062, "Duplicate entry '49924' for key 'item_seq'")
+201602266
+201602267
+201602287
+201602341
+(1062, "Duplicate entry '51632' for key 'item_seq'")
+201602342
+(1062, "Duplicate entry '2305' for key 'item_seq'")
+201602350
+(1062, "Duplicate entry '55989' for key 'item_seq'")
+201602387
+201602388
+201602399
+201602416
+201602436
+201602477
+201602478
+201602479
+201602491
+201602492
+201602493
+201602498
+201602499
+201602500
+(1062, "Duplicate entry '26162' for key 'item_seq'")
+201602541
+201602554
+201602555
+201602600
+201602601
+201602602
+201602619
+201602640
+(1062, "Duplicate entry '30283' for key 'item_seq'")
+201602683
+201602732
+201602734
+201602760
+201602774
+201602777
+201602778
+201602786
+201602805
+201602892
+201602893
+201602894
+201602904
+201602905
+201602913
+201602936
+201602937
+201602975
+201602980
+201602981
+201602987
+201602988
+201602989
+201603000
+201603022
+201603023
+201603053
+201603054
+201603061
+201603062
+201603063
+201603078
+201603079
+201603090
+201603091
+201603098
+201603099
+201603100
+201603103
+(1062, "Duplicate entry '49943' for key 'item_seq'")
+201603107
+201603122
+201603123
+201603124
+201603137
+(1062, "Duplicate entry '26941' for key 'item_seq'")
+201603148
+201603150
+201603151
+201603158
+201603174
+201603175
+201603224
+(1062, "Duplicate entry '82021' for key 'item_seq'")
+201603226
+201603227
+201603228
+201603229
+201603230
+201603231
+201603241
+201603330
+201603360
+201603372
+(1062, "Duplicate entry '23132' for key 'item_seq'")
+201603373
+(1062, "Duplicate entry '23131' for key 'item_seq'")
+201603374
+(1062, "Duplicate entry '23133' for key 'item_seq'")
+201603430
+201603431
+201603434
+201603440
+201603494
+201603495
+201603496
+201603501
+(1062, "Duplicate entry '60424' for key 'item_seq'")
+201603535
+(1062, "Duplicate entry '18217' for key 'item_seq'")
+201603545
+201603546
+201603551
+201603561
+(1062, "Duplicate entry '47275' for key 'item_seq'")
+201603563
+201603564
+201603565
+201603572
+201603584
+201603599
+(1062, "Duplicate entry '52354' for key 'item_seq'")
+201603652
+201603653
+201603669
+201603670
+201603677
+201603678
+201603695
+201603696
+201603698
+201603699
+201603745
+201603750
+201603753
+201603769
+201603797
+201603798
+201603802
+201603838
+201603851
+201603859
+201603860
+201603872
+201603873
+201603876
+201603888
+201603905
+(1062, "Duplicate entry '47281' for key 'item_seq'")
+201603926
+201603932
+201603933
+201603934
+201603935
+201603936
+201603937
+201603949
+201603950
+201603961
+(1062, "Duplicate entry '13483' for key 'item_seq'")
+201603965
+201603992
+201604007
+201604012
+201604023
+201604024
+201604047
+201604057
+'NoneType' object is not subscriptable
+201604083
+201604084
+201604088
+201604089
+201604097
+201604105
+201604106
+201604114
+201604119
+201604126
+201604127
+201604128
+201604129
+201604168
+201604169
+201604170
+201604198
+201604211
+(1062, "Duplicate entry '60428' for key 'item_seq'")
+201604252
+201604253
+201604269
+201604270
+201604282
+201604283
+201604284
+201604309
+201604346
+201604347
+201604349
+201604352
+201604353
+201604371
+(1062, "Duplicate entry '61095' for key 'item_seq'")
+201604383
+201604394
+201604395
+201604396
+201604397
+201604398
+201604399
+201604400
+201604410
+(1062, "Duplicate entry '17827' for key 'item_seq'")
+201604434
+201604475
+201604529
+(1062, "Duplicate entry '7575' for key 'item_seq'")
+201604556
+201604557
+201604558
+201604568
+201604609
+201604621
+201604622
+201604623
+201604625
+201604626
+201604631
+201604632
+201604744
+201604825
+201604866
+201604867
+201604907
+201604923
+(1062, "Duplicate entry '42776' for key 'item_seq'")
+201604959
+201604998
+(1062, "Duplicate entry '24453' for key 'item_seq'")
+201605017
+'NoneType' object is not subscriptable
+201605045
+201605046
+201605047
+201605118
+'NoneType' object is not subscriptable
+201605135
+201605136
+201605137
+201605138
+201605139
+201605140
+201605141
+201605143
+201605158
+201605161
+201605162
+201605163
+201605171
+201605172
+201605173
+201605174
+201605175
+201605176
+201605177
+201605178
+201605179
+201605325
+(1062, "Duplicate entry '50480' for key 'item_seq'")
+201605349
+201605395
+(1062, "Duplicate entry '42777' for key 'item_seq'")
+201605407
+(1062, "Duplicate entry '67145' for key 'item_seq'")
+201605439
+(1062, "Duplicate entry '48403' for key 'item_seq'")
+201605524
+201605528
+201605529
+201605530
+201605531
+201605615
+201605617
+201605650
+201605732
+(1062, "Duplicate entry '38439' for key 'item_seq'")
+201605990
+201606005
+201606080
+201606213
+201606231
+(1062, "Duplicate entry '78661' for key 'item_seq'")
+201606240
+201606241
+201606252
+201606253
+201606317
+201606331
+201606376
+201606403
+201606463
+(1062, "Duplicate entry '60954' for key 'item_seq'")
+201606488
+(1062, "Duplicate entry '80985' for key 'item_seq'")
+201606490
+(1062, "Duplicate entry '631' for key 'item_seq'")
+201606511
+201606512
+201606513
+201606534
+(1062, "Duplicate entry '13425' for key 'item_seq'")
+201606602
+201606603
+201606695
+201606708
+201606764
+(1062, "Duplicate entry '21179' for key 'item_seq'")
+201606765
+(1062, "Duplicate entry '21180' for key 'item_seq'")
+201606788
+(1062, "Duplicate entry '54443' for key 'item_seq'")
+201606819
+201606850
+201606961
+201607110
+201607123
+201607131
+(1062, "Duplicate entry '8626' for key 'item_seq'")
+201607191
+201607192
+201607193
+201607284
+201607285
+201607376
+201607380
+(1062, "Duplicate entry '7089' for key 'item_seq'")
+201607420
+(1062, "Duplicate entry '71888' for key 'item_seq'")
+201700098
+(1062, "Duplicate entry '26172' for key 'item_seq'")
+201700149
+201700160
+201700258
+201700266
+201700267
+201700280
+201700290
+201700341
+201700395
+201700396
+201700400
+201700402
+201700406
+201700418
+(1062, "Duplicate entry '18295' for key 'item_seq'")
+201700456
+201700457
+201700462
+(1062, "Duplicate entry '43715' for key 'item_seq'")
+201700478
+(1062, "Duplicate entry '60464' for key 'item_seq'")
+201700498
+201700539
+(1062, "Duplicate entry '636' for key 'item_seq'")
+201700540
+201700541
+201700551
+201700615
+201700624
+(1062, "Duplicate entry '69101' for key 'item_seq'")
+201700666
+201700718
+201700895
+201700947
+201701038
+201701047
+201701081
+201701082
+201701087
+201701088
+201701098
+201701099
+201701105
+201701106
+201701115
+201701116
+201701157
+201701322
+201701323
+201701432
+201701433
+201701436
+201701437
+201701438
+201701456
+(1062, "Duplicate entry '41060' for key 'item_seq'")
+201701458
+(1062, "Duplicate entry '41061' for key 'item_seq'")
+201701471
+(1062, "Duplicate entry '45701' for key 'item_seq'")
+201701479
+(1062, "Duplicate entry '68905' for key 'item_seq'")
+201701480
+201701513
+201701519
+201701528
+201701536
+201701540
+201701541
+201701576
+201701586
+201701587
+201701602
+(1062, "Duplicate entry '74636' for key 'item_seq'")
+201701737
+201701756
+201701842
+201701843
+201702103
+201702186
+201702216
+201702247
+201702248
+201702253
+(1062, "Duplicate entry '54454' for key 'item_seq'")
+201702267
+'NoneType' object is not subscriptable
+201702280
+(1062, "Duplicate entry '49113' for key 'item_seq'")
+201702281
+201702284
+201702285
+201702290
+(1062, "Duplicate entry '60270' for key 'item_seq'")
+201702295
+201702298
+(1062, "Duplicate entry '19621' for key 'item_seq'")
+201702323
+201702397
+201702398
+201702399
+201702400
+201702401
+201702402
+201702403
+201702404
+201702405
+201702406
+201702407
+201702408
+201702409
+201702410
+201702411
+201702412
+201702418
+201702430
+201702431
+201702432
+201702433
+201702508
+201702557
+201702566
+201702587
+201702641
+201703118
+201703348
+201703934
+201703935
+201703948
+201704021
+201704022
+201704494
+201704495
+201704542
+(1062, "Duplicate entry '49973' for key 'item_seq'")
+201704556
+201704557
+201704726
+201704727
+201704753
+(1062, "Duplicate entry '50487' for key 'item_seq'")
+201704761
+201704762
+201704776
+201704777
+201704778
+201704785
+201704843
+(1062, "Duplicate entry '14004' for key 'item_seq'")
+201704878
+201704879
+201705042
+201705043
+201705044
+201705157
+201705174
+201705208
+201705253
+(1062, "Duplicate entry '2319' for key 'item_seq'")
+201705259
+201705673
+201705674
+201705676
+201705681
+201705683
+201705684
+201705685
+201705686
+201705687
+201705688
+201705689
+201705701
+201705702
+201705708
+201705743
+201705756
+201705757
+201705760
+201705761
+201705764
+201705784
+201705788
+201705789
+201705799
+201705805
+201705806
+201705807
+201705808
+201705809
+201705810
+201705811
+201705812
+201706148
+201706149
+201706237
+201706266
+201706267
+201706291
+201706292
+201706343
+201706350
+201706354
+201706355
+(1062, "Duplicate entry '67156' for key 'item_seq'")
+201706371
+201706384
+201706389
+201706394
+201706395
+201706398
+201706417
+201706428
+201706429
+201706448
+201706471
+201706472
+201706473
+201706474
+201706514
+201706519
+201706530
+201706549
+201706550
+201706551
+201706553
+201706554
+201706555
+201706556
+201706557
+201706558
+201706559
+201706560
+201706562
+201706563
+201706564
+201706565
+201706566
+201706567
+201706569
+201706570
+201706577
+201706578
+201706579
+201706583
+201706584
+201706586
+201706587
+201706588
+201706605
+201706608
+201706634
+201706635
+201706641
+201706643
+201706648
+201706674
+(1062, "Duplicate entry '51679' for key 'item_seq'")
+201706680
+201706748
+201706791
+201706821
+201706823
+201706843
+201706844
+201706845
+201706864
+201706886
+(1062, "Duplicate entry '46613' for key 'item_seq'")
+201706888
+(1062, "Duplicate entry '56092' for key 'item_seq'")
+201706891
+201706892
+201706893
+201706894
+201706895
+201706896
+201706897
+201706898
+201706900
+201706903
+201706904
+201706909
+201707054
+201707055
+201707056
+201707107
+201707108
+201707153
+201707157
+201707158
+201707227
+201707240
+201707241
+201707242
+201707327
+201707355
+201707356
+201707445
+201707452
+201707492
+201707493
+201707495
+(1062, "Duplicate entry '67160' for key 'item_seq'")
+201707497
+(1062, "Duplicate entry '9278' for key 'item_seq'")
+201707520
+201707544
+201707545
+(1062, "Duplicate entry '5331' for key 'item_seq'")
+201707572
+'NoneType' object is not subscriptable
+201707607
+201707616
+201707618
+201707620
+201707631
+201707649
+201707658
+201707659
+201707660
+201707661
+(1062, "Duplicate entry '3827' for key 'item_seq'")
+201707668
+201707719
+201707837
+201707854
+201707855
+201707914
+(1062, "Duplicate entry '23139' for key 'item_seq'")
+201707939
+201707965
+(1062, "Duplicate entry '13439' for key 'item_seq'")
+201707970
+201708030
+201708040
+201708041
+201708042
+201708044
+201708069
+201708085
+201708088
+201708125
+201708127
+201708131
+201708138
+201708187
+201708196
+(1062, "Duplicate entry '75615' for key 'item_seq'")
+201708200
+201708204
+201708219
+201708237
+201708238
+201708261
+201708276
+201708279
+'NoneType' object is not subscriptable
+201708280
+201708281
+201708316
+201708317
+201708318
+201708319
+201708320
+201708321
+201708331
+201708334
+(1062, "Duplicate entry '2793' for key 'item_seq'")
+201708362
+201708377
+(1062, "Duplicate entry '43218' for key 'item_seq'")
+201708384
+(1062, "Duplicate entry '45705' for key 'item_seq'")
+201708389
+(1062, "Duplicate entry '30324' for key 'item_seq'")
+201708416
+201708428
+201708437
+201708448
+201708451
+201708459
+201708465
+201708466
+201708476
+201708479
+201708480
+201708481
+(1062, "Duplicate entry '75623' for key 'item_seq'")
+201708492
+201708493
+201708499
+201708530
+201708531
+201708545
+201708552
+201708560
+201708561
+201708591
+201708592
+201708593
+201708620
+(1062, "Duplicate entry '79425' for key 'item_seq'")
+201708630
+(1062, "Duplicate entry '72247' for key 'item_seq'")
+201708635
+201708638
+201708639
+201708641
+201800046
+201800047
+201800048
+(1062, "Duplicate entry '58690' for key 'item_seq'")
+201800071
+(1062, "Duplicate entry '50615' for key 'item_seq'")
+201800100
+201800101
+201800102
+201800108
+201800179
+(1062, "Duplicate entry '17851' for key 'item_seq'")
+201800200
+201800218
+201800219
+201800233
+(1062, "Duplicate entry '30399' for key 'item_seq'")
+201800234
+201800265
+(1062, "Duplicate entry '68283' for key 'item_seq'")
+201800297
+201800321
+201800335
+201800336
+201800467
+201800468
+201800572
+201800574
+201800575
+201800591
+201800623
+201800624
+201800627
+201800628
+201800668
+201800682
+201800683
+201800684
+201800718
+(1062, "Duplicate entry '17385' for key 'item_seq'")
+201800720
+201800721
+201800743
+201800748
+201800749
+201800750
+201800751
+201800752
+201800753
+201800761
+201800764
+201800785
+201800812
+201800819
+201800820
+201800846
+201800850
+(1062, "Duplicate entry '50627' for key 'item_seq'")
+201800860
+201800904
+201800905
+201800906
+201800907
+201800908
+201800934
+201800939
+201800963
+(1062, "Duplicate entry '21892' for key 'item_seq'")
+201800965
+201801001
+201801003
+201801012
+201801013
+201801014
+201801015
+201801087
+201801147
+(1062, "Duplicate entry '55131' for key 'item_seq'")
+201801152
+201801153
+201801194
+201801195
+201801197
+201801213
+201801251
+201801324
+201801325
+201801328
+(1062, "Duplicate entry '12312' for key 'item_seq'")
+201801331
+201801332
+201801336
+201801338
+201801339
+201801340
+201801346
+201801354
+201801367
+201801368
+201801371
+201801372
+201801381
+201801391
+201801394
+201801404
+201801405
+201801406
+201801415
+201801418
+201801422
+201801427
+201801428
+201801434
+201801435
+201801444
+201801456
+201801457
+201801459
+(1062, "Duplicate entry '26933' for key 'item_seq'")
+201801462
+201801463
+201801489
+201801496
+201801559
+201801579
+201801687
+201801734
+201801763
+(1062, "Duplicate entry '69132' for key 'item_seq'")
+201801827
+201801828
+201801834
+201801835
+201801860
+201801864
+201801867
+201801975
+201801976
+201801977
+201801978
+201801979
+201801980
+201801981
+201801982
+201801983
+201801987
+201801988
+201801989
+201801990
+201801991
+201801992
+201801993
+201801994
+201801995
+201801996
+201801997
+201801998
+201802022
+201802035
+201802049
+201802133
+201802150
+201802182
+201802184
+(1062, "Duplicate entry '77755' for key 'item_seq'")
+201802204
+201802209
+201802220
+201802226
+201802227
+201802228
+201802229
+201802230
+201802231
+201802235
+201802236
+201802237
+201802242
+201802250
+201802257
+201802265
+201802271
+201802280
+201802281
+201802296
+201802298
+201802300
+201802323
+201802378
+201802402
+(1062, "Duplicate entry '43107' for key 'item_seq'")
+201802448
+201802449
+201802450
+201802463
+201802472
+(1062, "Duplicate entry '14026' for key 'item_seq'")
+201802473
+(1062, "Duplicate entry '49984' for key 'item_seq'")
+201802474
+(1062, "Duplicate entry '45368' for key 'item_seq'")
+201802477
+201802478
+201802479
+201802480
+201802481
+201802482
+201802483
+201802484
+201802485
+201802486
+201802487
+201802488
+201802489
+201802490
+201802491
+201802492
+201802493
+201802494
+201802495
+201802496
+201802497
+201802498
+201802499
+201802500
+201802501
+(1062, "Duplicate entry '19556' for key 'item_seq'")
+201802505
+201802529
+201802530
+201802558
+201802559
+201802560
+201802561
+201802562
+201802563
+201802583
+201802584
+201802585
+201802586
+201802587
+201802588
+201802618
+201802641
+201802670
+201802697
+201802737
+201802751
+201802756
+201802760
+201802815
+201802859
+201802861
+201802894
+201802905
+201802906
+201802919
+201802922
+201802934
+(1062, "Duplicate entry '41682' for key 'item_seq'")
+201802935
+(1062, "Duplicate entry '41683' for key 'item_seq'")
+201802955
+201802956
+201802982
+201802989
+201802990
+201802991
+201802998
+201803003
+201803029
+201803030
+201803031
+201803042
+201803083
+201803084
+201803088
+201803116
+201803139
+201803140
+201803141
+201803155
+201803159
+(1062, "Duplicate entry '19563' for key 'item_seq'")
+201803160
+201803166
+201803171
+201803186
+201803259
+201803260
+201803310
+201803322
+201803323
+201803324
+201803325
+201803326
+201803327
+201803328
+201803329
+201803330
+201803331
+201803332
+201803333
+201803334
+201803335
+201803336
+201803337
+201803338
+201803343
+201803351
+201803352
+201803353
+201803354
+201803355
+201803356
+201803379
+201803380
+201803443
+(1062, "Duplicate entry '7078' for key 'item_seq'")
+201803468
+'NoneType' object is not subscriptable
+201803489
+201803500
+201803501
+201803502
+201803503
+201803511
+201803512
+201803516
+201803540
+201803542
+201803558
+201803570
+201803571
+201803605
+201803606
+201803634
+(1062, "Duplicate entry '7592' for key 'item_seq'")
+201803678
+201803679
+201803698
+201803700
+201803701
+201803732
+(1062, "Duplicate entry '60289' for key 'item_seq'")
+201803758
+201803759
+201803799
+201803806
+201803826
+201803827
+201803861
+(1062, "Duplicate entry '77767' for key 'item_seq'")
+201803868
+201803869
+201803880
+201803887
+201803888
+201803889
+201803890
+201803943
+(1062, "Duplicate entry '54565' for key 'item_seq'")
+201803953
+201803954
+201803975
+201803980
+201803987
+201803988
+201803989
+201804095
+201804100
+201804101
+201804104
+201804105
+201804136
+201804137
+201804160
+(1062, "Duplicate entry '54566' for key 'item_seq'")
+201804167
+201804168
+201804176
+201804233
+201804263
+201804268
+201804271
+201804282
+201804290
+201804291
+201804299
+201804300
+201804314
+201804315
+201804317
+201804326
+201804329
+201804330
+201804331
+201804346
+201804348
+201804358
+201804425
+201804479
+201804538
+201804539
+201804540
+201804541
+201804542
+201804543
+201804544
+201804545
+201804546
+201804547
+201804548
+201804549
+201804553
+'NoneType' object is not subscriptable
+201804562
+201804589
+201804669
+201804680
+201804681
+201804682
+201804702
+201804719
+201804839
+(1062, "Duplicate entry '30842' for key 'item_seq'")
+201804846
+201804847
+201804848
+201804849
+201804850
+201804852
+201804853
+201804854
+201804855
+201804861
+201804867
+201804868
+201804875
+201804893
+201804918
+201804928
+201805064
+201805066
+201805067
+201805068
+201805113
+201805114
+201805118
+201805131
+201805132
+201805145
+201805146
+201805174
+201805183
+201805195
+201805197
+201805198
+201805211
+201805226
+201805227
+201805228
+201805243
+201805244
+201805245
+201805247
+201805248
+201805261
+201805262
+201805263
+201805264
+201805265
+201805266
+201805279
+201805280
+201805281
+201805283
+201805284
+201805285
+201805286
+201805287
+201805288
+201805293
+201805294
+201805295
+201805297
+201805300
+201805301
+201805304
+201805305
+201805306
+201805307
+201805308
+201805309
+201805310
+201805337
+201805338
+201805339
+201805340
+201805341
+201805342
+201805353
+201805354
+201805362
+(1062, "Duplicate entry '24172' for key 'item_seq'")
+201805363
+201805364
+201805365
+201805370
+201805375
+(1062, "Duplicate entry '667' for key 'item_seq'")
+201805389
+201805390
+201900025
+201900030
+201900031
+201900085
+201900086
+201900102
+201900127
+201900128
+201900207
+201900220
+201900224
+201900242
+201900243
+201900258
+201900267
+201900269
+201900270
+201900295
+201900296
+201900305
+201900306
+201900325
+201900603
+201900623
+201900627
+201900628
+201900630
+201900631
+201900656
+201900665
+201900666
+201900681
+(1062, "Duplicate entry '44399' for key 'item_seq'")
+201900690
+201900706
+201900721
+201900767
+201900768
+201900774
+201900782
+201900836
+201900837
+201900841
+201900850
+201900879
+201900899
+(1062, "Duplicate entry '18336' for key 'item_seq'")
+201900900
+201900915
+201900921
+201900922
+201901023
+201901111
+201901112
+201901114
+(1062, "Duplicate entry '59370' for key 'item_seq'")
+201901124
+(1062, "Duplicate entry '2365' for key 'item_seq'")
+201901142
+201901143
+201901162
+201901169
+201901170
+201901191
+201901192
+201901242
+201901243
+201901244
+201901245
+201901246
+201901247
+201901256
+'NoneType' object is not subscriptable
+201901262
+201901263
+201901264
+201901265
+201901271
+201901301
+(1062, "Duplicate entry '74651' for key 'item_seq'")
+201901302
+(1062, "Duplicate entry '74650' for key 'item_seq'")
+201901323
+201901324
+201901345
+201901360
+201901361
+201901366
+201901367
+201901400
+201901439
+201901521
+201901523
+201901551
+201901613
+201901614
+201901615
+201901631
+201901634
+201901636
+201901637
+201901638
+201901639
+201901656
+(1062, "Duplicate entry '61164' for key 'item_seq'")
+201901657
+201901667
+201901669
+(1062, "Duplicate entry '50666' for key 'item_seq'")
+201901673
+201901677
+201901683
+201901689
+201901720
+201901722
+(1062, "Duplicate entry '59372' for key 'item_seq'")
+201901726
+201901736
+201901746
+201901753
+201901765
+201901802
+201901803
+201901815
+201901816
+201901823
+201901835
+201901841
+201901885
+201901887
+201901888
+201901894
+201901906
+201901916
+201901917
+201901921
+201901928
+201901930
+201901937
+201901941
+201901949
+(1062, "Duplicate entry '81628' for key 'item_seq'")
+201901976
+201902020
+201902021
+201902022
+201902044
+201902045
+201902080
+201902113
+201902114
+201902121
+201902122
+201902142
+201902148
+201902149
+(1062, "Duplicate entry '9326' for key 'item_seq'")
+201902173
+201902176
+201902177
+201902178
+201902183
+201902217
+201902218
+201902230
+201902231
+201902238
+201902248
+201902286
+201902295
+201902300
+201902301
+201902302
+201902303
+201902320
+201902321
+201902333
+201902334
+201902335
+201902341
+201902348
+201902349
+201902387
+201902391
+201902401
+201902422
+201902423
+201902444
+201902446
+201902492
+201902494
+201902497
+201902498
+201902540
+(1062, "Duplicate entry '12343' for key 'item_seq'")
+201902559
+201902560
+201902568
+201902569
+201902579
+(1062, "Duplicate entry '14567' for key 'item_seq'")
+201902586
+201902599
+201902600
+201902601
+201902627
+(1062, "Duplicate entry '11519' for key 'item_seq'")
+201902650
+201902656
+201902691
+201902694
+201902705
+201902708
+201902714
+201902715
+201902716
+201902717
+201902733
+201902734
+201902751
+201902753
+201902758
+201902760
+201902778
+201902779
+201902780
+201902781
+201902785
+201902799
+201902806
+201902811
+201902813
+201902822
+(1062, "Duplicate entry '61182' for key 'item_seq'")
+201902823
+201902825
+201902826
+201902827
+201902828
+201902830
+201902831
+201902843
+201902844
+201902855
+(1062, "Duplicate entry '48420' for key 'item_seq'")
+201902875
+(1062, "Duplicate entry '2371' for key 'item_seq'")
+201902894
+201902896
+201902903
+201902904
+201902905
+201902907
+(1062, "Duplicate entry '12349' for key 'item_seq'")
+201902909
+201902913
+201902916
+(1062, "Duplicate entry '39959' for key 'item_seq'")
+201902957
+201902989
+201902990
+201902991
+201903001
+201903009
+201903012
+201903043
+(1062, "Duplicate entry '11405' for key 'item_seq'")
+201903060
+201903061
+201903062
+201903095
+201903096
+201903101
+201903113
+201903129
+201903130
+201903145
+201903146
+201903157
+201903158
+201903159
+201903163
+201903181
+201903182
+201903190
+201903191
+201903202
+(1062, "Duplicate entry '3497' for key 'item_seq'")
+201903219
+(1062, "Duplicate entry '35174' for key 'item_seq'")
+201903223
+201903268
+201903269
+201903284
+201903285
+(1062, "Duplicate entry '28705' for key 'item_seq'")
+201903308
+201903309
+201903326
+201903327
+201903335
+201903343
+201903356
+201903389
+201903390
+201903397
+201903398
+201903399
+201903407
+(1062, "Duplicate entry '61194' for key 'item_seq'")
+201903440
+201903445
+(1062, "Duplicate entry '6560' for key 'item_seq'")
+201903452
+201903456
+201903457
+201903460
+201903461
+201903542
+201903543
+201903544
+201903548
+201903549
+201903550
+201903552
+201903553
+201903554
+201903559
+201903560
+201903564
+201903574
+201903590
+(1062, "Duplicate entry '3499' for key 'item_seq'")
+201903599
+201903602
+201903603
+201903605
+201903632
+(1062, "Duplicate entry '9340' for key 'item_seq'")
+201903642
+201903643
+201903714
+201903715
+201903716
+201903717
+201903725
+201903743
+201903752
+201903753
+201903758
+(1062, "Duplicate entry '3504' for key 'item_seq'")
+201903761
+201903762
+201903766
+201903774
+201903788
+(1062, "Duplicate entry '673' for key 'item_seq'")
+201903805
+(1062, "Duplicate entry '36358' for key 'item_seq'")
+201903824
+201903843
+201903859
+201904189
+201904190
+201904191
+201904229
+201904230
+201904245
+201904246
+201904266
+201904304
+201904309
+201904319
+(1062, "Duplicate entry '3511' for key 'item_seq'")
+201904329
+201904330
+201904336
+201904386
+(1062, "Duplicate entry '61201' for key 'item_seq'")
+201904418
+201904428
+201904429
+201904431
+(1062, "Duplicate entry '70017' for key 'item_seq'")
+201904439
+201904440
+201904443
+201904444
+201904466
+201904521
+201904522
+201904569
+201904571
+201904649
+(1062, "Duplicate entry '62156' for key 'item_seq'")
+201904670
+(1062, "Duplicate entry '76284' for key 'item_seq'")
+201904674
+201904685
+(1062, "Duplicate entry '30876' for key 'item_seq'")
+201904691
+201904742
+201904775
+201904776
+201904788
+201905067
+201905068
+201905085
+201905236
+201905243
+201905244
+201905283
+201905284
+201905300
+(1062, "Duplicate entry '716' for key 'item_seq'")
+201905306
+201905330
+201905331
+201905342
+201905343
+201905348
+201905369
+201905388
+201905389
+201905390
+201905397
+201905398
+201905405
+201905406
+201905407
+201905408
+201905415
+201905416
+201905459
+201905468
+201905469
+201905535
+(1062, "Duplicate entry '33516' for key 'item_seq'")
+201905581
+201905582
+201905587
+201905588
+201905589
+201905593
+201905600
+(1062, "Duplicate entry '72294' for key 'item_seq'")
+201905633
+201905634
+201905637
+201905651
+201905654
+201905655
+201905666
+201905667
+201905671
+201905686
+201905790
+201905791
+201905800
+201905844
+(1062, "Duplicate entry '8665' for key 'item_seq'")
+201905857
+201905869
+201905875
+201905876
+201905896
+201905899
+201905905
+201905907
+(1062, "Duplicate entry '12375' for key 'item_seq'")
+201905908
+201905912
+201905913
+201905915
+201905916
+201905923
+201905938
+201905939
+201905940
+(1062, "Duplicate entry '30344' for key 'item_seq'")
+201905956
+201905957
+201905958
+201905977
+201905993
+201905995
+201905998
+201906070
+201906074
+201906086
+201906087
+201906111
+201906122
+201906123
+201906124
+201906154
+(1062, "Duplicate entry '772' for key 'item_seq'")
+201906155
+201906163
+(1062, "Duplicate entry '42716' for key 'item_seq'")
+201906174
+201906187
+201906188
+201906189
+201906194
+(1062, "Duplicate entry '70028' for key 'item_seq'")
+201906197
+201906198
+201906199
+201906201
+201906202
+201906217
+(1062, "Duplicate entry '72315' for key 'item_seq'")
+201906279
+201906283
+201906284
+201906285
+201906307
+201906308
+201906331
+201906332
+201906333
+201906334
+201906336
+201906343
+(1062, "Duplicate entry '52818' for key 'item_seq'")
+201906367
+201906392
+201906393
+201906396
+201906401
+201906402
+201906419
+201906420
+201906447
+201906448
+201906467
+201906469
+(1062, "Duplicate entry '72322' for key 'item_seq'")
+201906479
+201906503
+201906511
+201906512
+201906514
+201906515
+201906516
+201906555
+201906565
+201906566
+201906572
+(1062, "Duplicate entry '72325' for key 'item_seq'")
+201906585
+201906586
+201906602
+201906609
+201906610
+201906616
+201906633
+(1062, "Duplicate entry '44469' for key 'item_seq'")
+201906673
+201906687
+201906692
+201906693
+201906696
+201906697
+201906789
+201906790
+201906791
+201906864
+'NoneType' object is not subscriptable
+201906874
+201906875
+201906879
+201906880
+201906883
+201906884
+201906904
+201906915
+201906916
+201906918
+201906919
+201906921
+201906922
+201906923
+201906944
+201906945
+201906946
+201906947
+201906954
+201906955
+201906959
+201906960
+201906961
+201906965
+201906966
+201906967
+201906968
+201906969
+201906972
+(1062, "Duplicate entry '69782' for key 'item_seq'")
+201906973
+201906974
+201906976
+201906977
+201906978
+201906979
+201906980
+201906981
+201906982
+201906983
+201906984
+201906985
+201906986
+201906987
+201906988
+201906989
+201906990
+201906991
+201906992
+201906993
+201906994
+201906999
+(1062, "Duplicate entry '77823' for key 'item_seq'")
+201907000
+201907007
+201907008
+201907009
+201907012
+201907013
+201907015
+201907016
+201907026
+201907046
+201907047
+201907073
+201907076
+201907077
+201907078
+201907091
+201907092
+201907111
+(1062, "Duplicate entry '7673' for key 'item_seq'")
+201907130
+201907134
+201907135
+201907140
+201907158
+201907169
+201907197
+201907198
+201907204
+201907205
+201907207
+201907208
+201907246
+201907247
+201907248
+201907249
+201907250
+201907251
+201907252
+201907253
+201907254
+201907255
+201907256
+201907257
+201907258
+201907259
+201907260
+201907261
+201907262
+201907263
+201907269
+201907270
+201907284
+201907291
+201907316
+201907317
+201907337
+201907344
+201907345
+201907351
+201907352
+201907378
+(1062, "Duplicate entry '19588' for key 'item_seq'")
+201907392
+201907400
+201907428
+201907454
+201907455
+201907460
+(1062, "Duplicate entry '81009' for key 'item_seq'")
+201907469
+201907479
+201907480
+201907536
+201907537
+201907542
+201907561
+201907575
+201907588
+201907590
+(1062, "Duplicate entry '54601' for key 'item_seq'")
+201907667
+201907668
+201907669
+201907690
+(1062, "Duplicate entry '6627' for key 'item_seq'")
+201907692
+201907693
+201907723
+201907731
+201907732
+201907798
+201907800
+201907816
+201907818
+201907826
+201907831
+201907846
+201907847
+201907879
+201907881
+201907890
+201907891
+201907893
+201907894
+201907895
+201907896
+201907897
+201907914
+201907920
+201907921
+201907938
+201907939
+201907940
+201907961
+201907962
+201907968
+201908037
+201908060
+201908066
+201908086
+201908087
+201908093
+201908094
+201908100
+(1062, "Duplicate entry '17928' for key 'item_seq'")
+201908103
+201908114
+201908131
+201908144
+201908198
+201908205
+201908215
+201908216
+201908218
+201908249
+201908250
+201908262
+201908267
+201908289
+201908291
+201908292
+(1062, "Duplicate entry '66119' for key 'item_seq'")
+201908306
+201908379
+201908380
+201908383
+201908430
+201908435
+201908436
+201908477
+(1062, "Duplicate entry '28733' for key 'item_seq'")
+201908489
+201908514
+201908515
+201908527
+201908538
+201908539
+201908600
+(1062, "Duplicate entry '59963' for key 'item_seq'")
+201908638
+201908639
+201908693
+202000046
+202000082
+202000143
+202000148
+202000149
+202000181
+202000182
+202000203
+202000225
+202000226
+202000259
+202000260
+202000272
+202000273
+202000299
+(1062, "Duplicate entry '15854' for key 'item_seq'")
+202000314
+(1062, "Duplicate entry '72405' for key 'item_seq'")
+202000326
+202000332
+(1062, "Duplicate entry '15850' for key 'item_seq'")
+202000339
+202000348
+(1062, "Duplicate entry '41447' for key 'item_seq'")
+202000374
+202000390
+202000391
+202000399
+202000400
+202000401
+202000402
+202000403
+202000404
+202000409
+202000410
+202000411
+202000419
+202000420
+202000433
+202000434
+202000446
+202000447
+202000448
+202000498
+202000499
+202000518
+202000520
+202000574
+202000575
+202000582
+(1062, "Duplicate entry '66170' for key 'item_seq'")
+202000624
+202000708
+202000771
+202000772
+202000799
+202000804
+202000829
+202000830
+202000918
+202000961
+202000968
+202000969
+202000970
+202000971
+202000972
+202000973
+202001043
+(1062, "Duplicate entry '1126' for key 'item_seq'")
+202001105
+202001110
+202001158
+202001159
+202001160
+202001161
+202001162
+202001163
+202001164
+202001165
+202001166
+202001186
+202001194
+202001198
+202001199
+202001212
+202001213
+202001229
+202001230
+202001238
+202001244
+202001263
+202001274
+202001275
+202001276
+202001325
+202001377
+202001385
+(1062, "Duplicate entry '59969' for key 'item_seq'")
+202001387
+(1062, "Duplicate entry '47331' for key 'item_seq'")
+202001412
+202001413
+202001421
+(1062, "Duplicate entry '9168' for key 'item_seq'")
+202001448
+202001464
+202001518
+202001530
+(1062, "Duplicate entry '54619' for key 'item_seq'")
+202001615
+202001649
+(1062, "Duplicate entry '67540' for key 'item_seq'")
+202001659
+202001660
+202001690
+202001691
+'NoneType' object is not subscriptable
+202001699
+202001712
+202001726
+202001744
+202001745
+202001748
+202001791
+202001794
+202001795
+202001798
+(1062, "Duplicate entry '28808' for key 'item_seq'")
+202001803
+202001804
+202001814
+202001815
+202001823
+202001836
+202001837
+202001838
+202001839
+202001840
+202001841
+202001842
+202001843
+202001844
+202001845
+202001846
+202001847
+202001848
+202001849
+202001850
+202001851
+202001852
+202001853
+202001854
+202001855
+202001856
+202001857
+202001861
+202001884
+202001901
+202001909
+202001911
+202001928
+202001949
+202001961
+(1062, "Duplicate entry '82084' for key 'item_seq'")
+202001988
+202001989
+202001990
+202002025
+202002026
+202002085
+202002094
+202002095
+202002126
+202002127
+202002149
+202002182
+202002188
+202002189
+202002232
+202002237
+202002240
+202002254
+202002255
+202002272
+202002312
+(1062, "Duplicate entry '14060' for key 'item_seq'")
+202002330
+'NoneType' object is not subscriptable
+202002345
+(1062, "Duplicate entry '74005' for key 'item_seq'")
+202002453
+202002454
+202002455
+202002456
+202002457
+202002458
+202002459
+202002460
+202002500
+202002501
+202002515
+202002518
+202002559
+202002567
+202002585
+202002634
+202002649
+202002651
+(1062, "Duplicate entry '12402' for key 'item_seq'")
+202002652
+202002653
+202002687
+(1062, "Duplicate entry '54640' for key 'item_seq'")
+202002694
+202002697
+202002698
+202002744
+202002745
+202002747
+202002748
+202002749
+202002750
+202002765
+(1062, "Duplicate entry '36377' for key 'item_seq'")
+202002772
+202002773
+202002805
+202002807
+202002808
+202002812
+202002813
+202002822
+202002825
+202002855
+202002867
+202002868
+202002869
+202002896
+202002897
+202002898
+202002899
+202002900
+202002901
+202002908
+202002909
+202002917
+202002918
+202002940
+202002941
+202002942
+202002948
+202002963
+202002967
+202002971
+202002972
+202002973
+202002983
+202002988
+202002989
+202002990
+202002991
+202002992
+202002993
+202003032
+202003033
+202003034
+202003050
+202003057
+202003058
+202003071
+202003072
+202003073
+202003082
+202003083
+202003085
+202003100
+202003103
+202003104
+202003107
+202003108
+202003109
+202003119
+202003120
+202003137
+(1062, "Duplicate entry '14588' for key 'item_seq'")
+202003142
+202003166
+202003169
+202003170
+202003174
+202003178
+202003184
+202003217
+202003218
+202003219
+202003220
+202003221
+202003254
+202003265
+202003266
+202003278
+202003283
+202003284
+202003285
+202003290
+202003291
+202003293
+202003294
+202003302
+202003307
+202003311
+202003353
+(1062, "Duplicate entry '55164' for key 'item_seq'")
+202003393
+202003399
+202003409
+202003420
+(1062, "Duplicate entry '67553' for key 'item_seq'")
+202003460
+202003474
+(1062, "Duplicate entry '74011' for key 'item_seq'")
+202003489
+202003490
+202003535
+202003536
+202003538
+202003546
+202003555
+202003556
+202003557
+202003590
+202003602
+202003603
+202003616
+202003621
+202003657
+202003663
+202003665
+202003691
+202003707
+202003714
+202003715
+202003722
+202003723
+202003724
+202003734
+202003735
+202003738
+202003739
+202003741
+202003749
+202003750
+202003752
+202003754
+202003755
+202003772
+202003773
+202003828
+202003829
+202003830
+202003843
+202003844
+202003887
+202003888
+202003894
+202003902
+202003911
+202003937
+202003938
+202003939
+202003940
+202003991
+202004008
+202004009
+202004021
+202004022
+202004023
+202004024
+202004033
+202004034
+202004054
+(1062, "Duplicate entry '9392' for key 'item_seq'")
+202004078
+202004128
+202004221
+202004222
+202004230
+202004274
+202004276
+202004333
+202004334
+202004445
+202004448
+202004451
+202004454
+202004455
+202004457
+202004458
+202004486
+202004516
+202004519
+202004585
+202004622
+202004637
+202004638
+202004686
+(1062, "Duplicate entry '64628' for key 'item_seq'")
+202004753
+202004762
+202004763
+202004778
+202004807
+202004814
+202004865
+202004977
+202004978
+202004979
+202004981
+202005053
+202005054
+202005072
+202005073
+202005075
+202005076
+202005122
+(1062, "Duplicate entry '14595' for key 'item_seq'")
+202005251
+202005265
+202005266
+202005289
+202005290
+202005291
+202005292
+202005295
+202005296
+202005300
+202005352
+202005353
+202005354
+202005355
+202005362
+202005363
+202005368
+202005369
+202005372
+202005373
+202005379
+202005380
+202005381
+202005382
+202005383
+202005384
+202005385
+202005386
+202005395
+202005414
+202005501
+202005502
+202005503
+202005504
+202005511
+202005512
+202005513
+202005514
+202005515
+202005516
+202005517
+202005518
+202005519
+202005520
+202005521
+202005522
+202005523
+202005524
+202005525
+202005526
+202005527
+202005528
+202005546
+202005547
+202005672
+202005673
+202005722
+(1062, "Duplicate entry '30360' for key 'item_seq'")
+202005815
+202005873
+202005887
+202005951
+202005952
+202005981
+202006064
+202006205
+202006207
+202006208
+202006211
+202006212
+202006400
+202006401
+202006402
+202006465
+202006466
+202006467
+202006520
+(1062, "Duplicate entry '57083' for key 'item_seq'")
+202006602
+202006655
+202006656
+202006657
+202006658
+202006659
+202006660
+202006661
+202006662
+202006708
+202006709
+202006710
+202006711
+202006728
+202006755
+(1062, "Duplicate entry '65126' for key 'item_seq'")
+202006759
+202006760
+202006878
+202006923
+202006953
+202006982
+202006983
+202006984
+202007027
+202007028
+202007039
+202007238
+'NoneType' object is not subscriptable
+202007363
+202007594
+'NoneType' object is not subscriptable
+202007706
+'NoneType' object is not subscriptable
+202007967
+'NoneType' object is not subscriptable
+202008127
+'NoneType' object is not subscriptable
+202008370
+'NoneType' object is not subscriptable
+202009092
+'NoneType' object is not subscriptable
+
+Process finished with exit code 0
